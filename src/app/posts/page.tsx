@@ -5,7 +5,7 @@ function Posts() {
     <>
       <h1>Posts page</h1>
       <h2>
-        <Link href="/posts/first-post"></Link>
+        <Link href="/posts/first-post">Go To Post 1</Link>
       </h2>
     </>
   );
