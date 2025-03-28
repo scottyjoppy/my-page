@@ -20,6 +20,10 @@ export const menuItems: MenuItem[] = [
     label: "Blog",
     iconName: "Notebook",
     href: "/blog",
+    dropdown: [
+      { label: "Newest", href: "/mydocs" },
+      { label: "Oldest", href: "/about" },
+    ],
   },
   {
     label: "MyDocs",

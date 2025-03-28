@@ -48,7 +48,7 @@ function MobileNavbar({ items }: MobileNavbarProps) {
           </SheetHeader>
           <nav className="flex flex-col space-y-4 mt-6">
             {items.map((item) => {
-              const Icon = IconsMap[item.iconName];
+              const Icon = item.iconName ? IconsMap[item.iconName] : null;
               return (
                 <Button
                   variant="ghost"
@@ -57,7 +57,7 @@ function MobileNavbar({ items }: MobileNavbarProps) {
                   key={item.label}
                 >
                   <Link href={item.href}>
-                    <Icon className="w-4 h-4" />
+                    {Icon && <Icon className="w-4 h-4" />}
                     {item.label}
                   </Link>
                 </Button>
