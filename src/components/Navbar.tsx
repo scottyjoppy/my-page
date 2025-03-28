@@ -1,6 +1,7 @@
 import Link from "next/link";
 import DesktopNavbar from "./DesktopNavbar";
 import MobileNavbar from "./MobileNavbar";
+import { menuItems } from "./navbar/menuItems";
 
 async function Navbar() {
   return (
@@ -12,12 +13,11 @@ async function Navbar() {
               href="/"
               className="text-xl font-bold text-primary font-mono tracking-wider"
             >
-              Socially
+              ALX
             </Link>
           </div>
-
-          <DesktopNavbar />
-          <MobileNavbar />
+          <DesktopNavbar items={menuItems} />
+          <MobileNavbar items={menuItems} />
         </div>
       </div>
     </nav>

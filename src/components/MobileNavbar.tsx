@@ -8,12 +8,18 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { HomeIcon, MenuIcon, MoonIcon, SunIcon } from "lucide-react";
+import { MenuIcon, MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useState } from "react";
+import { IconsMap } from "./navbar/iconMap";
+import { MenuItem } from "./navbar/types";
 
-function MobileNavbar() {
+interface MobileNavbarProps {
+  items: MenuItem[];
+}
+
+function MobileNavbar({ items }: MobileNavbarProps) {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -41,16 +47,22 @@ function MobileNavbar() {
             <SheetTitle>Menu</SheetTitle>
           </SheetHeader>
           <nav className="flex flex-col space-y-4 mt-6">
-            <Button
-              variant="ghost"
-              className="flex items-center gap-3 justify-start"
-              asChild
-            >
-              <Link href="/">
-                <HomeIcon className="w-4 h-4" />
-                Home
-              </Link>
-            </Button>
+            {items.map((item) => {
+              const Icon = IconsMap[item.iconName];
+              return (
+                <Button
+                  variant="ghost"
+                  className="flex items-center gap-3 justify-start"
+                  asChild
+                  key={item.label}
+                >
+                  <Link href={item.href}>
+                    <Icon className="w-4 h-4" />
+                    {item.label}
+                  </Link>
+                </Button>
+              );
+            })}
           </nav>
         </SheetContent>
       </Sheet>
