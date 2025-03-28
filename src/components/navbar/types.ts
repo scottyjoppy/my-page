@@ -1,4 +1,4 @@
-import { IconsMap } from "./IconMap";
+import { IconsMap } from "./iconMap";
 
 export type MenuItem = {
   label: string;
