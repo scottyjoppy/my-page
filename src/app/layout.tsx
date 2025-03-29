@@ -1,4 +1,3 @@
-import Layout from "@/components/Layout";
 import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
@@ -37,7 +36,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <Layout>{children}</Layout>
+          {children}
         </ThemeProvider>
       </body>
     </html>
