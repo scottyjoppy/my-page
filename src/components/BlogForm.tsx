@@ -3,6 +3,7 @@
 import { addPost } from "@/lib/actions";
 import { useState } from "react";
 import { CustomAlert } from "./Alert";
+import { Button } from "./ui/button";
 
 export default function BlogForm() {
   const [password, setPassword] = useState("");
@@ -29,6 +30,14 @@ export default function BlogForm() {
     setLoading(true);
 
     const formData = new FormData(event.currentTarget);
+
+    const contentDiv = document.querySelector(
+      '[data-name="content"]'
+    ) as HTMLElement;
+    if (contentDiv) {
+      formData.append("content", contentDiv.innerText);
+    }
+
     await addPost(formData);
 
     setLoading(false);
@@ -46,6 +55,7 @@ export default function BlogForm() {
             onChange={(e) => setPassword(e.target.value)}
             required
             autoFocus
+            className="backdrop-brightness-95 outline mx-1"
           />
           <button type="submit">Submit</button>
         </form>
@@ -56,11 +66,23 @@ export default function BlogForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input name="title" placeholder="Title" required autoFocus />
-      <textarea name="content" placeholder="Content" required />
-      <button type="submit" disabled={loading}>
+      <input
+        name="title"
+        placeholder="Title"
+        required
+        autoFocus
+        className="text-7xl font-bold text-center focus:placeholder-transparent backdrop-brightness-99 mx-1 w-full outline-none"
+      />
+      <div
+        data-name="content"
+        contentEditable="true"
+        className="w-full min-h-screen pb-16 outline-none resize-none overflow-hidden bg-gray-100 text-lg p-4 required"
+        style={{ minHeight: "calc(100vh - 4rem)" }}
+      ></div>
+
+      <Button type="submit" disabled={loading}>
         {loading ? "Submitting..." : "Submit"}
-      </button>
+      </Button>
     </form>
   );
 }
