@@ -1,3 +1,4 @@
+import GridSection from "@/components/GridSection";
 import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
@@ -36,7 +37,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          {children}
+          <GridSection colNum={"5"}>{children}</GridSection>
         </ThemeProvider>
       </body>
     </html>

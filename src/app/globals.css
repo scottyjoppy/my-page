@@ -196,8 +196,11 @@
 }
 
 .title-css {
-  font-size: var(--text-7xl);
-  font-weight: bold;
-  justify-content: var(--justify-center);
-  color: var(--text-primary);
+  @apply text-4xl font-bold text-primary;
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+  .title-css {
+    @apply text-7xl;
+  }
 }
