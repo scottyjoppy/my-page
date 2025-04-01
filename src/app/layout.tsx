@@ -37,7 +37,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <GridSection colNum={"5"}>{children}</GridSection>
+          <GridSection colsClass="grid-cols-3">{children}</GridSection>
         </ThemeProvider>
       </body>
     </html>

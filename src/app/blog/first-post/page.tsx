@@ -1,6 +1,5 @@
 import GridSectionCenterFull from "@/components/GridSectionCenterFull";
 import GridTitleSection from "@/components/GridTitleSection";
-import Title from "@/components/Title";
 import { prisma } from "@/lib/prisma";
 
 export default async function Blog() {
@@ -9,7 +8,7 @@ export default async function Blog() {
   return (
     <>
       <GridTitleSection>
-        <Title>Blog</Title>
+        <h1>Blog</h1>
       </GridTitleSection>
       <GridSectionCenterFull>
         {posts.map((post) => (

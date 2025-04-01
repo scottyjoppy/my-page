@@ -1,12 +1,11 @@
 import GridSectionCenterFull from "@/components/GridSectionCenterFull";
 import GridTitleSection from "@/components/GridTitleSection";
-import Title from "@/components/Title";
 
 function MyDocs() {
   return (
     <>
       <GridTitleSection>
-        <Title>MyDocs page</Title>
+        <h1>MyDocs page</h1>
       </GridTitleSection>
       <GridSectionCenterFull>
         <p>Here I have my personal Docs</p>
