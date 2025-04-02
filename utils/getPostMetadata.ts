@@ -1,21 +1,25 @@
+import { PostMetadata } from "@/components/interface/PostMetadata";
 import fs from "fs";
 import matter from "gray-matter";
 
-export default function getPostMetadata(basePath: string) {
-  const folder = basePath + "/";
+const getPostMetadata = (): PostMetadata[] => {
+  const folder = "blog-posts/";
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
 
-  const posts = markdownPosts.map((filename) => {
-    const fileContents = fs.readFileSync(`${basePath}/${filename}`, "utf8");
+  const posts = markdownPosts.map((fileName) => {
+    const fileContents = fs.readFileSync(`blog-posts/${fileName}`, "utf8");
     const matterResult = matter(fileContents);
+
     return {
       title: matterResult.data.title,
       blogSeries: matterResult.data.blogSeries,
       date: matterResult.data.date,
-      content: matterResult.data.content,
-      slug: filename.replace(".md", ""),
+      description: matterResult.data.description,
+      slug: fileName.replace(".md", ""),
     };
   });
   return posts;
-}
+};
+
+export default getPostMetadata;
