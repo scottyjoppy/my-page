@@ -16,7 +16,7 @@ export default function Home() {
           className="hover:backdrop-brightness-95 dark:hover:backdrop-brightness-200"
           colNum="2"
         >
-          <div className="mx-auto flex items-center justify-center h-full">
+          <div className="mx-auto flex items-center justify-center">
             <Button className="hover:cursor-pointer">
               <Link href="/blog">Go To Blog</Link>
             </Button>

@@ -22,9 +22,16 @@ const BlogPage = (props: any) => {
   const post = getPostContent(slug);
   return (
     <>
-      <p>{post.data.date}</p>
-      <h1>{post.data.title}</h1>
-      <Markdown>{post.content}</Markdown>
+      <div className="border-b-8 border-primary">
+        <div className="m-10">
+          <h1 className="text-left -ml-1 mb-5">{post.data.title}</h1>
+          <h2 className="text-left mb-5">{post.data.description}</h2>
+          <p className="text-left">{post.data.date}</p>
+        </div>
+      </div>
+      <div className="m-10">
+        <Markdown>{post.content}</Markdown>
+      </div>
     </>
   );
 };

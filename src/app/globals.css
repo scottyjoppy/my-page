@@ -210,3 +210,7 @@ h3 {
 h4 {
   @apply italic text-secondary
 }
+
+code {
+  @apply flex
+}
