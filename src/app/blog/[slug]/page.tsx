@@ -24,7 +24,8 @@ export const generateStaticParams = async () => {
 };
 
 const BlogPage = ({ params }: BlogPageProps) => {
-  const post = getPostContent(params.slug);
+  const { slug } = params;
+  const post = getPostContent(slug);
   return (
     <>
       <p>{post.data.date}</p>
