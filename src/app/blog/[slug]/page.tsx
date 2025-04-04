@@ -3,12 +3,6 @@ import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import getPostMetadata from "utils/getPostMetadata";
 
-interface BlogPageProps {
-  params: {
-    slug: string;
-  };
-}
-
 const getPostContent = (slug: string) => {
   const file = `blog-posts/${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
@@ -23,7 +17,7 @@ export const generateStaticParams = async () => {
   }));
 };
 
-const BlogPage = ({ params }: BlogPageProps) => {
+const BlogPage = ({ params }: { params: { slug: string } }) => {
   const { slug } = params;
   const post = getPostContent(slug);
   return (
