@@ -4,9 +4,9 @@ import Markdown from "markdown-to-jsx";
 import getPostMetadata from "utils/getPostMetadata";
 
 interface BlogPageProps {
-  params: Promise<{
+  params: {
     slug: string;
-  }>;
+  };
 }
 
 const getPostContent = (slug: string) => {
@@ -23,8 +23,7 @@ export const generateStaticParams = async () => {
   }));
 };
 
-const BlogPage = (props: any) => {
-  const params = props.params;
+const BlogPage = ({ params }: BlogPageProps) => {
   const post = getPostContent(params.slug);
   return (
     <>
