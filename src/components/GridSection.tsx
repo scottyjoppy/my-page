@@ -10,7 +10,7 @@ const GridSection = ({ children, colsClass = "grid-cols-3" }: GridProps) => {
   return (
     <div
       className={clsx(
-        "md:grid grid-rows-[repeat(3,minmax(4rem,12rem))] lg:[&>*]:p-1 [&>*]:p-10 [&>*]:border-b-7 [&>*]:border-primary [&>*]:w-full font-inter",
+        "gap-2 md:grid auto-rows-[minmax(4rem,12rem)] lg:[&>*]:p-1 [&>*]:p-10 border-b-8 [&>*]:border-b-8 [&>*]:border-primary md:[&>*]:border-b-0 md:[&>*]:border-transparent border-primary [&>*]:w-full font-inter md:bg-foreground",
         colsClass
       )}
     >

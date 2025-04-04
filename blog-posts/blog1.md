@@ -1,8 +1,8 @@
 ---
 title: "Day 1: My first blog"
 blogSeries: "Journey To"
-date: "April 1, 2025"
-description: "A look into the day."
+date: "April 4, 2025"
+description: "Setting the pace."
 ---
 
 # Classic Apple Pie

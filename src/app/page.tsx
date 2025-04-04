@@ -13,26 +13,14 @@ export default function Home() {
           <p className="text-secondary">Alexander Delisle's page</p>
         </GridTitleSection>
         <GridSectionCenterFull
-          className="hover:backdrop-brightness-95"
+          className="hover:backdrop-brightness-95 dark:hover:backdrop-brightness-200"
           colNum="2"
         >
           <div className="mx-auto flex items-center justify-center h-full">
-            <Button>
+            <Button className="hover:cursor-pointer">
               <Link href="/blog">Go To Blog</Link>
             </Button>
           </div>
-        </GridSectionCenterFull>
-        <GridSectionCenterFull
-          className="hover:backdrop-brightness-95"
-          colNum="1"
-        >
-          <h2>test</h2>
-        </GridSectionCenterFull>
-        <GridSectionCenterFull
-          className="hover:backdrop-brightness-95"
-          colNum="2"
-        >
-          <h2>test</h2>
         </GridSectionCenterFull>
       </GridSection>
     </>
