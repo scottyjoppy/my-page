@@ -200,17 +200,32 @@ h1 {
 }
 
 h2 {
-  @apply font-bold underline
+  @apply font-bold underline;
 }
 
 h3 {
-  @apply font-semibold
+  @apply font-semibold;
 }
 
 h4 {
-  @apply italic text-secondary
+  @apply italic text-secondary;
 }
 
+/* Ensure dropdowns have a minimum width or grow based on content */
+[data-slot="navigation-menu-content"] {
+  min-width: 190px; /* or any value you deem suitable */
+  width: auto; /* Allows the dropdown to expand based on its content */
+}
+
+pre {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  overflow-x: auto; /* Allow horizontal scroll if the code overflows */
+  white-space: pre-wrap; /* Wrap text inside the code block */
+  word-wrap: break-word; /* Allow long words to break */
+}
+
+/* Style inline code */
 code {
-  @apply flex
+  font-size: 0.9rem;
+  @apply rounded-md max-w-[30rem] border-4 border-primary;
 }

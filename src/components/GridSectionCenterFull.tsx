@@ -13,7 +13,7 @@ const GridSectionCenterFull = ({
 }: GridProps) => {
   return (
     <div
-      className={`rounded-sm bg-background flex flex-col items-center justify-center h-full col-span-${colNum} ${className}`}
+      className={`md:border-b-8 border-primary rounded-sm bg-background flex flex-col items-center justify-center h-full col-span-${colNum} ${className}`}
     >
       {children}
     </div>
