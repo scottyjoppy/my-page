@@ -7,20 +7,15 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
+      <GridTitleSection>
+        <h1>Welcome</h1>
+        <p className="text-secondary">Alexander Delisle's page</p>
+      </GridTitleSection>
       <GridSection>
-        <GridTitleSection>
-          <h1>Welcome</h1>
-          <p className="text-secondary">Alexander Delisle's page</p>
-        </GridTitleSection>
-        <GridSectionCenterFull
-          className="hover:backdrop-brightness-95 dark:hover:backdrop-brightness-200"
-          colNum="2"
-        >
-          <div className="mx-auto flex items-center justify-center">
-            <Button className="hover:cursor-pointer">
-              <Link href="/blog">Go To Blog</Link>
-            </Button>
-          </div>
+        <GridSectionCenterFull>
+          <Button className="hover:cursor-pointer">
+            <Link href="/blog">Go To Blog</Link>
+          </Button>
         </GridSectionCenterFull>
       </GridSection>
     </>

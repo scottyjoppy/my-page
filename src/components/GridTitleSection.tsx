@@ -1,10 +1,26 @@
+import clsx from "clsx";
 import React from "react";
 
-const GridTitleSection = ({ children }: { children: React.ReactNode }) => {
+interface GridTitleProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+const GridTitleSection = ({ children, className }: GridTitleProps) => {
   return (
-    <div className="border-b-8 border-primary bg-background col-span-full row-span-2 flex flex-col items-center justify-center mx-auto">
-      {children}
-    </div>
+    <section
+      className={clsx(
+        "border-b-8 border-primary bg-background",
+        "col-span-full",
+        "lg:grid auto-rows-[minmax(4rem,12rem)]",
+        "lg:p-1 p-10",
+        className
+      )}
+    >
+      <div className="row-span-2 flex flex-col items-center justify-center container mx-auto">
+        <div className="items-start">{children}</div>
+      </div>
+    </section>
   );
 };
 

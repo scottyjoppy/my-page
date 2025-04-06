@@ -3,19 +3,42 @@ import React from "react";
 
 interface GridProps {
   children?: React.ReactNode;
-  colsClass?: string;
+  cols?: {
+    default?: number;
+    sm?: number;
+    md?: number;
+    lg?: number;
+    xl?: number;
+  };
+  gap?: string;
+  className?: string;
 }
 
-const GridSection = ({ children, colsClass = "grid-cols-3" }: GridProps) => {
+const GridSection = ({
+  children,
+  cols = { default: 1, sm: 2, lg: 3 },
+  gap = "gap-2",
+  className,
+}: GridProps) => {
+  // Create grid classes directly in the className prop
   return (
-    <div
-      className={clsx(
-        "gap-2 md:grid auto-rows-[minmax(4rem,12rem)] lg:[&>*]:p-1 [&>*]:p-10 border-b-8 md:[&>*]:border-b-0 md:[&>*]:border-transparent border-primary [&>*]:w-full font-inter md:bg-foreground",
-        colsClass
-      )}
-    >
-      {children}
-    </div>
+    <section className="w-full border-b-8 border-primary bg-foreground">
+      <div
+        className={clsx(
+          "container mx-auto px-4 grid",
+          `grid-cols-${cols.default}`,
+          cols.sm && `sm:grid-cols-${cols.sm}`,
+          cols.md && `md:grid-cols-${cols.md}`,
+          cols.lg && `lg:grid-cols-${cols.lg}`,
+          cols.xl && `xl:grid-cols-${cols.xl}`,
+          gap,
+          "font-inter",
+          className
+        )}
+      >
+        {children}
+      </div>
+    </section>
   );
 };
 

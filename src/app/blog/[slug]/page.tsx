@@ -27,28 +27,28 @@ const BlogPage = (props: any) => {
   return (
     <>
         <div className="border-b-8 border-primary flex items-center">
-          <div className="mx-50 my-3">
+          <div className="container px-5 mx-auto my-3 max-w-250">
             <h3 className="text-left">{post.data.blogSeries}</h3>
             <h4 className="text-left mb-5">{post.data.blogLine}</h4>
             <h1 className="-ml-1 mb-5">{post.data.title}</h1>
             <h2 className="mb-5">{post.data.description}</h2>
           </div>
         </div>
-      <div className="mx-40">
-        <div className="m-10">
+      <div className="container mx-auto my-10 max-w-250 px-5">
           <p className="mb-3">{post.data.date}</p>
-          <ReactMarkdown
-            remarkPlugins={[remarkBreaks]} // Handle line breaks (two spaces or <br>)
-            rehypePlugins={[rehypeRaw, rehypeHighlight]} // Render raw HTML (e.g., <u>) and syntax highlight code
-            components={{
-              u: ({ node, ...props }) => <u {...props} />, // Custom component for <u> tag
-            }}
-            skipHtml={false}
-          >
-            {post.content}
-          </ReactMarkdown>
+          <article className="prose prose-lg max-w-none">
+            <ReactMarkdown
+              remarkPlugins={[remarkBreaks]} // Handle line breaks (two spaces or <br>)
+              rehypePlugins={[rehypeRaw, rehypeHighlight]} // Render raw HTML (e.g., <u>) and syntax highlight code
+              components={{
+                u: ({ node, ...props }) => <u {...props} />, // Custom component for <u> tag
+              }}
+              skipHtml={false}
+            >
+              {post.content}
+            </ReactMarkdown>
+          </article>
         </div>
-      </div>
     </>
   );
 };

@@ -11,12 +11,10 @@ const Blog = () => {
 
   return (
     <>
-      <GridSection>
-        <GridTitleSection>
-          <h1>Blog</h1>
-        </GridTitleSection>
-        {postPreviews}
-      </GridSection>
+      <GridTitleSection>
+        <h1>Blog</h1>
+      </GridTitleSection>
+      <GridSection>{postPreviews}</GridSection>
     </>
   );
 };
