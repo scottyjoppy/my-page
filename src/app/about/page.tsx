@@ -10,7 +10,7 @@ function About() {
         <h1>About page</h1>
       </GridTitleSection>
       <GridSection>
-        <GridSectionCenterFull>
+        <GridSectionCenterFull colSpan={{default: "full"}}>
           <p>My name is Alexander Delisle</p>
         </GridSectionCenterFull>
       </GridSection>
