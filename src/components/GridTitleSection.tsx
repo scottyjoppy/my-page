@@ -17,7 +17,7 @@ const GridTitleSection = ({ children, className }: GridTitleProps) => {
         className
       )}
     >
-      <div className="min-h-[300px] row-span-2 flex flex-col items-center justify-center container mx-auto">
+      <div className="min-h-[200px] row-span-2 flex flex-col items-center justify-center container mx-auto">
         <div className="items-start">{children}</div>
       </div>
     </section>
