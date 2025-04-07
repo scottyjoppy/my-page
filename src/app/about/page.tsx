@@ -11,6 +11,11 @@ function About() {
       </GridTitleSection>
       <GridSection>
         <GridSectionCenterFull>
+          <p>My name is Alexander Delisle</p>
+        </GridSectionCenterFull>
+      </GridSection>
+      <GridSection>
+        <GridSectionCenterFull>
           <Image
             src="/images/alex-image.jpg"
             width={500}
