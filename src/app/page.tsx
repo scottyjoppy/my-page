@@ -1,6 +1,7 @@
 import GridSection from "@/components/GridSection";
 import GridSectionCenterFull from "@/components/GridSectionCenterFull";
 import GridTitleSection from "@/components/GridTitleSection";
+import SocialIcons from "@/components/SocialIcons";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -16,6 +17,9 @@ export default function Home() {
           <Button className="hover:cursor-pointer">
             <Link href="/blog">Go To Blog</Link>
           </Button>
+        </GridSectionCenterFull>
+        <GridSectionCenterFull>
+          <SocialIcons/>
         </GridSectionCenterFull>
       </GridSection>
     </>
