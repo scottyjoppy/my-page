@@ -3,7 +3,7 @@ title: "Day 1: Setting the pace"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
 date: "April 7, 2025"
-description: "Beginning of the journey to Software Engineer."
+description: "A look back to how it all started. Lating the groundwork for a new challenge to better myself and my skills."
 ---
 
 Hello,  
