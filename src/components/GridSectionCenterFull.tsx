@@ -37,7 +37,7 @@ const GridSectionCenterFull = ({
       className={clsx(
         "w-full h-full",
         "flex items-center justify-center",
-        "rounded-sm bg-background",
+        "rounded-sm bg-background p-5",
         minHeight,
         getColSpan(),
         className

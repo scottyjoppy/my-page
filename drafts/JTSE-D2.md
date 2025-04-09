@@ -1,8 +1,8 @@
 ---
-title: "Day 2: React Meetup"
+title: "Day 3: React Meetup"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
-date: "April 8, 2025"
+date: "April 9, 2025"
 description: "Learning React and thoughts on attending the React April Meetup in Vienna."
 ---
 
