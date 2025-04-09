@@ -12,7 +12,7 @@ const SocialIcons = ({ size = 2 }: SocialProps) => {
         <Link href={link.href} key={index} target="_blank">
           {
             <link.icon
-            style={{width: `${size}rem`, height: `${size}rem`}}
+              style={{ fontSize: `${size}rem` }}
               className="transition-all hover:fill-primary/90"
             />
           }

@@ -227,5 +227,5 @@ pre {
 /* Style inline code */
 code {
   font-size: 0.9rem;
-  @apply rounded-md max-w-[30rem] border-4 border-primary;
+  @apply rounded-md max-w-[35rem] border-4 border-primary;
 }

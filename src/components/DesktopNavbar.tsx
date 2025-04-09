@@ -34,11 +34,11 @@ async function DesktopNavbar({ items }: DesktopNavbarProps) {
                     </Link>
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    {item.dropdown.map((ddItem) => (
-                      <NavigationMenuLink href={ddItem.href} key={ddItem.label}>
-                        {ddItem.label}
-                      </NavigationMenuLink>
-                    ))}
+                      {item.dropdown.map((ddItem) => (
+                        <NavigationMenuLink href={ddItem.href} key={ddItem.label}>
+                          {ddItem.label}
+                        </NavigationMenuLink>
+                      ))}
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               </NavigationMenuList>
