@@ -13,7 +13,7 @@ my name is Alexander Delisle and I am a software engineer. I first ever touched 
 
 ## The Idea
 
-I've always had an interest in factory building games such as _[Factorio](https://store.steampowered.com/app/427520/Factorio/)_ and _[Satisfactory](https://store.steampowered.com/app/526870/Satisfactory/)_. At the time, I was into one - [Assembly Line 2](https://store.steampowered.com/app/2691010/Assembly_Line_2_Mobile_Version/). Through previous experience in the genre I'm used to using online tools like material calculators to plan my factories as efficiently as possible. Since the community for this game is relatively small there were no such tools available so I decided to use my newfound skills to create a calculator.
+I've always had an interest in factory building games such as _**[Factorio](https://store.steampowered.com/app/427520/Factorio/)**_ and _**[Satisfactory](https://store.steampowered.com/app/526870/Satisfactory/)**_. At the time, I was into one - _**[Assembly Line 2](https://store.steampowered.com/app/2691010/Assembly_Line_2_Mobile_Version/)**_. Through previous experience in the genre I'm used to using online tools like material calculators to plan my factories as efficiently as possible. Since the community for this game is relatively small there were no such tools available so I decided to use my newfound skills to create a calculator.
 
 <br>
 
@@ -21,7 +21,7 @@ I've always had an interest in factory building games such as _[Factorio](https:
 
 #### Better to start wrong than to not start at all.
 
-This is not true in all cases. Like doing drugs. But nonetheless I find too easily was I overcome with choices. After hearing about _Tutorial Hell_ I decided I should just start. I’ll learn much more from doing and failing than just watching videos. So, armed with a few completed lessons on **_[FreeCodeCamp](https://www.freecodecamp.org)_** and an Excel sheet database I found on Reddit, I began.
+This is not true in all cases. Like doing drugs. But nonetheless I find too easily was I overcome with choices. After hearing about _Tutorial Hell_ I decided I should just start. I'll learn much more from doing and failing than just watching videos. So, armed with a few completed lessons on _**[FreeCodeCamp](https://www.freecodecamp.org)**_ and an Excel sheet database I found on Reddit, I began.
 
 <br>
 

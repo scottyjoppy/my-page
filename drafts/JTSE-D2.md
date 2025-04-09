@@ -7,8 +7,8 @@ description: "Learning React and thoughts on attending the React April Meetup in
 ---
 
 Hello,  
-Today I will be attending the Eversports sponsored April React meetup. About two weeks ago, I started using React and Next.js with the goal of creating this _[blog](alex-page.vercel.app)_. It was love at first sight. Something about Typescript XML and reusable components was just so awesome and fluent to me. I could so quickly get a decent looking site up and running.  
-I decided to make things easier on myself with some premade components courtesy of _[ShadCN](https://ui.shadcn.com)_. And not to mention Tailwind's built in classes made it so easy to style everything. Suffice it to say I'm a React fan, maybe a fool that just hasn't used it enough yet to uncover its faults but as it stands now I love it.
+Today I will be attending the Eversports sponsored April React meetup. About two weeks ago, I started using React and Next.js with the goal of creating this _*[blog](https://github.com/scottyjoppy/my-page)*_. It was love at first sight. Something about Typescript XML and reusable components was just so awesome and fluent to me. I could so quickly get a decent looking site up and running.  
+I decided to make things easier on myself with some premade components courtesy of _*[ShadCN](https://ui.shadcn.com)*_. And not to mention Tailwind's built in classes made it so easy to style everything. Suffice it to say I'm a React fan, maybe a fool that just hasn't used it enough yet to uncover its faults but as it stands now I love it.
 
 <br>
 
@@ -18,7 +18,7 @@ I decided to make things easier on myself with some premade components courtesy 
 
 I've been to two meetups since I started coding. It's not always easy to make time with my current job, but I think it's helpful to try and immerse myself in such environments. To go outside my home and meet people in the field I'd like to join.  
 I'd be lying if I said I didn't feel out of place at times. But the motivation to achieve my goals in this field trumps any fear I could have.  
-So the meetup. _[React Vienna](https://www.meetup.com/en-AU/reactvienna/)_ organized by [Nik Graf](https://x.com/nikgraf) host regular local meetups for people interested in React and front-end development.
+So the meetup. _*[React Vienna](https://www.meetup.com/en-AU/reactvienna/)*_ organized by _*[Nik Graf](https://x.com/nikgraf)*_ host regular local meetups for people interested in React and front-end development.
 
 <br>
 
@@ -45,7 +45,7 @@ So enough said, I'm excited going into it, and if all else fails, free food is a
 <br>
 
 Post meetup reflections. Overall had a great time, organizers really created a nice space in the relatively small room. There were plenty of chairs, a bunch of food, drinks. Really well done.  
-As for the talks they were good as well. The first speaker [Max Zauner](https://zaunermax.at) gave a talk on dependency arrays in React and how recent compiler efforts aim to automate dependency tracking at build time, removing the need to manually specify dependencies in hooks like useEffect. The second speaker [Cezar Neaga](https://www.linkedin.com/in/cezarneaga/) went through his team's development of a solution to build multi-domain SSO with FusionAuth and Next.js. He talked about the challenges he faced, like ensuring smooth logins across different web domains, which isn't easy with OAuth.  
+As for the talks they were good as well. The first speaker _*[Max Zauner](https://zaunermax.at)*_ gave a talk on dependency arrays in React and how recent compiler efforts aim to automate dependency tracking at build time, removing the need to manually specify dependencies in hooks like useEffect. The second speaker _*[Cezar Neaga](https://www.linkedin.com/in/cezarneaga/)*_ went through his team's development of a solution to build multi-domain SSO with FusionAuth and Next.js. He talked about the challenges he faced, like ensuring smooth logins across different web domains, which isn't easy with OAuth.  
 On a side note I really enjoyed Cezar as a speaker. He's very open and honest but with a genuine care and love for what he does, and it comes out in the way he speaks.  
 Besides the talks I spoke with a few other people. I'm sure as I become more experienced these conversations will be more fruitful but as it stands I just try to come loaded with curiosity. I'm very interested in how people came into tech, learned the skills, how language barriers are handled, and also if they program outside of work. But in the future maybe I'll be able to join in on these post talk conversations, for now I listen and try to learn.
 
