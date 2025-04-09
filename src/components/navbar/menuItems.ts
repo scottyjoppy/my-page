@@ -18,11 +18,11 @@ export const menuItems: MenuItem[] = [
     iconName: "User",
     href: "/about",
   },
-  // {
-  //   label: "Projects",
-  //   iconName: "Code",
-  //   href: "/projects",
-  // },
+  {
+    label: "Projects",
+    iconName: "Code",
+    href: "/projects",
+  },
   {
     label: "Blog",
     iconName: "Notebook",

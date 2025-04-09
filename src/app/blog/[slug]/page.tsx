@@ -31,7 +31,7 @@ const BlogPage = (props: any) => {
           <h3 className="text-left">{post.data.blogSeries}</h3>
           <h4 className="text-left mb-5">{post.data.blogLine}</h4>
           <h1 className="-ml-1 mb-5">{post.data.title}</h1>
-          <h2 className="mb-5">{post.data.description}</h2>
+          <p className="mb-5">{post.data.description}</p>
         </div>
       </div>
       <div className="container mx-auto my-10 max-w-250 px-5">

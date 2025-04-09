@@ -52,8 +52,8 @@ function MobileNavbar({ items }: MobileNavbarProps) {
           <SheetHeader>
             <SheetTitle>Menu</SheetTitle>
           </SheetHeader>
-          <nav className="flex flex-col space-y-4 mt-6">
-            <Accordion type="multiple" className="w-full">
+          <nav className="h-full space-y-4 mt-6">
+            <Accordion type="multiple" className="flex flex-col gap-5 h-full w-full">
               {items.map((item) => {
                 const Icon = item.iconName ? IconsMap[item.iconName] : null;
 

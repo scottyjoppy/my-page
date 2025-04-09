@@ -1,7 +1,6 @@
 import GridSection from "@/components/GridSection";
 import GridSectionCenterFull from "@/components/GridSectionCenterFull";
 import GridTitleSection from "@/components/GridTitleSection";
-import SocialIcons from "@/components/SocialIcons";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -19,7 +18,10 @@ export default function Home() {
           </Button>
         </GridSectionCenterFull>
         <GridSectionCenterFull>
-          <SocialIcons />
+          <div className="flex flex-col">
+            <h2 className="text-2xl">Projects</h2>
+            <p>Current:</p>
+          </div>
         </GridSectionCenterFull>
       </GridSection>
     </>
