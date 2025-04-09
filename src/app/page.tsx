@@ -11,18 +11,18 @@ export default function Home() {
         <h1>Welcome</h1>
         <p className="text-secondary">Alexander Delisle's page</p>
       </GridTitleSection>
-      <GridSection cols={{ lg: 2 }}>
+      <GridSection cols={{ lg: 1 }}>
         <GridSectionCenterFull>
           <Button className="hover:cursor-pointer">
             <Link href="/blog">Go To Blog</Link>
           </Button>
         </GridSectionCenterFull>
-        <GridSectionCenterFull>
+        {/* <GridSectionCenterFull>
           <div className="flex flex-col">
             <h2 className="text-2xl">Projects</h2>
             <p>Current:</p>
           </div>
-        </GridSectionCenterFull>
+        </GridSectionCenterFull> */}
       </GridSection>
     </>
   );
