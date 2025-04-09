@@ -12,14 +12,14 @@ export default function Home() {
         <h1>Welcome</h1>
         <p className="text-secondary">Alexander Delisle's page</p>
       </GridTitleSection>
-      <GridSection>
+      <GridSection cols={{ lg: 2 }}>
         <GridSectionCenterFull>
           <Button className="hover:cursor-pointer">
             <Link href="/blog">Go To Blog</Link>
           </Button>
         </GridSectionCenterFull>
         <GridSectionCenterFull>
-          <SocialIcons/>
+          <SocialIcons />
         </GridSectionCenterFull>
       </GridSection>
     </>

@@ -7,13 +7,13 @@ description: "A look back to how it all started. Lating the groundwork for a new
 ---
 
 Hello,  
-my name is Alexander Delisle and I am a software engineer. I first ever touched code in September 2024. I was fascinated by such basic concepts as functions and loops and quickly challenged myself to create my first web app with **HTML** **CSS** and **JavaScript**.  
+my name is Alexander Delisle and I am a software engineer. I first ever touched code in September 2024. I was fascinated by such basic concepts as functions and loops and quickly challenged myself to create my first web app with **HTML** **CSS** and **JavaScript**.
 
 <br>
 
 ## The Idea
 
-I've always had an interest in factory building games such as _[Factorio]()_ and _[Satisfactory]()_. At the time, I was into one - [Assembly Line 2](). Through previous experience in the genre I'm used to using online tools like material calculators to plan my factories as efficiently as possible. Since the community for this game is relatively small there were no such tools available so I decided to use my newfound skills to create a calculator.
+I've always had an interest in factory building games such as _[Factorio](https://store.steampowered.com/app/427520/Factorio/)_ and _[Satisfactory](https://store.steampowered.com/app/526870/Satisfactory/)_. At the time, I was into one - [Assembly Line 2](https://store.steampowered.com/app/2691010/Assembly_Line_2_Mobile_Version/). Through previous experience in the genre I'm used to using online tools like material calculators to plan my factories as efficiently as possible. Since the community for this game is relatively small there were no such tools available so I decided to use my newfound skills to create a calculator.
 
 <br>
 
@@ -30,17 +30,16 @@ This is not true in all cases. Like doing drugs. But nonetheless I find too easi
 <br>
 
 ```javascript
-
 function metalI(amountPS, metalIndex) {
-
   machine[0].metalNum = metal[metalIndex];
-  levelValue = machineLevelArr[0].value
+  levelValue = machineLevelArr[0].value;
   levelCalc(levelValue);
   starterLVL = levelValueFound;
   machine[0].amount = amountPS / starterLVL;
   totalStarter += machine[0].amount;
 
-  metalMade = machine[0].amount + " " + machine[0].name + " " + machine[0].metalNum;
+  metalMade =
+    machine[0].amount + " " + machine[0].name + " " + machine[0].metalNum;
 
   return metalMade;
 }
