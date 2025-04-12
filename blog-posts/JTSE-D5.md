@@ -27,7 +27,7 @@ I'm more of a morning person. Even though I struggle to wake up every day, but s
 <br>
 
 I leave the house at around 5 and get to work just before 6. On the way I either do something productive like research what I'll code in the evening. For example today I knew I wanted to learn about customising Tailwind color themes, as well as how parallax and scroll effects are created.  
-I also use this time to decide what podcasts I'll be listening to for the next 10 hours. Today I started the first few episodes of **_[Syntax.](https://syntax.fm)_**
+I also use this time to decide what podcasts I'll be listening to for the next 10 hours. Today I started the first few episodes of **_[Syntax](https://syntax.fm)_**.
 
 <br>
 
