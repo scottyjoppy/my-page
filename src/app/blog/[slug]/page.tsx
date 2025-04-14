@@ -43,6 +43,19 @@ const BlogPage = (props: any) => {
             components={{
               u: ({ node, ...props }) => <u {...props} />, // Custom component for <u> tag
               a: ({ node, ...props }) => <a target="_blank" {...props} />, // Add target="_blank" to links
+              ul: ({ node, ...props }) => (
+                <ul
+                  className="list-disc list-inside my-6 space-y-2"
+                  {...props}
+                />
+              ),
+              ol: ({ node, ...props }) => (
+                <ol
+                  className="list-decimal list-inside my-6 space-y-2"
+                  {...props}
+                />
+              ),
+              li: ({ node, ...props }) => <li className="ml-4" {...props} />,
             }}
             skipHtml={false}
           >
