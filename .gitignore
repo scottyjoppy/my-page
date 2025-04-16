@@ -57,3 +57,20 @@ next-env.d.ts
 
 # Testing
 /coverage/
+
+# Ignore node_modules (Sanity Studio dependencies)
+node_modules/
+
+# Ignore build and public directories (if any)
+build/
+public/
+
+# Ignore environment variables
+.env
+
+# Ignore sanity-specific config or data directories (if you have them)
+studio/.env.local
+studio/.env.production
+
+# Optional: ignore the `sanity.json` or other config files if you don't need them in version control
+studio/sanity.json
