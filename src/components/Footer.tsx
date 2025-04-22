@@ -2,7 +2,7 @@ import SocialIcons from "@/components/SocialIcons";
 
 function Footer() {
   return (
-    <footer className="mt-auto w-full border-primary bg-background z-50 font-inter h-16">
+    <footer className="mt-auto w-full border-primary bg-background z-50 font-inter h-16 mix-blend-multiply">
       <div className="max-w-7xl mx-auto p-4 flex items-center justify-center">
         <SocialIcons />
       </div>

@@ -22,7 +22,7 @@ const GridSection = ({
 }: GridProps) => {
   // Create grid classes directly in the className prop
   return (
-    <section className="w-full border-b-8 border-primary bg-primary">
+    <section className="w-full border-b-8 border-primary bg-primary mix-blend-multiply">
       <div
         className={clsx(
           "container mx-auto px-4 grid",

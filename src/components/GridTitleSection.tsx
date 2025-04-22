@@ -13,7 +13,7 @@ const GridTitleSection = ({ children, className }: GridTitleProps) => {
         "border-b-8 border-primary bg-background",
         "col-span-full",
         "lg:grid auto-rows-[minmax(4rem,12rem)]",
-        "lg:p-1 p-10",
+        "lg:p-1 p-10 mix-blend-multiply",
         className
       )}
     >
