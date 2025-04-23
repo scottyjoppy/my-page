@@ -1,5 +1,5 @@
 export default function Texture() {
   return (
-    <div className="pointer-events-none fixed bg-[url(/images/noise.png)] inset-0 -z-10 overflow-hidden opacity-10 bg-repeat bg-[length:512px_512px]"></div>
+    <div className="pointer-events-none bg-[url(/images/noise.png)]  opacity-10 w-full h-full absolute inset-0 bg-fixed  top-0 left-0 mix-blend-multiply dark:mix-blend-soft-light dark:opacity-50 bg-repeat bg-[length:512px_512px]" />
   );
 }

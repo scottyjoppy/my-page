@@ -12,7 +12,6 @@ function Layout({ children }: { children: React.ReactNode }) {
       enableSystem
       disableTransitionOnChange
     >
-      <Texture />
 
       <Navbar />
       {children}

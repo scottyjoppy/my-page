@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import React from "react";
+import Texture from "./Texture";
 
 interface GridProps {
   children?: React.ReactNode;
@@ -33,18 +34,21 @@ const GridSectionCenterFull = ({
   };
 
   return (
-    <div
-      className={clsx(
-        "w-full h-full",
-        "flex items-center justify-center",
-        "rounded-sm bg-background p-5",
-        minHeight,
-        getColSpan(),
-        className
-      )}
-    >
-      {children}
-    </div>
+    <>
+      <div
+        className={clsx(
+          "w-full h-full",
+          "flex items-center justify-center relative",
+          "rounded-sm bg-background p-5",
+          minHeight,
+          getColSpan(),
+          className
+        )}
+      >
+        <Texture />
+        {children}
+      </div>
+    </>
   );
 };
 
