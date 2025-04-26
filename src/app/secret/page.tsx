@@ -70,37 +70,39 @@ const Secret = () => {
     <>
       <div className="flex flex-col items-center">
         <div className="flex gap-5">
-            <button
-              onClick={() => {
-                setRunning(!running);
-                if (!running) {
-                  runningRef.current = true;
-                  runSimulation();
-                }
-              }}
-            >
-              {running ? "Stop" : "Start"}
-            </button>
-            <button
-              onClick={() => {
-                setGrid(generateEmptyGrid());
-              }}
-            >
-              Clear
-            </button>
-            <button
-              onClick={() => {
-                const rows = [];
-                for (let i = 0; i < numRows; i++) {
-                  rows.push(
-                    Array.from(Array(numCols), () => (Math.random() > 0.7 ? 1 : 0))
-                  );
-                }
-                setGrid(rows);
-              }}
-            >
-              Random
-            </button>
+          <button
+            onClick={() => {
+              setRunning(!running);
+              if (!running) {
+                runningRef.current = true;
+                runSimulation();
+              }
+            }}
+          >
+            {running ? "Stop" : "Start"}
+          </button>
+          <button
+            onClick={() => {
+              setGrid(generateEmptyGrid());
+            }}
+          >
+            Clear
+          </button>
+          <button
+            onClick={() => {
+              const rows = [];
+              for (let i = 0; i < numRows; i++) {
+                rows.push(
+                  Array.from(Array(numCols), () =>
+                    Math.random() > 0.7 ? 1 : 0
+                  )
+                );
+              }
+              setGrid(rows);
+            }}
+          >
+            Random
+          </button>
         </div>
         <div
           style={{

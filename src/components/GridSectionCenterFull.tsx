@@ -45,7 +45,6 @@ const GridSectionCenterFull = ({
           className
         )}
       >
-        <Texture />
         {children}
       </div>
     </>
