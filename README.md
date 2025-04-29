@@ -59,7 +59,7 @@ I'm actively building and learning. Expect frequent updates and refinements as I
 Feel free to reach out or connect with me:
 
 - **Email:** alexanderdelisle@yahoo.ca
-- **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/alexander-delisle-3a7a68227/)
+- **LinkedIn:** [linkedin.com/in/alexander-delisle](https://www.linkedin.com/in/alexander-delisle-3a7a68227/)
 - **GitHub:** [github.com/scottyjoppy](https://github.com/scottyjoppy)
 
 ---
