@@ -107,9 +107,41 @@ export default async function BlogPage({ params }: Props) {
   const { slug } = await params;
   const blog = await getBlog(slug);
 
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  const dateToString = (date: string) => {
+    const [year, month, day] = date.split("-");
+    return `${Number(day)} ${months[Number(month) - 1]} ${Number(year)}`;
+  };
+
   return (
     <>
-      <PortableText value={blog.content} components={components} />
+      <div className="border-b-8 border-primary flex items-center">
+        <div className="container px-5 mx-auto my-3 max-w-250">
+          <h3 className="text-left">{blog.blogSeries}</h3>
+          <h4 className="text-left mb-5">{blog.blogLine}</h4>
+          <h1 className="-ml-1 mb-5">{blog.title}</h1>
+          <p className="mb-5">{blog.description}</p>
+        </div>
+      </div>
+      <div className="container mx-auto my-10 max-w-250 px-5">
+        <div className="mb-4">{dateToString(blog.date)}</div>
+
+        <PortableText value={blog.content} components={components} />
+      </div>
     </>
   );
 }

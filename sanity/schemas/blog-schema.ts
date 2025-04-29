@@ -28,7 +28,7 @@ const blog = {
       title: "Date",
       type: "date",
       options: {
-        dateFormat: "DD-MM-YYY",
+        dateFormat: "DD-MM-YYYY",
         calendarTodayLabel: "Today",
       },
     },
@@ -77,12 +77,6 @@ const blog = {
           },
         },
       ],
-    },
-    {
-      name: "sortOrder",
-      title: "Sort Order",
-      type: "number",
-      description: "Highest First",
     },
   ],
 };

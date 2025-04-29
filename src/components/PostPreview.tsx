@@ -6,6 +6,10 @@ import { Button } from "./ui/button";
 export default async function PostPreview() {
   const blogs = await getBlogs();
 
+  const formatDate = (date: string) => {
+    return date.split("-").reverse().join("-");
+  };
+
   return (
     <>
       {blogs.map((blog, index) => (
@@ -24,7 +28,7 @@ export default async function PostPreview() {
               <div className="w-full rounded-2xl border-primary border-2 px-5 py-4 backdrop-brightness-95 flex flex-col justify-center transition-all hover:bg-primary/10">
                 <h2 className="mb-3">{blog.title}</h2>
                 <h3 className="mb-2">{blog.description}</h3>
-                <h4>{blog.date}</h4>
+                <h4>{formatDate(blog.date)}</h4>
               </div>
             </Link>
           </div>

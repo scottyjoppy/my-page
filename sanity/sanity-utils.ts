@@ -4,7 +4,7 @@ import clientConfig from "./config/client-config";
 
 export async function getBlogs(): Promise<Blog[]> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == "blog"] | order(sortOrder desc){
+    groq`*[_type == "blog"] {
         _id,
         _createdAt,
         title,
