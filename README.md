@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alexander Delisle – Portfolio
 
-## Getting Started
+Hi, my name is **Alexander Delisle**. I'm a 24-year-old software engineer-in-training, originally from Canada and now based in Vienna, Austria. In 2024, I made the decision to transition into tech and have since been immersing myself in the fundamentals of **programming**, **web development**, **security**, and **data storage**.
 
-First, run the development server:
+This portfolio serves as a central hub for documenting my journey, sharing my projects, and connecting with like-minded individuals.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔗 Live Site
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[Visit my portfolio website](https://alex-page.vercel.app)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧩 Features
 
-To learn more about Next.js, take a look at the following resources:
+### 🖥 Portfolio
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A collection of projects I've built, including:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Web apps
+- JavaScript experiments
+- UI/UX demos
+- Data tools
 
-## Deploy on Vercel
+Each project is documented with a description, tech stack, and a live preview or repo link.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📝 Blog
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+My blog features personal reflections, technical writeups, and progress logs. Topics include:
+
+- Tutorials on tools I’m exploring
+- Project retrospectives
+- The journey from warehouse work to web development
+
+### 📬 Contact Page
+
+Get in touch with me via a simple contact form or find my email and social media links.
+
+---
+
+## ⚙️ Tech Stack
+
+- **Next.js** for frontend rendering and routing
+- **Tailwind CSS** for styling
+- **Sanity.io** as a headless CMS powering the blog
+- **Vercel** for deployment
+
+---
+
+## 🚧 Still in Progress
+
+I'm actively building and learning. Expect frequent updates and refinements as I develop new skills and build new projects.
+
+---
+
+## 📫 Contact
+
+Feel free to reach out or connect with me:
+
+- **Email:** alexanderdelisle@yahoo.ca
+- **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/alexander-delisle-3a7a68227/)
+- **GitHub:** [github.com/scottyjoppy](https://github.com/scottyjoppy)
+
+---
+
+Thanks for checking out my work!
