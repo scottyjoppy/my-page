@@ -18,7 +18,7 @@ Today I finally git checkout-ed back into my switch-to-sanity branch for this pa
 
 <br>
 
-I had one issue when I first opened up the branch and it was that despite the schema defining dates as DD-MM-YYYY, they were showing up as YYYY-MM-DD on the webpage. I was able to determine that the schema defines how the date is inputted in Sanity but does not affect how the GROQ fetch works. In fact, I found out GROQ lacks built-in date formatting functions. This led to me starting to roll down the hill of endlessly searching for some workaround. I looked at multiple videos, docs, posts, but eventually had to take a step back and ask myself, "Is this worth it?". Is it worth me wasting so much time just to invert the date? No. So I decided, let's just fix it _temporarily_. Who actually knows how long my temporary code will stick but I think it's way better than wasting more time on something so mundane.
+I had one issue when I first opened up the branch and it was that despite the schema defining dates as DD-MM-YYYY, they were showing up as YYYY-MM-DD on the webpage. I was able to determine that the schema defines how the date is inputted in Sanity but does not affect how the GROQ fetch works. In fact, I found out GROQ lacks built-in date formatting functions. This led to me starting to roll down the hill of endlessly searching for some workaround. I looked at multiple videos, docs, posts, but eventually had to take a step back and ask myself, "Is this worth it?". Is it worth me wasting so much time just to invert the date? No. So I decided, let's just fix it _temporarily_. Who actually knows how long my temporary code will stick but I think it's way better than wasting more time on something so mundane. 
 
 <br>
 
