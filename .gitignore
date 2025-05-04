@@ -71,6 +71,7 @@ public/
 # Ignore sanity-specific config or data directories (if you have them)
 studio/.env.local
 studio/.env.production
+sanity/config
 
 # Optional: ignore the `sanity.json` or other config files if you don't need them in version control
 studio/sanity.json

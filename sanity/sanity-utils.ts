@@ -1,6 +1,8 @@
+import { nanoid } from "nanoid";
 import { createClient, groq } from "next-sanity";
 import { Blog } from "types/Blog";
 import clientConfig from "./config/client-config";
+import { blogPost } from "./blogPost";
 
 export async function getBlogs(): Promise<Blog[]> {
   return createClient(clientConfig).fetch(
@@ -34,3 +36,7 @@ export async function getBlog(slug: string): Promise<Blog> {
     { slug }
   );
 }
+
+export const createBlogPost = async () => {
+  return await createClient(clientConfig).create(blogPost);
+};

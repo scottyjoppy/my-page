@@ -1,7 +1,7 @@
 import { PortableText } from "@portabletext/react";
-import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
 import { getBlog } from "../../../../../sanity/sanity-utils";
+import { monokai, monokaiSublime } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 // const getPostContent = (slug: string) => {
 //   const file = `blog-posts/${slug}.md`;
@@ -80,7 +80,12 @@ const components = {
       return (
         <SyntaxHighlighter
           language={value.language || "javascript"}
-          style={dracula}
+          style={monokaiSublime}
+          wrapLongLines={true}  
+          
+          customStyle={{
+            borderRadius: "0.4rem",
+          }}
         >
           {value.code}
         </SyntaxHighlighter>
@@ -88,12 +93,9 @@ const components = {
     },
   },
   marks: {
-    code: ({ children }: any) => (
-      <code className="bg-gray-100 px-1 rounded">{children}</code>
-    ),
   },
   block: {
-    h2: ({ children }: any) => <h2 className="text-2xl">{children}</h2>,
+    h2: ({ children }: any) => <h2 className="text-xl">{children}</h2>,
     h3: ({ children }: any) => (
       <h3 className="text-2xl underline">{children}</h3>
     ),
@@ -140,7 +142,9 @@ export default async function BlogPage({ params }: Props) {
       <div className="container mx-auto my-10 max-w-250 px-5">
         <div className="mb-4">{dateToString(blog.date)}</div>
 
-        <PortableText value={blog.content} components={components} />
+        <article className="prose">
+          <PortableText value={blog.content} components={components} />
+        </article>
       </div>
     </>
   );
