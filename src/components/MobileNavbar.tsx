@@ -28,7 +28,6 @@ interface MobileNavbarProps {
 function MobileNavbar({ items }: MobileNavbarProps) {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const { theme, setTheme } = useTheme();
-
   return (
     <div className="flex md:hidden items-center space-x-2">
       <Button

@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import React from "react";
-import Texture from "./Texture";
 
 interface GridProps {
   children?: React.ReactNode;
@@ -34,11 +33,9 @@ const GridSection = ({
             cols.lg && `lg:grid-cols-${cols.lg}`,
             cols.xl && `xl:grid-cols-${cols.xl}`,
             gap,
-            "font-inter",
             className
           )}
         >
-          
           {children}
         </div>
       </section>
