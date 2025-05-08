@@ -1,47 +1,43 @@
+"use client";
+
 import GridSection from "@/components/GridSection";
 import GridSectionCenterFull from "@/components/GridSectionCenterFull";
-import GridTitleSection from "@/components/GridTitleSection";
-import PostPreview from "@/components/PostPreview";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
-import getPostMetadata from "utils/getPostMetadata";
 
 export default function Home() {
-  const postMetadata = getPostMetadata();
-  const postPreview = (
-    <PostPreview key={postMetadata[0].slug} {...postMetadata[0]} />
-  );
+  // const postMetadata = getPostMetadata();
+  // const postPreview = (
+  //   <PostPreview key={postMetadata[0].slug} {...postMetadata[0]} />
+  // );
 
   return (
     <>
-      <GridTitleSection>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
-          <div className="h-full w-full flex flex-col items-center justify-center">
-            <div className="flex flex-col gap-4 md:text-right text-center">
-              <h1>Welcome</h1>
-              <p className="text-secondary">
-                My name is Alexander Delisle, <br /> and I'm a Software Engineer
-              </p>
-            </div>
-          </div>
-          <div>
-            <div className="w-[300px] h-[300px] overflow-hidden relative rounded-2xl">
-              <img
-                src="/images/alex-image.jpg"
-                alt="a picture of alex"
-                className="object-cover absolute h-full w-full"
-              />
-            </div>
-          </div>
+      <section className="h-[85vh] min-h-[450px] flex flex-col justify-center items-center">
+        <h1 className="text-7xl font-bold uppercase">Welcome</h1>
+        <div 
+        className="hover:scale-99 transition-transform w-[50vh] h-[50vh] min-w-[300px] max-w-[400px] min-h-[300px] max-h-[400px] overflow-hidden relative rounded-2xl drop-shadow-2xl"
+        >
+          <Image
+            className="object-cover"
+            objectPosition="-80px center"
+            src="/images/alex-image.jpg"
+            alt="A picture of alex"
+            fill
+          />
         </div>
-      </GridTitleSection>
+        <p className="text-4xl uppercase font-bold">I'm Alexander Delisle</p>
+      </section>
       <GridSection cols={{ lg: 2 }}>
         <GridSectionCenterFull>
           <div className="flex flex-col gap-3">
             <h2 className="text-2xl">Projects</h2>
             <div className="flex gap-3 items-center">
               <p>Current: </p>
-              <Link href="https://github.com/scottyjoppy/my-page"><Button className="hover:cursor-pointer">My-Page</Button></Link>
+              <Link href="https://github.com/scottyjoppy/my-page">
+                <Button className="hover:cursor-pointer">My-Page</Button>
+              </Link>
             </div>
             <div className="flex gap-3">
               <p>Desc: </p>
@@ -50,9 +46,9 @@ export default function Home() {
           </div>
         </GridSectionCenterFull>
         <GridSectionCenterFull className="flex flex-col">
-          {postPreview}
+          {/* {postPreview} */}
           <Button className="hover:cursor-pointer">
-            <Link href="/blog">All Blogs</Link>
+            <Link href="/blog">Go To Blogs</Link>
           </Button>
         </GridSectionCenterFull>
         {/* <GridSectionCenterFull>
