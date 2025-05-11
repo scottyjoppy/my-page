@@ -201,7 +201,6 @@
   border-left: 1px solid var(--border);
 }
 
-
 h2 {
   @apply font-bold underline;
 }
@@ -231,4 +230,43 @@ pre {
 code {
   font-size: 0.9rem;
   @apply rounded-md max-w-[35rem] border-4 border-primary;
+}
+
+.wrapper-cube {
+  display: grid;
+  grid-template-columns: repeat(5, 173.2px);
+  grid-template-rows: 150.2px;
+}
+
+.offset-cube {
+  transform: translateX(86.6px);
+}
+
+.cube {
+  width: 173.2px;
+  height: 173.2px;
+  position: relative;
+  margin-bottom: -45px;
+}
+
+.face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform-origin: 0 0;
+}
+
+.right {
+  background: #aaa;
+  transform: rotate(-90deg) skewX(-30deg) scaleY(0.864);
+}
+
+.left {
+  background: #999;
+  transform: rotate(150deg) skewX(-30deg) scaleY(0.864);
+}
+
+.bottom {
+  background: #ccc;
+  transform: rotate(30deg) skew(-30deg) scaleY(0.864);
 }

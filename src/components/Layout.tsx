@@ -11,7 +11,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       enableSystem
       disableTransitionOnChange
     >
-      <Navbar />
+      {/* <Navbar /> */}
       {children}
       <Footer />
     </ThemeProvider>

@@ -1,5 +1,6 @@
 "use client";
 
+import IsometricShape from "@/components/components-2/IsometricShape";
 import GridSection from "@/components/GridSection";
 import GridSectionCenterFull from "@/components/GridSectionCenterFull";
 import { Button } from "@/components/ui/button";
@@ -14,11 +15,12 @@ export default function Home() {
 
   return (
     <>
-      <section className="h-[85vh] min-h-[450px] flex flex-col justify-center items-center">
-        <h1 className="text-7xl font-bold uppercase">Welcome</h1>
-        <div 
-        className="hover:scale-99 transition-transform w-[50vh] h-[50vh] min-w-[300px] max-w-[400px] min-h-[300px] max-h-[400px] overflow-hidden relative rounded-2xl drop-shadow-2xl"
-        >
+      <section className="h-[85vh] min-h-[450px] flex flex-col justify-center items-center overflow-none">
+        <nav className="absolute right-30 top-[70%]">
+          <IsometricShape />
+        </nav>
+        <h1 className="text-7xl font-bold uppercase z-1">Welcome</h1>
+        <div className="hover:scale-99 transition-transform w-[50vh] h-[50vh] min-w-[300px] max-w-[400px] min-h-[300px] max-h-[400px] overflow-hidden relative rounded-2xl drop-shadow-2xl">
           <Image
             className="object-cover"
             objectPosition="-80px center"
