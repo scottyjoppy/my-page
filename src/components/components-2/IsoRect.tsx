@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React from "react";
 
 interface ShapePropsSize {
   className?: string;
@@ -13,24 +13,25 @@ interface ShapePropsWH {
   lWidth: number | string;
   rWidth: number | string;
   height: number | string;
-  size?: never
+  size?: never;
 }
 
-const IsometricShape: React.FC<ShapeProps> = ({ className, ...props }) => {
-  if ('size' in props) {
-    // Handle size-based shape
-    return <div className={className, size=100}>
->
-</div>;
-  } else {
-    // Handle width-based shape
-    return <div className={className, lWidth=100, rWidth=100, height=100}>
-</div>;
-  }
-};
+type ShapeProps = ShapePropsSize | ShapePropsWH;
 
-const IsometricShape = ({ className, size="100" }: ShapeProps) => {
-            
+const IsometricShape: React.FC<ShapeProps> = ({ className, ...props }) => {
+  let lWidth: number | string;
+  let rWidth: number | string;
+  let height: number | string;
+
+  if ('size' in props) {
+    const size = props.size ?? 100; // Default if undefined
+    lWidth = rWidth = height = size;
+  } else {
+    lWidth = props.lWidth ?? 100;
+    rWidth = props.rWidth ?? 100;
+    height = props.height ?? 100;
+  }
+
   return (
     <div className={`relative ${className}`}>
       <div
@@ -45,7 +46,7 @@ const IsometricShape = ({ className, size="100" }: ShapeProps) => {
       <div
         className="absolute bg-[#aaa]"
         style={{
-          height: `${lWidth}px`, // Still dimension width, rotation is weird
+          height: `${lWidth}px`,
           width: `${height}px`,
           transformOrigin: "0 0",
           transform: "rotate(90deg) skewX(-30deg) scaleY(0.864)",
