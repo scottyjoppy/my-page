@@ -1,12 +1,33 @@
 import { useEffect, useState } from "react";
 
-interface ShapeProps {
+interface ShapePropsSize {
   className?: string;
-size?: string;
-lWidth?: string;
-rWidth?: string;
-height?: string;
+  size: number | string;
+  height?: never;
+  lWidth?: never;
+  rWidth?: never;
 }
+
+interface ShapePropsWH {
+  className?: string;
+  lWidth: number | string;
+  rWidth: number | string;
+  height: number | string;
+  size?: never
+}
+
+const IsometricShape: React.FC<ShapeProps> = ({ className, ...props }) => {
+  if ('size' in props) {
+    // Handle size-based shape
+    return <div className={className, size=100}>
+>
+</div>;
+  } else {
+    // Handle width-based shape
+    return <div className={className, lWidth=100, rWidth=100, height=100}>
+</div>;
+  }
+};
 
 const IsometricShape = ({ className, size="100" }: ShapeProps) => {
             
