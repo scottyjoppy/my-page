@@ -1,10 +1,9 @@
 "use client";
 
-import IsometricShape from "@/components/components-2/IsometricShape";
+import NavShape from "@/components/components-2/NavShape";
 import GridSection from "@/components/GridSection";
 import GridSectionCenterFull from "@/components/GridSectionCenterFull";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -16,10 +15,10 @@ export default function Home() {
   return (
     <>
       <section className="h-[85vh] min-h-[450px] flex flex-col justify-center items-center overflow-none">
-        <nav className="absolute right-30 top-[70%]">
-          <IsometricShape />
+        <nav className="sticky left-2/3 top-1/3 ">
+          <NavShape />
         </nav>
-        <h1 className="text-7xl font-bold uppercase z-1">Welcome</h1>
+        {/* <h1 className="text-7xl font-bold uppercase z-1">Welcome</h1>
         <div className="hover:scale-99 transition-transform w-[50vh] h-[50vh] min-w-[300px] max-w-[400px] min-h-[300px] max-h-[400px] overflow-hidden relative rounded-2xl drop-shadow-2xl">
           <Image
             className="object-cover"
@@ -27,9 +26,9 @@ export default function Home() {
             src="/images/alex-image.jpg"
             alt="A picture of alex"
             fill
-          />
+            />
         </div>
-        <p className="text-4xl uppercase font-bold">I'm Alexander Delisle</p>
+        <p className="text-4xl uppercase font-bold">I'm Alexander Delisle</p> */}
       </section>
       <GridSection cols={{ lg: 2 }}>
         <GridSectionCenterFull>
