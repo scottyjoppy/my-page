@@ -35,4 +35,4 @@ I planned to make the navbar isometric but haven't yet figured out how it would 
 
 <br>
 
-But that is all I've got for today, thank you for joining the journey, until tomorrow.
+But that is all I've got for today, thank you for joining the journey, until tomorrow. 
