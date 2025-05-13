@@ -31,7 +31,7 @@ So back to the main problem, a cube. I outlined solving this issue last blog, bu
 
 <br>
 
-I planned to make the navbar isometric but haven't yet figured out how it would pan out. I tried modifying the angles a bit on the cube to make the isometric rectangle more horizontal but decided the website would be more consistent if I stuck to a fixed angle of isometry. I spent the rest of the evening thinking about how I want to display the shapes: I need an easily customizable cube component; one that mainly has controls for size and text.
+I planned to make the navbar isometric but haven't yet figured out how it would pan out. I tried modifying the angles a bit on the cube to make the isometric rectangle more horizontal but decided the website would be more consistent if I stuck to a fixed angle of isometry. I spent the rest of the evening thinking about how I want to display the shapes: I need an easily customizable cube component; one that mainly has controls for size and text. 
 
 <br>
 
