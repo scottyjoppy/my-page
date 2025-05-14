@@ -1,23 +1,21 @@
 import React from "react";
 
 interface ShapePropsSize {
-  children?: React.ReactNode;
+  children?: React.ReactNode | Partial<Record<"left" | "right" | "top", React.ReactNode>>;
   className?: string;
   size: number | string;
   height?: never;
   lWidth?: never;
   rWidth?: never;
-  face?: "left" | "right" | "top"; // Added "top"
 }
 
 interface ShapePropsWH {
-  children?: React.ReactNode;
+  children?: React.ReactNode | Partial<Record<"left" | "right" | "top", React.ReactNode>>;
   className?: string;
   lWidth: number | string;
   rWidth: number | string;
   height: number | string;
   size?: never;
-  face?: "left" | "right" | "top"; // Added "top"
 }
 
 type ShapeProps = ShapePropsSize | ShapePropsWH;
@@ -25,7 +23,6 @@ type ShapeProps = ShapePropsSize | ShapePropsWH;
 const IsometricShape: React.FC<ShapeProps> = ({
   children,
   className,
-  face = "left",
   ...props
 }) => {
   let lWidth: number | string;
@@ -40,6 +37,11 @@ const IsometricShape: React.FC<ShapeProps> = ({
     rWidth = props.rWidth ?? 100;
     height = props.height ?? 100;
   }
+
+  const content: Partial<Record<"left" | "right" | "top", React.ReactNode>> =
+    React.isValidElement(children) || typeof children === "string"
+      ? { left: children, right: children, top: children }
+      : (children as Partial<Record<"left" | "right" | "top", React.ReactNode>>);
 
   const leftFaceStyle = {
     width: `${rWidth}px`,
@@ -56,7 +58,6 @@ const IsometricShape: React.FC<ShapeProps> = ({
   };
 
   const topFaceStyle = {
-    // Added style for the top face
     width: `${lWidth}px`,
     height: `${rWidth}px`,
     transformOrigin: "0 0",
@@ -65,26 +66,26 @@ const IsometricShape: React.FC<ShapeProps> = ({
 
   return (
     <div className={`relative ${className}`}>
-      <div className="absolute bg-[#999]" style={leftFaceStyle}>
-        {face === "right" && <div className="break-words p-1">{children}</div>}
+      <div className="absolute" style={leftFaceStyle}>
+        {content.right && <div className="break-words p-1">{content.right}</div>}
       </div>
-      <div className="absolute bg-[#aaa]" style={rightFaceStyle}>
-        {face === "left" && (
+      <div className="absolute" style={rightFaceStyle}>
+        {content.left && (
           <div
             className="absolute inset-0 p-1 px-2 flex justify-end"
             style={{ writingMode: "sideways-lr", textOrientation: "mixed" }}
           >
-            {children}
+            {content.left}
           </div>
         )}
       </div>
-      <div className="absolute bg-[#ccc]" style={topFaceStyle}>
-        {face === "top" && (
+      <div className="absolute" style={topFaceStyle}>
+        {content.top && (
           <div
             className="absolute inset-0 p-1 px-2 break-words"
-            style={{ writingMode: "vertical-lr", textOrientation: "mixed" }}
+            style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
           >
-            {children}
+            {content.top}
           </div>
         )}
       </div>
