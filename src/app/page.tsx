@@ -1,7 +1,7 @@
 "use client";
 
 import BoxTest from "@/components/components-2/BoxTest";
-import PlayGround from "@/components/components-2/PlayGround";
+import IsometricShape from "@/components/components-2/IsometricShape";
 import GridSection from "@/components/GridSection";
 import GridSectionCenterFull from "@/components/GridSectionCenterFull";
 import { Button } from "@/components/ui/button";
@@ -15,9 +15,15 @@ export default function Home() {
 
   return (
     <>
-      <section className="h-[85vh] min-h-[450px] flex flex-col justify-center items-center overflow-none">
-        <BoxTest />
-        <PlayGround />
+      <section className="h-[100vh] min-h-[450px] flex flex-col justify-center items-center overflow-none">
+        <div className="background-grid w-full h-full" />
+        <div className="absolute top-1/2 translate-x-[8px] translate-y-[17px]">
+          <BoxTest />
+        </div>
+        <IsometricShape size={100} className="[&>*>*>*]:border-10 bg-green-200 mb-[100px]">
+          {{ left: <span>something</span> }}
+        </IsometricShape>
+
         {/* <nav className="left-2/3 top-1/3 ">
           <NavShape />
         </nav> */}

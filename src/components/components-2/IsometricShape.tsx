@@ -1,7 +1,9 @@
 import React from "react";
 
 interface ShapePropsSize {
-  children?: React.ReactNode | Partial<Record<"left" | "right" | "top", React.ReactNode>>;
+  children?:
+    | React.ReactNode
+    | Partial<Record<"left" | "right" | "top", React.ReactNode>>;
   className?: string;
   size: number | string;
   height?: never;
@@ -10,7 +12,9 @@ interface ShapePropsSize {
 }
 
 interface ShapePropsWH {
-  children?: React.ReactNode | Partial<Record<"left" | "right" | "top", React.ReactNode>>;
+  children?:
+    | React.ReactNode
+    | Partial<Record<"left" | "right" | "top", React.ReactNode>>;
   className?: string;
   lWidth: number | string;
   rWidth: number | string;
@@ -41,7 +45,9 @@ const IsometricShape: React.FC<ShapeProps> = ({
   const content: Partial<Record<"left" | "right" | "top", React.ReactNode>> =
     React.isValidElement(children) || typeof children === "string"
       ? { left: children, right: children, top: children }
-      : (children as Partial<Record<"left" | "right" | "top", React.ReactNode>>);
+      : (children as Partial<
+          Record<"left" | "right" | "top", React.ReactNode>
+        >);
 
   const leftFaceStyle = {
     width: `${rWidth}px`,
@@ -67,7 +73,9 @@ const IsometricShape: React.FC<ShapeProps> = ({
   return (
     <div className={`relative ${className}`}>
       <div className="absolute" style={leftFaceStyle}>
-        {content.right && <div className="break-words p-1">{content.right}</div>}
+        {content.right && (
+          <div className="break-words p-1">{content.right}</div>
+        )}
       </div>
       <div className="absolute" style={rightFaceStyle}>
         {content.left && (

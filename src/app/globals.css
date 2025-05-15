@@ -237,81 +237,21 @@ code {
   @apply rounded-md max-w-[35rem] border-4 border-primary;
 }
 
-.YellowCube,
-.PurpleCube,
-.GreenCube,
-.RedCube,
-.BlueCube,
-.OrangeCube {
-  animation: fallIntoPlace 10s ease-in-out infinite;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.PurpleCube-3,
-.GreenCube-5,
-.RedCube-5,
-.BlueCube-5,
-.OrangeCube-5 {
-  transform: translateY(var(--gap));
-}
-
-.YellowCube-3,
-.GreenCube-1,
-.RedCube-1,
-.BlueCube-1,
-.OrangeCube-1 {
-  transform: translateY(calc(-1 * var(--gap)));
-}
-
-.YellowCube-1,
-.PurpleCube-1,
-.GreenCube-4,
-.RedCube-4,
-.OrangeCube-3 {
-  transform: var(--topRight);
-}
-
-.YellowCube-2,
-.PurpleCube-2,
-.GreenCube-3,
-.BlueCube-2,
-.OrangeCube-2 {
-  transform: var(--topLeft);
-}
-
-.YellowCube-4,
-.PurpleCube-4,
-.RedCube-3,
-.BlueCube-4,
-.OrangeCube-4 {
-  transform: var(--bottomRight);
-}
-
-.YellowCube-5,
-.PurpleCube-5,
-.GreenCube-2,
-.RedCube-2,
-.BlueCube-3 {
-  transform: var(--bottomLeft);
-}
-
-@keyframes fallIntoPlace {
-  10% {
-    opacity: 0;
-  }
-
-  40% {
-    transform: translate(0);
-    opacity: 1;
-  }
-
-  60% {
-    transform: translate(0);
-    opacity: 1;
-  }
-
-  90% {
-    opacity: 0;
-  }
+.background-grid {
+  background-color: #fff;
+  background: repeating-linear-gradient(
+      150deg,
+      #ccc,
+      #bbb 0.5px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      30deg,
+      #ccc,
+      #bbb 0.5px,
+      transparent 1px,
+      transparent 40px
+    );
+  background-size: 81px 46px;
 }
