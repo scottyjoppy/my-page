@@ -1,7 +1,6 @@
 "use client";
 
-import BoxTest from "@/components/components-2/BoxTest";
-import IsometricShape from "@/components/components-2/IsometricShape";
+import FigmaIsometric from "@/components/components-2/FigmaIsometric";
 import GridSection from "@/components/GridSection";
 import GridSectionCenterFull from "@/components/GridSectionCenterFull";
 import { Button } from "@/components/ui/button";
@@ -15,29 +14,42 @@ export default function Home() {
 
   return (
     <>
-      <section className="h-[100vh] min-h-[450px] flex flex-col justify-center items-center overflow-none">
-        <div className="background-grid w-full h-full" />
-        <div className="absolute top-1/2 translate-x-[8px] translate-y-[17px]">
-          <BoxTest />
+    {/* <div className="background-grid w-screen h-screen z-10 absolute top-0"></div> */}
+      <section className="z-0 w-full h-full relative flex justify-center overflow-hidden">
+        <div className="w-full h-full max-w-[70rem] min-w-[40rem]">
+          <FigmaIsometric />
         </div>
-        <IsometricShape size={100} className="[&>*>*>*]:border-10 bg-green-200 mb-[100px]">
-          {{ left: <span>something</span> }}
-        </IsometricShape>
-
+      </section>
+      <section className="flex flex-col justify-center items-center overflow-hidden relative">
         {/* <nav className="left-2/3 top-1/3 ">
           <NavShape />
-        </nav> */}
+          </nav> */}
         {/* <h1 className="text-7xl font-bold uppercase z-1">Welcome</h1>
         <div className="hover:scale-99 transition-transform w-[50vh] h-[50vh] min-w-[300px] max-w-[400px] min-h-[300px] max-h-[400px] overflow-hidden relative rounded-2xl drop-shadow-2xl">
-          <Image
-            className="object-cover"
-            objectPosition="-80px center"
-            src="/images/alex-image.jpg"
-            alt="A picture of alex"
-            fill
-            />
+        <Image
+        className="object-cover"
+        objectPosition="-80px center"
+        src="/images/alex-image.jpg"
+        alt="A picture of alex"
+        fill
+        />
         </div>
         <p className="text-4xl uppercase font-bold">I'm Alexander Delisle</p> */}
+
+        {/* <div className="absolute bottom-0 w-full h-full flex translate-y-10 overflow-hidden ">
+          <svg
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M1 1L645 368.999V640H1V1Z" fill="white" />
+          </svg>
+          <svg
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M645 1L1 368.999V640H645V1Z" fill="white" />
+          </svg>
+        </div> */}
       </section>
       <GridSection cols={{ lg: 2 }}>
         <GridSectionCenterFull>
