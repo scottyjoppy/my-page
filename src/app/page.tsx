@@ -16,7 +16,7 @@ export default function Home() {
     <>
     {/* <div className="background-grid w-screen h-screen z-10 absolute top-0"></div> */}
       <section className="z-0 w-full h-full relative flex justify-center overflow-hidden">
-        <div className="w-full h-full max-w-[70rem] min-w-[40rem]">
+        <div className="w-full h-full max-w-[70rem] min-w-[20rem]">
           <FigmaIsometric />
         </div>
       </section>

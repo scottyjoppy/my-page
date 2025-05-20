@@ -255,23 +255,3 @@ code {
     );
   background-size: 81px 46px;
 }
-
-@keyframes boatAnimation {
-  0% {
-    transform: translate(-250px, calc(250px * 0.57735026919));
-  }
-  40% {
-    transform: translate(880px, calc(-1 * 880px * 0.57735026919));
-  }
-  60% {
-    transform: translate(880px, calc(-1 * 880px * 0.57735026919));
-  }
-  100% {
-    transform: translate(-250px, calc(250px * 0.57735026919));
-  }
-}
-
-#Boat {
-  animation: boatAnimation 60s ease-in-out infinite reverse;
-  animation-fill-mode: forwards;
-}
