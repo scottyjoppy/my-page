@@ -1,10 +1,6 @@
 const FigmaIsometric = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 1288 1344"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1288 1344">
       <g id="Mask group">
         <mask
           id="mask0_70_132235"
@@ -13,7 +9,7 @@ const FigmaIsometric = () => {
           x="0"
           y="0"
           maskUnits="userSpaceOnUse"
-          style={{maskType: "alpha"}}
+          style={{ maskType: "alpha" }}
         >
           <path id="Rectangle 1" fill="#D9D9D9" d="M0 0h1288v1344H0z" />
         </mask>

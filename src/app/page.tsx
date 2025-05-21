@@ -15,11 +15,12 @@ export default function Home() {
   return (
     <>
     {/* <div className="background-grid w-screen h-screen z-10 absolute top-0"></div> */}
-      <section className="z-0 w-full h-full relative flex justify-center overflow-hidden">
-        <div className="w-full h-full max-w-[70rem] min-w-[20rem]">
+      <section className="fixed z-0 w-full h-full flex justify-center overflow-hidden">
+        <div className="w-full max-w-[70rem] min-w-[20rem]">
           <FigmaIsometric />
         </div>
       </section>
+      <section className="h-screen"></section>
       <section className="flex flex-col justify-center items-center overflow-hidden relative">
         {/* <nav className="left-2/3 top-1/3 ">
           <NavShape />
