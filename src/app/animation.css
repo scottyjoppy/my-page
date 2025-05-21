@@ -35,6 +35,6 @@
   }
 }
 
-#Tram-Train {
+#TramTrain {
   animation: tramAnimation 20s ease-in-out infinite;
 }

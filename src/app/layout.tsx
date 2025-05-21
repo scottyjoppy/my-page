@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import "./globals.css";
 import "./animation.css";
+import { ReactLenis } from "lenis/react"
 
 export const metadata: Metadata = {
   title: "Alex's Page",
@@ -19,7 +20,9 @@ export default function RootLayout({
       <body className={`antialiased font-inter`}>
         <SpeedInsights />
         <Analytics />
-        <Layout>{children}</Layout>
+        <ReactLenis root>
+          <Layout>{children}</Layout>
+        </ReactLenis>
       </body>
     </html>
   );

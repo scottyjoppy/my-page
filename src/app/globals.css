@@ -255,3 +255,34 @@ code {
     );
   background-size: 81px 46px;
 }
+
+#IslWGroup {
+  transition: all 0.3s;
+  transform-origin: center center;
+}
+
+#IslWGroup:hover {
+  scale: 101%;
+  filter:saturate(50%);
+  rotate: 1deg;
+}
+#IslE {
+  transition: all 0.3s;
+  transform-origin: center center;
+}
+
+#IslE:hover {
+  scale: 101%;
+  filter:saturate(50%);
+  rotate: -1deg;
+}
+#IslS {
+  transition: all 0.3s;
+  transform-origin: center center;
+}
+
+#IslS:hover {
+  scale: 101%;
+  filter:saturate(50%);
+  rotate: 1deg;
+}

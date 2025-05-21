@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <>
     {/* <div className="background-grid w-screen h-screen z-10 absolute top-0"></div> */}
-      <section className="fixed z-0 w-full h-full flex justify-center overflow-hidden">
-        <div className="w-full max-w-[70rem] min-w-[20rem]">
+      <section className="fixed z-0 w-full h-full overflow-hidden bg-[#143D60]">
+        <div className="relative w-full h-full flex justify-center items-center active:scale-[700%] origin-left active:-translate-x-[3000px] active:translate-y-[1200px] transition-all duration-[2s]">
           <FigmaIsometric />
         </div>
       </section>
@@ -80,6 +80,7 @@ export default function Home() {
           </Button>
         </GridSectionCenterFull> */}
       </GridSection>
+      <section className="h-screen"></section>
     </>
   );
 }
