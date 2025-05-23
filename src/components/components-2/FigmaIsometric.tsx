@@ -1,6 +1,17 @@
 const FigmaIsometric = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full drop-shadow-2xl" fill="none" viewBox="0 0 1288 1344">
+    // svg
+    // className="w-full h-full"
+    // mask
+    // style={{ maskType: "alpha"}}
+    <svg
+      className="w-full h-full"
+      xmlns="http://www.w3.org/2000/svg"
+      width="1288"
+      height="1344"
+      fill="none"
+      viewBox="0 0 1288 1344"
+    >
       <g id="SquareMask">
         <mask
           id="mask0_70_132235"
@@ -18,375 +29,375 @@ const FigmaIsometric = () => {
             <g id="Landscape">
               <path id="WaterBottom" fill="#143D60" d="M0 0h1288v1344H0z" />
               <g id="IslS">
-                <g id="IslSDepth" opacity=".19">
+                <g id="IslSDepth" opacity=".65">
                   <path
                     id="Vector 27"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M1190 1264v-8l-14-8v8l14 8Z"
+                    d="M1190 1263v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 31"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M1134 1280v-8l-14-8v8l14 8Z"
+                    d="M1134 1279v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 33"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M1078 1296v-8l-14-8v8l14 8Z"
+                    d="M1078 1295v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 35"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M1022 1312v-8l-14-8v8l14 8Z"
+                    d="M1022 1311v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 40"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m455 1068 7-4-14-8v8l7 4Z"
+                    d="m455 1067 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 41"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m441 1092 7-4-14-8v8l7 4Z"
+                    d="m441 1091 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 44"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m469 1156 7-4-14-8v8l7 4Z"
+                    d="m469 1155 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 45"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m455 1180 7-4-14-8v8l7 4Z"
+                    d="m455 1179 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 46"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m427 1212 7-4-14-8v8l7 4Z"
+                    d="m427 1211 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 47"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m385 1252 7-4-14-8v8l7 4Z"
+                    d="m385 1251 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 48"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m357 1284 7-4-14-8v8l7 4Z"
+                    d="m357 1283 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 49"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m329 1316 7-4-14-8v8l7 4Z"
+                    d="m329 1315 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 50"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m315 1340 7-4-14-8v8l7 4Z"
+                    d="m315 1339 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 42"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m455 1116 7-4-28-16v8l21 12Z"
+                    d="m455 1115 7-4-28-16v8l21 12Z"
                   />
                   <path
                     id="Vector 43"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m469 1140 7-4-28-16v8l21 12Z"
+                    d="m469 1139 7-4-28-16v8l21 12Z"
                   />
                   <path
                     id="Vector 37"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M952 1336v-8l-14-8v8l14 8Z"
+                    d="M952 1335v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 26"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1267 1172-7-4 28-16v8l-21 12Z"
+                    d="m1267 1171-7-4 28-16v8l-21 12Z"
                   />
                   <path
                     id="Vector 29"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1225 1228-7-4 28-16v8l-21 12Z"
+                    d="m1225 1227-7-4 28-16v8l-21 12Z"
                   />
                   <path
                     id="Vector 28"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M1190 1264v-8l42-24v8l-42 24Z"
+                    d="M1190 1263v-8l42-24v8l-42 24Z"
                   />
                   <path
                     id="Vector 30"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M1134 1280v-8l42-24v8l-42 24Z"
+                    d="M1134 1279v-8l42-24v8l-42 24Z"
                   />
                   <path
                     id="Vector 39"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1239 1204-7-4 42-24v8l-35 20Z"
+                    d="m1239 1203-7-4 42-24v8l-35 20Z"
                   />
                   <path
                     id="Vector 32"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M1078 1296v-8l42-24v8l-42 24Z"
+                    d="M1078 1295v-8l42-24v8l-42 24Z"
                   />
                   <path
                     id="Vector 34"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M1022 1312v-8l42-24v8l-42 24Z"
+                    d="M1022 1311v-8l42-24v8l-42 24Z"
                   />
                   <path
                     id="Vector 36"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M952 1336v-8l56-32v8l-56 32Z"
+                    d="M952 1335v-8l56-32v8l-56 32Z"
                   />
                   <path
                     id="Vector 38"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M910 1344h-14l42-24v8l-28 16Z"
+                    d="M910 1343h-14l42-24v8l-28 16Z"
                   />
                 </g>
                 <path
                   id="IslSTop"
                   fill="#A0C878"
-                  stroke="#718B58"
+                  stroke="#556D3C"
                   stroke-linejoin="round"
-                  d="M1288 1040v112l-28 16 14 8-42 24 14 8-28 16 14 8-42 24-14-8-42 24-14-8-42 24-14-8-42 24-14-8-56 32-14-8-42 24H308l14-8-14-8 28-16-14-8 42-24-14-8 42-24-14-8 56-32-14-8 42-24-14-8 28-16-14-8 14-8-28-16 14-8-28-16 14-8-14-8 28-16-14-8 42-24 14 8 56-32 14 8 14-8 28 16 14-8 14 8 70-40 14 8 112-64 14 8 42-24 14 8 28-16 14 8 14-8 28 16 14-8 56 32 14-8 84 48 14-8 112 64Z"
+                  d="M1288 1039v112l-28 16 14 8-42 24 14 8-28 16 14 8-42 24-14-8-42 24-14-8-42 24-14-8-42 24-14-8-56 32-14-8-42 24H308l14-8-14-8 28-16-14-8 42-24-14-8 42-24-14-8 56-32-14-8 42-24-14-8 28-16-14-8 14-8-28-16 14-8-28-16 14-8-14-8 28-16-14-8 42-24 14 8 56-32 14 8 14-8 28 16 14-8 14 8 70-40 14 8 112-64 14 8 42-24 14 8 28-16 14 8 14-8 28 16 14-8 56 32 14-8 84 48 14-8 112 64Z"
                 />
               </g>
               <g id="IslE">
-                <g id="IslEDepth" opacity=".19">
+                <g id="IslEDepth" opacity=".65">
                   <path
                     id="Vector 1"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M1288 872v-8l-28-16v8l28 16Z"
+                    d="M1288 871v-8l-28-16v8l28 16Z"
                   />
                   <path
                     id="Vector 3"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M1246 864v-8l-56-32v8l56 32Z"
+                    d="M1246 863v-8l-56-32v8l56 32Z"
                   />
                   <path
                     id="Vector 5"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M1176 840v-8l-56-32v8l56 32Z"
+                    d="M1176 839v-8l-56-32v8l56 32Z"
                   />
                   <path
                     id="Vector 6"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1127 796 7-4-42-24v8l35 20Z"
+                    d="m1127 795 7-4-42-24v8l35 20Z"
                   />
                   <path
                     id="Vector 2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M1246 864v-8l14-8v8l-14 8Z"
+                    d="M1246 863v-8l14-8v8l-14 8Z"
                   />
                   <path
                     id="Vector 4"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M1176 840v-8l14-8v8l-14 8Z"
+                    d="M1176 839v-8l14-8v8l-14 8Z"
                   />
                   <path
                     id="Vector 7"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1099 764 7-4-14-8v8l7 4Z"
+                    d="m1099 763 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 8"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1113 740 7-4-14-8v8l7 4Z"
+                    d="m1113 739 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 9"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1127 716 7-4-14-8v8l7 4Z"
+                    d="m1127 715 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 10"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1155 684 7-4-14-8v8l7 4Z"
+                    d="m1155 683 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 11"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1155 668 7-4-28-16v8l21 12Z"
+                    d="m1155 667 7-4-28-16v8l21 12Z"
                   />
                   <path
                     id="Vector 12"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1141 644 7-4-28-16v8l21 12Z"
+                    d="m1141 643 7-4-28-16v8l21 12Z"
                   />
                   <path
                     id="Vector 13"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1127 620 7-4-42-24v8l35 20Z"
+                    d="m1127 619 7-4-42-24v8l35 20Z"
                   />
                   <path
                     id="Vector 14"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1099 588 7-4-42-24v8l35 20Z"
+                    d="m1099 587 7-4-42-24v8l35 20Z"
                   />
                   <path
                     id="Vector 15"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1071 556 7-4-70-40v8l63 36Z"
+                    d="m1071 555 7-4-70-40v8l63 36Z"
                   />
                   <path
                     id="Vector 16"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1015 508 7-4-70-40v8l63 36Z"
+                    d="m1015 507 7-4-70-40v8l63 36Z"
                   />
                   <path
                     id="Vector 18"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m917 420 7-4-70-40v8l63 36Z"
+                    d="m917 419 7-4-70-40v8l63 36Z"
                   />
                   <path
                     id="Vector 19"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m861 372 7-4-28-16v8l21 12Z"
+                    d="m861 371 7-4-28-16v8l21 12Z"
                   />
                   <path
                     id="Vector 20"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m847 348 7-4-14-8v8l7 4Z"
+                    d="m847 347 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 21"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m861 324 7-4-14-8v8l7 4Z"
+                    d="m861 323 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 22"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m889 292 7-4-14-8v8l7 4Z"
+                    d="m889 291 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 23"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m917 260 7-4-14-8v8l7 4Z"
+                    d="m917 259 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 24"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m973 212 7-4-14-8v8l7 4Z"
+                    d="m973 211 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 25"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m1029 164 7-4-14-8v8l7 4Z"
+                    d="m1029 163 7-4-14-8v8l7 4Z"
                   />
                   <path
                     id="Vector 17"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m959 460 7-4-56-32v8l49 28Z"
+                    d="m959 459 7-4-56-32v8l49 28Z"
                   />
                 </g>
                 <path
                   id="IslETop"
                   fill="#A0C878"
-                  stroke="#718B58"
+                  stroke="#556D3C"
                   stroke-linejoin="round"
-                  d="m1260 848 28 16V112l-28-16-14 8-28-16-14 8-14-8-28 16-14-8-42 24-14-8-70 40 14 8-70 40 14 8-70 40 14 8-42 24 14 8-42 24 14 8-28 16 14 8-14 8 28 16-14 8 70 40-14 8 56 32-14 8 70 40-14 8 70 40-14 8 42 24-14 8 42 24-14 8 28 16-14 8 28 16-14 8 14 8-42 24 14 8-28 16 14 8-28 16 14 8-14 8 42 24-14 8 56 32 14-8 56 32 14-8Z"
+                  d="m1260 847 28 16V111l-28-16-14 8-28-16-14 8-14-8-28 16-14-8-42 24-14-8-70 40 14 8-70 40 14 8-70 40 14 8-42 24 14 8-42 24 14 8-28 16 14 8-14 8 28 16-14 8 70 40-14 8 56 32-14 8 70 40-14 8 70 40-14 8 42 24-14 8 42 24-14 8 28 16-14 8 28 16-14 8 14 8-42 24 14 8-28 16 14 8-28 16 14 8-14 8 42 24-14 8 56 32 14-8 56 32 14-8Z"
                 />
               </g>
             </g>
@@ -565,392 +576,2159 @@ const FigmaIsometric = () => {
             </g>
             <g id="IslWGroup">
               <g id="IslW">
-                <g id="IslWDepth" opacity=".19">
+                <g id="IslWDepth">
                   <path
                     id="Vector 26_2"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M14 1008v-8l-14-8v8l14 8Z"
+                    d="M14 1007v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 27_2"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M56 1000v-8l-14-8v8l14 8Z"
+                    d="M56 999v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 28_2"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M112 984v-8l-14-8v8l14 8Z"
+                    d="M112 983v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 29_2"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M168 968v-8l-14-8v8l14 8Z"
+                    d="M168 967v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 32_2"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M280 984v-8l-14-8v8l14 8Z"
+                    d="M280 983v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 33_2"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M322 976v-8l-14-8v8l14 8Z"
+                    d="M322 975v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 41_2"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M364 968v-8l-14-8v8l14 8Z"
+                    d="M364 967v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 49_3"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M630 736v-8l-14-8v8l14 8Z"
+                    d="M630 735v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 74"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m175.5 316 6.5-4-14-8v8l7.5 4Z"
+                    d="m175.5 315 6.5-4-14-8v8l7.5 4Z"
                   />
                   <path
                     id="Vector 75"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m161.5 340 6.5-4-14-8v8l7.5 4Z"
+                    d="m161.5 339 6.5-4-14-8v8l7.5 4Z"
                   />
                   <path
                     id="Vector 76"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m133.5 372 6.5-4-14-8v8l7.5 4Z"
+                    d="m133.5 371 6.5-4-14-8v8l7.5 4Z"
                   />
                   <path
                     id="Vector 77"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m91.5 412 6.5-4-14-8v8l7.5 4Z"
+                    d="m91.5 411 6.5-4-14-8v8l7.5 4Z"
                   />
                   <path
                     id="Vector 78"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m77.5 436 6.5-4-14-8v8l7.5 4Z"
+                    d="m77.5 435 6.5-4-14-8v8l7.5 4Z"
                   />
                   <path
                     id="Vector 50_3"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M672 728v-8l-14-8v8l14 8Z"
+                    d="M672 727v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 59"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M826 752v-8l-14-8v8l14 8Z"
+                    d="M826 751v-8l-14-8v8l14 8Z"
                   />
                   <path
                     id="Vector 51_2"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M714 736v-8l-28-16v8l28 16Z"
+                    d="M714 735v-8l-28-16v8l28 16Z"
                   />
                   <path
                     id="Vector 55_2"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M756 744v-8l-28-16v8l28 16Z"
+                    d="M756 743v-8l-28-16v8l28 16Z"
                   />
                   <path
                     id="Vector 57_2"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M798 752v-8l-28-16v8l28 16Z"
+                    d="M798 751v-8l-28-16v8l28 16Z"
                   />
                   <path
                     id="Vector 30_2"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M210 976v-8l-28-16v8l28 16Z"
+                    d="M210 975v-8l-28-16v8l28 16Z"
                   />
                   <path
                     id="Vector 31_2"
                     fill="#6E8B51"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M252 984v-8l-28-16v8l28 16Z"
+                    d="M252 983v-8l-28-16v8l28 16Z"
                   />
                   <path
                     id="Vector 26_3"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M14 1008v-8l28-16v8l-28 16Z"
+                    d="M14 1007v-8l28-16v8l-28 16Z"
                   />
                   <path
                     id="Vector 36_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M168 968v-8l14-8v8l-14 8Z"
+                    d="M168 967v-8l14-8v8l-14 8Z"
                   />
                   <path
                     id="Vector 37_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M210 976v-8l14-8v8l-14 8Z"
+                    d="M210 975v-8l14-8v8l-14 8Z"
                   />
                   <path
                     id="Vector 38_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M252 984v-8l14-8v8l-14 8Z"
+                    d="M252 983v-8l14-8v8l-14 8Z"
                   />
                   <path
                     id="Vector 39_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M280 984v-8l28-16v8l-28 16Z"
+                    d="M280 983v-8l28-16v8l-28 16Z"
                   />
                   <path
                     id="Vector 40_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M322 976v-8l28-16v8l-28 16Z"
+                    d="M322 975v-8l28-16v8l-28 16Z"
                   />
                   <path
                     id="Vector 42_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M364 968v-8l42-24v8l-42 24Z"
+                    d="M364 967v-8l42-24v8l-42 24Z"
                   />
                   <path
                     id="Vector 43_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m399 932-7-4 28-16v8l-21 12Z"
+                    d="m399 931-7-4 28-16v8l-21 12Z"
                   />
                   <path
                     id="Vector 44_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m413 908-7-4 42-24v8l-35 20Z"
+                    d="m413 907-7-4 42-24v8l-35 20Z"
                   />
                   <path
                     id="Vector 45_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m441 876-7-4 42-24v8l-35 20Z"
+                    d="m441 875-7-4 42-24v8l-35 20Z"
                   />
                   <path
                     id="Vector 46_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m469 844-7-4 56-32v8l-49 28Z"
+                    d="m469 843-7-4 56-32v8l-49 28Z"
                   />
                   <path
                     id="Vector 48_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m567 756-7-4 56-32v8l-49 28Z"
+                    d="m567 755-7-4 56-32v8l-49 28Z"
                   />
                   <path
                     id="Vector 62"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m875 692-7-4 56-32v8l-49 28Z"
+                    d="m875 691-7-4 56-32v8l-49 28Z"
                   />
                   <path
                     id="Vector 61"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m861 716-7-4 28-16v8l-21 12Z"
+                    d="m861 715-7-4 28-16v8l-21 12Z"
                   />
                   <path
                     id="Vector 63"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m917 652-7-4 28-16v8l-21 12Z"
+                    d="m917 651-7-4 28-16v8l-21 12Z"
                   />
                   <path
                     id="Vector 64"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m931 628-7-4 28-16v8l-21 12Z"
+                    d="m931 627-7-4 28-16v8l-21 12Z"
                   />
                   <path
                     id="Vector 65"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m945 604-7-4 14-8v8l-7 4Z"
+                    d="m945 603-7-4 14-8v8l-7 4Z"
                   />
                   <path
                     id="Vector 66"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m931 580-7-4 14-8v8l-7 4Z"
+                    d="m931 579-7-4 14-8v8l-7 4Z"
                   />
                   <path
                     id="Vector 67"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m903 548-7-4 14-8v8l-7 4Z"
+                    d="m903 547-7-4 14-8v8l-7 4Z"
                   />
                   <path
                     id="Vector 68"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m623 436-7-4 14-8v8l-7 4Z"
+                    d="m623 435-7-4 14-8v8l-7 4Z"
                   />
                   <path
                     id="Vector 69"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m609 412-7-4 14-8v8l-7 4Z"
+                    d="m609 411-7-4 14-8v8l-7 4Z"
                   />
                   <path
                     id="Vector 70"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m581 380-7-4 14-8v8l-7 4Z"
+                    d="m581 379-7-4 14-8v8l-7 4Z"
                   />
                   <path
                     id="Vector 71"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m553 348-7-4 14-8v8l-7 4Z"
+                    d="m553 347-7-4 14-8v8l-7 4Z"
                   />
                   <path
                     id="Vector 72"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m511 308-7-4 14-8v8l-7 4Z"
+                    d="m511 307-7-4 14-8v8l-7 4Z"
                   />
                   <path
                     id="Vector 73"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m483 276-7-4 14-8v8l-7 4Z"
+                    d="m483 275-7-4 14-8v8l-7 4Z"
                   />
                   <path
                     id="Vector 52_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M630 736v-8l28-16v8l-28 16Z"
+                    d="M630 735v-8l28-16v8l-28 16Z"
                   />
                   <path
                     id="Vector 53_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M672 728v-8l14-8v8l-14 8Z"
+                    d="M672 727v-8l14-8v8l-14 8Z"
                   />
                   <path
                     id="Vector 54"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M714 736v-8l14-8v8l-14 8Z"
+                    d="M714 735v-8l14-8v8l-14 8Z"
                   />
                   <path
                     id="Vector 56_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M756 744v-8l14-8v8l-14 8Z"
+                    d="M756 743v-8l14-8v8l-14 8Z"
                   />
                   <path
                     id="Vector 58_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M798 752v-8l14-8v8l-14 8Z"
+                    d="M798 751v-8l14-8v8l-14 8Z"
                   />
                   <path
                     id="Vector 60"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M826 752v-8l42-24v8l-42 24Z"
+                    d="M826 751v-8l42-24v8l-42 24Z"
                   />
                   <path
                     id="Vector 47_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="m511 804-7-4 70-40v8l-63 36Z"
+                    d="m511 803-7-4 70-40v8l-63 36Z"
                   />
                   <path
                     id="Vector 34_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M56 1000v-8l42-24v8l-42 24Z"
+                    d="M56 999v-8l42-24v8l-42 24Z"
                   />
                   <path
                     id="Vector 35_2"
                     fill="#729053"
-                    stroke="#718B58"
+                    stroke="#556D3C"
                     stroke-linejoin="round"
-                    d="M112 984v-8l42-24v8l-42 24Z"
+                    d="M112 983v-8l42-24v8l-42 24Z"
                   />
                 </g>
                 <path
                   id="IslWTop"
                   fill="#A0C878"
-                  stroke="#718B58"
+                  stroke="#556D3C"
                   stroke-linejoin="round"
-                  d="m868 720-42 24-14-8-14 8-28-16-14 8-28-16-14 8-28-16-14 8-14-8-28 16-14-8-56 32 14 8-70 40 14 8-56 32 14 8-42 24 14 8-42 24 14 8-28 16 14 8-42 24-14-8-28 16-14-8-28 16-14-8-14 8-28-16-14 8-28-16-14 8-14-8-42 24-14-8-42 24-14-8-28 16-14-8V464l28-16 14 8 42-24-14-8 28-16-14-8 56-32-14-8 42-24-14-8 28-16-14-8 56-32 14 8 42-24 14 8 28-16 14 8 28-16 14 8 28-16 14 8 14-8 56 32-14 8 42 24-14 8 56 32-14 8 42 24-14 8 42 24-14 8 28 16-14 8 28 16 14-8 56 32 14-8 56 32 14-8 28 16 14-8 70 40-14 8 42 24-14 8 28 16-14 8 14 8-28 16 14 8-28 16 14 8-56 32 14 8-28 16 14 8Z"
+                  d="m868 719-42 24-14-8-14 8-28-16-14 8-28-16-14 8-28-16-14 8-14-8-28 16-14-8-56 32 14 8-70 40 14 8-56 32 14 8-42 24 14 8-42 24 14 8-28 16 14 8-42 24-14-8-28 16-14-8-28 16-14-8-14 8-28-16-14 8-28-16-14 8-14-8-42 24-14-8-42 24-14-8-28 16-14-8V463l28-16 14 8 42-24-14-8 28-16-14-8 56-32-14-8 42-24-14-8 28-16-14-8 56-32 14 8 42-24 14 8 28-16 14 8 28-16 14 8 28-16 14 8 14-8 56 32-14 8 42 24-14 8 56 32-14 8 42 24-14 8 42 24-14 8 28 16-14 8 28 16 14-8 56 32 14-8 56 32 14-8 28 16 14-8 70 40-14 8 42 24-14 8 28 16-14 8 14 8-28 16 14 8-28 16 14 8-56 32 14 8-28 16 14 8Z"
+                />
+              </g>
+              <g id="Sidewalks">
+                <path
+                  id="Vector 121"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m0 559-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 129"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m56 527-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 137"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m112 495-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 125"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m28 543-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 130"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m84 511-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 138"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m140 479-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 123"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m14 551-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 131"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m70 519-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 139"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m126 487-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 126"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m42 535-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 132"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m98 503-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 140"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m154 471-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 122"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m7 555-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 133"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m63 523-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 141"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m119 491-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 127"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m35 539-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 134"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m91 507-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 142"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m147 475-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 124"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m21 547-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 135"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m77 515-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 143"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m133 483-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 128"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m49 531-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 136"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m105 499-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 144"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m161 467-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 121_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m168 463-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 129_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m224 431-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 137_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m280 399-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 125_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m196 447-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 130_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m252 415-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 138_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m308 383-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 123_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m182 455-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 131_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m238 423-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 139_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m294 391-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 126_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m210 439-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 132_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m266 407-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 140_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m322 375-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 122_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m175 459-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 133_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m231 427-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 141_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m287 395-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 127_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m203 443-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 134_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m259 411-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 142_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m315 379-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 124_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m189 451-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 135_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m245 419-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 143_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m301 387-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 128_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m217 435-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 136_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m273 403-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 144_2"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m329 371-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 121_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m21 571-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 145"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m14 575-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 146"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m7 579-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 147"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m0 583-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 129_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m77 539-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 137_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m133 507-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 125_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m49 555-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 130_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m105 523-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 138_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m161 491-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 123_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m35 563-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 131_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m91 531-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 139_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m147 499-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 126_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m63 547-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 132_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m119 515-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 140_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m175 483-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 122_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m28 567-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 133_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m84 535-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 141_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m140 503-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 127_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m56 551-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 134_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m112 519-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 142_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m168 487-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 124_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m42 559-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 135_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m98 527-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 143_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m154 495-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 128_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m70 543-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 136_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m126 511-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 121_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m189 475-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 129_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m245 443-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 137_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m301 411-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 125_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m217 459-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 130_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m273 427-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 138_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m329 395-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 123_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m203 467-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 131_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m259 435-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 139_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m315 403-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 126_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m231 451-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 132_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m287 419-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 140_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m343 387-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 122_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m196 471-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 133_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m252 439-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 141_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m308 407-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 127_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m224 455-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 134_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m280 423-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 142_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m336 391-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 124_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m210 463-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 135_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m266 431-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 143_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m322 399-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 128_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m238 447-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 136_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m294 415-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 144_3"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m350 383-7 4 7 4 7-4-7-4Z"
+                />
+                <path
+                  id="Vector 144_4"
+                  fill="silver"
+                  stroke="#9D9D9D"
+                  stroke-linejoin="round"
+                  d="m182 479-7 4 7 4 7-4-7-4Z"
+                />
+              </g>
+              <path
+                id="Road"
+                fill="#1A1A1A"
+                stroke="#000"
+                stroke-linejoin="round"
+                d="M336 375 0 567v16l350-200-14-8Z"
+              />
+              <g id="TramTracks">
+                <path
+                  id="Vector 188"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m7 587 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 193"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m35 571 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 198"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m91 539 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 191"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m21 579 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 199"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m77 547 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 194"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m49 563 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 200"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m105 531 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 189"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m0 591 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 195"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m28 575 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 202"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m84 543 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 192"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m14 583 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 203"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m70 551 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 196"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m42 567 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 204"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m98 535 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 190"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="M.5 599.33 7 603l-7 4-6.5-3.67 7-4Z"
+                />
+                <path
+                  id="Vector 188_2"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m119 523 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 193_2"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m147 507 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 198_2"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m203 475 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 191_2"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m133 515 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 199_2"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m189 483 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 194_2"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m161 499 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 200_2"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m217 467 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 189_2"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m112 527 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 195_2"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m140 511 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 202_2"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m196 479 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 192_2"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m126 519 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 203_2"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m182 487 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 196_2"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m154 503 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 204_2"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m210 471 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 188_3"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m231 459 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 193_3"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m259 443 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 198_3"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m301 419 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 191_3"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m245 451 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 199_3"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m287 427 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 194_3"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m273 435 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 200_3"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m315 411 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 189_3"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m224 463 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 195_3"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m252 447 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 202_3"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m294 423 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 192_3"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m238 455 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 203_3"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m280 431 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 196_3"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m266 439 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 204_3"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m308 415 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 197"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m63 555 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 202_4"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m175 491 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 201"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m56 559 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 203_4"
+                  fill="#9A9A9A"
+                  stroke="#7D7D7D"
+                  stroke-linejoin="round"
+                  d="m168 495 14 8-7 4-14-8 7-4Z"
+                />
+                <path
+                  id="Vector 205"
+                  stroke="#2A2A2A"
+                  stroke-linecap="round"
+                  stroke-linejoin="bevel"
+                  d="m0 599 322-184"
+                />
+              </g>
+              <g id="TramTrain">
+                <g id="Tram">
+                  <path
+                    id="Vector 59_2"
+                    fill="#fff"
+                    stroke="#DBDBDB"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="M87 544.379h-6.632l-3.315-1.922v-3.845L93.632 529h6.631l3.316 1.922v3.845L87 544.379Z"
+                  />
+                  <g id="Group 31">
+                    <path
+                      id="Vector 61_2"
+                      fill="#E90000"
+                      stroke="#A00"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M80.368 555.913v-3.844H87v3.844h-6.632Z"
+                    />
+                    <path
+                      id="Vector 62_2"
+                      fill="#E90000"
+                      stroke="#A00"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M103.579 542.457 87 552.069v3.844l16.579-9.612v-3.844Z"
+                    />
+                    <path
+                      id="Vector 63_2"
+                      fill="#E90000"
+                      stroke="#A00"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m77.053 550.146 3.315 1.923v3.844l-3.315-1.922v-3.845Z"
+                    />
+                  </g>
+                  <g id="Group 32">
+                    <path
+                      id="Vector 64_2"
+                      fill="#fff"
+                      stroke="#DBDBDB"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M80.368 552.069v-7.69H87v7.69h-6.632Z"
+                    />
+                    <path
+                      id="Vector 65_2"
+                      fill="#fff"
+                      stroke="#DBDBDB"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M103.579 534.767 87 544.379v7.69l16.579-9.612v-7.69Z"
+                    />
+                    <path
+                      id="Vector 66_2"
+                      fill="#fff"
+                      stroke="#DBDBDB"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m77.053 542.457 3.315 1.922v7.69l-3.315-1.923v-7.689Z"
+                    />
+                  </g>
+                  <g id="Group 30">
+                    <path
+                      id="Vector 69_2"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m92.05 542.457-4.102 2.403v5.766l4.101-2.403v-5.766Z"
+                    />
+                    <path
+                      id="Vector 70_2"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m97.4 539.333-4.103 2.403v5.767L97.4 545.1v-5.767Z"
+                    />
+                    <path
+                      id="Vector 71_2"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m102.749 536.21-4.102 2.402v5.767l4.102-2.403v-5.766Z"
+                    />
+                    <path
+                      id="Vector 67_2"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M86.053 545.34h-4.737v5.767h4.737v-5.767Z"
+                    />
+                    <path
+                      id="Vector 68_2"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m79.73 544.89-2.024-1.232v5.977l2.024 1.232v-5.977Z"
+                    />
+                  </g>
+                  <path
+                    id="Vector 72_2"
+                    fill="#D9D9D9"
+                    stroke="#9A9A9A"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="m83.684 541.015-3.316-1.922 16.58-9.612 3.315 1.922-16.579 9.612Z"
+                  />
+                  <path
+                    id="Vector 73_2"
+                    fill="#D9D9D9"
+                    stroke="#9A9A9A"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="M80.368 540.534v-1.442l3.316 1.923v1.442l-3.316-1.923Z"
+                  />
+                  <path
+                    id="Vector 74_2"
+                    fill="#D9D9D9"
+                    stroke="#9A9A9A"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="m100.263 532.845-16.579 9.612v-1.442l16.579-9.612v1.442Z"
+                  />
+                </g>
+                <g id="Tram_2">
+                  <path
+                    id="Vector 59_3"
+                    fill="#fff"
+                    stroke="#DBDBDB"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="M62.474 558.583h-6.632l-3.316-1.922v-3.845l16.58-9.612h6.63l3.317 1.923v3.844l-16.58 9.612Z"
+                  />
+                  <g id="Group 31_2">
+                    <path
+                      id="Vector 61_3"
+                      fill="#E90000"
+                      stroke="#A00"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M55.842 570.118v-3.845h6.632v3.845h-6.632Z"
+                    />
+                    <path
+                      id="Vector 62_3"
+                      fill="#E90000"
+                      stroke="#A00"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m79.053 556.661-16.58 9.612v3.845l16.58-9.612v-3.845Z"
+                    />
+                    <path
+                      id="Vector 63_3"
+                      fill="#E90000"
+                      stroke="#A00"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m52.526 564.351 3.316 1.922v3.845l-3.316-1.923v-3.844Z"
+                    />
+                  </g>
+                  <g id="Group 32_2">
+                    <path
+                      id="Vector 64_3"
+                      fill="#fff"
+                      stroke="#DBDBDB"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M55.842 566.273v-7.69h6.632v7.69h-6.632Z"
+                    />
+                    <path
+                      id="Vector 65_3"
+                      fill="#fff"
+                      stroke="#DBDBDB"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m79.053 548.971-16.58 9.612v7.69l16.58-9.612v-7.69Z"
+                    />
+                    <path
+                      id="Vector 66_3"
+                      fill="#fff"
+                      stroke="#DBDBDB"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m52.526 556.661 3.316 1.922v7.69l-3.316-1.922v-7.69Z"
+                    />
+                  </g>
+                  <g id="Group 30_2">
+                    <path
+                      id="Vector 69_3"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m67.523 556.661-4.102 2.403v5.766l4.102-2.402v-5.767Z"
+                    />
+                    <path
+                      id="Vector 70_3"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m72.873 553.537-4.102 2.403v5.767l4.102-2.403v-5.767Z"
+                    />
+                    <path
+                      id="Vector 71_3"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m78.223 550.414-4.102 2.403v5.766l4.102-2.403v-5.766Z"
+                    />
+                    <path
+                      id="Vector 67_3"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M61.526 559.545H56.79v5.767h4.737v-5.767Z"
+                    />
+                    <path
+                      id="Vector 68_3"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m55.203 559.095-2.024-1.232v5.976l2.024 1.232v-5.976Z"
+                    />
+                  </g>
+                  <path
+                    id="Vector 72_3"
+                    fill="#D9D9D9"
+                    stroke="#9A9A9A"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="m59.158 555.219-3.316-1.922 16.579-9.612 3.316 1.922-16.58 9.612Z"
+                  />
+                  <path
+                    id="Vector 73_3"
+                    fill="#D9D9D9"
+                    stroke="#9A9A9A"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="M55.842 554.739v-1.442l3.316 1.922v1.442l-3.316-1.922Z"
+                  />
+                  <path
+                    id="Vector 74_3"
+                    fill="#D9D9D9"
+                    stroke="#9A9A9A"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="m75.737 547.049-16.58 9.612v-1.442l16.58-9.612v1.442Z"
+                  />
+                </g>
+                <g id="Tram_3">
+                  <path
+                    id="Vector 59_4"
+                    fill="#fff"
+                    stroke="#DBDBDB"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="M37.947 572.788h-6.631L28 570.865v-3.844l16.579-9.612h6.632l3.315 1.922v3.845l-16.579 9.612Z"
+                  />
+                  <g id="Group 31_3">
+                    <path
+                      id="Vector 61_4"
+                      fill="#E90000"
+                      stroke="#A00"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M31.316 584.322v-3.845h6.631v3.845h-6.631Z"
+                    />
+                    <path
+                      id="Vector 62_4"
+                      fill="#E90000"
+                      stroke="#A00"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m54.526 570.865-16.579 9.612v3.845l16.58-9.612v-3.845Z"
+                    />
+                    <path
+                      id="Vector 63_4"
+                      fill="#E90000"
+                      stroke="#A00"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m28 578.555 3.316 1.922v3.845L28 582.4v-3.845Z"
+                    />
+                  </g>
+                  <g id="Group 32_3">
+                    <path
+                      id="Vector 64_4"
+                      fill="#fff"
+                      stroke="#DBDBDB"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M31.316 580.477v-7.689h6.631v7.689h-6.631Z"
+                    />
+                    <path
+                      id="Vector 65_4"
+                      fill="#fff"
+                      stroke="#DBDBDB"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m54.526 563.176-16.579 9.612v7.689l16.58-9.612v-7.689Z"
+                    />
+                    <path
+                      id="Vector 66_4"
+                      fill="#fff"
+                      stroke="#DBDBDB"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m28 570.865 3.316 1.923v7.689L28 578.555v-7.69Z"
+                    />
+                  </g>
+                  <g id="Group 30_3">
+                    <path
+                      id="Vector 69_4"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m42.997 570.865-4.102 2.403v5.767l4.101-2.403v-5.767Z"
+                    />
+                    <path
+                      id="Vector 70_4"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m48.347 567.742-4.102 2.403v5.766l4.101-2.403v-5.766Z"
+                    />
+                    <path
+                      id="Vector 71_4"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m53.697 564.618-4.102 2.403v5.767l4.101-2.403v-5.767Z"
+                    />
+                    <path
+                      id="Vector 67_4"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M37 573.749h-4.737v5.767H37v-5.767Z"
+                    />
+                    <path
+                      id="Vector 68_4"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m30.677 573.299-2.024-1.232v5.977l2.024 1.232v-5.977Z"
+                    />
+                  </g>
+                  <path
+                    id="Vector 72_4"
+                    fill="#D9D9D9"
+                    stroke="#9A9A9A"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="m34.632 569.424-3.316-1.923 16.579-9.612 3.316 1.923-16.58 9.612Z"
+                  />
+                  <path
+                    id="Vector 73_4"
+                    fill="#D9D9D9"
+                    stroke="#9A9A9A"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="M31.316 568.943v-1.442l3.316 1.922v1.442l-3.316-1.922Z"
+                  />
+                  <path
+                    id="Vector 74_4"
+                    fill="#D9D9D9"
+                    stroke="#9A9A9A"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="m51.21 561.253-16.578 9.612v-1.441l16.579-9.612v1.441Z"
+                  />
+                </g>
+                <g id="Tram_4">
+                  <path
+                    id="Vector 59_5"
+                    fill="#fff"
+                    stroke="#DBDBDB"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="M13.421 586.992H6.79l-3.315-1.922v-3.845l16.579-9.612h6.631L30 573.535v3.845l-16.579 9.612Z"
+                  />
+                  <g id="Group 31_4">
+                    <path
+                      id="Vector 61_5"
+                      fill="#E90000"
+                      stroke="#A00"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M6.79 598.526v-3.844h6.631v3.844H6.79Z"
+                    />
+                    <path
+                      id="Vector 62_5"
+                      fill="#E90000"
+                      stroke="#A00"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m30 585.07-16.579 9.612v3.844L30 588.914v-3.844Z"
+                    />
+                    <path
+                      id="Vector 63_5"
+                      fill="#E90000"
+                      stroke="#A00"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m3.474 592.759 3.315 1.923v3.844l-3.315-1.922v-3.845Z"
+                    />
+                  </g>
+                  <g id="Group 32_4">
+                    <path
+                      id="Vector 64_5"
+                      fill="#fff"
+                      stroke="#DBDBDB"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M6.79 594.682v-7.69h6.631v7.69H6.79Z"
+                    />
+                    <path
+                      id="Vector 65_5"
+                      fill="#fff"
+                      stroke="#DBDBDB"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m30 577.38-16.579 9.612v7.69L30 585.07v-7.69Z"
+                    />
+                    <path
+                      id="Vector 66_5"
+                      fill="#fff"
+                      stroke="#DBDBDB"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m3.474 585.07 3.315 1.922v7.69l-3.315-1.923v-7.689Z"
+                    />
+                  </g>
+                  <g id="Group 30_4">
+                    <path
+                      id="Vector 69_5"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m18.47 585.07-4.101 2.403v5.766l4.101-2.403v-5.766Z"
+                    />
+                    <path
+                      id="Vector 70_5"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m23.82 581.946-4.102 2.403v5.767l4.102-2.403v-5.767Z"
+                    />
+                    <path
+                      id="Vector 71_5"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m29.17 578.823-4.102 2.402v5.767l4.102-2.403v-5.766Z"
+                    />
+                    <path
+                      id="Vector 67_5"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M12.474 587.953H7.737v5.767h4.737v-5.767Z"
+                    />
+                    <path
+                      id="Vector 68_5"
+                      fill="#EAF1FF"
+                      stroke="#B1B6C1"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="m6.15 587.503-2.023-1.232v5.977l2.024 1.232v-5.977Z"
+                    />
+                  </g>
+                  <path
+                    id="Vector 72_5"
+                    fill="#D9D9D9"
+                    stroke="#9A9A9A"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="m10.105 583.628-3.316-1.923 16.58-9.611 3.315 1.922-16.579 9.612Z"
+                  />
+                  <path
+                    id="Vector 73_5"
+                    fill="#D9D9D9"
+                    stroke="#9A9A9A"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="M6.79 583.147v-1.442l3.315 1.923v1.442l-3.316-1.923Z"
+                  />
+                  <path
+                    id="Vector 74_5"
+                    fill="#D9D9D9"
+                    stroke="#9A9A9A"
+                    stroke-linejoin="round"
+                    stroke-width=".5"
+                    d="m26.684 575.458-16.579 9.612v-1.442l16.58-9.612v1.442Z"
+                  />
+                  <g id="extrude-group">
+                    <g id="side-faces_3">
+                      <path
+                        id="side-face_3"
+                        fill="#949494"
+                        fill-rule="evenodd"
+                        stroke="#4C4C4C"
+                        stroke-linejoin="round"
+                        stroke-width=".5"
+                        d="M3.3 594.824c.186-.109.442-.093.726.073.566.331 1.025 1.138 1.025 1.802 0 .332-.115.565-.3.674l.945-.554c.185-.109.3-.342.3-.674 0-.663-.459-1.47-1.025-1.802-.284-.166-.54-.181-.726-.073l-.945.554Z"
+                        clip-rule="evenodd"
+                      />
+                    </g>
+                    <path
+                      id="cap-face_3"
+                      fill="#949494"
+                      stroke="#4C4C4C"
+                      stroke-linejoin="round"
+                      stroke-width=".5"
+                      d="M5.051 596.699c0 .663-.459.932-1.025.601-.567-.332-1.026-1.139-1.026-1.803 0-.663.46-.932 1.026-.6.566.331 1.025 1.138 1.025 1.802Z"
+                    />
+                  </g>
+                </g>
+              </g>
+              <g id="Billboard">
+                <path
+                  id="Vector 227"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m234 465.5-3.5-2V475l3.5 2v-11.5Z"
+                />
+                <path
+                  id="Vector 228"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m237.5 475-3.5 2v-11.5l3.5-2V475Z"
+                />
+                <path
+                  id="Vector 229"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m234 461.5-3.5 2 3.5 2 3.5-2-3.5-2Z"
+                />
+                <path
+                  id="Vector 227_2"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m258.5 451.5-3.5-2V461l3.5 2v-11.5Z"
+                />
+                <path
+                  id="Vector 228_2"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m262 461-3.5 2v-11.5l3.5-2V461Z"
+                />
+                <path
+                  id="Vector 229_2"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m258.5 447.5-3.5 2 3.5 2 3.5-2-3.5-2Z"
+                />
+                <path
+                  id="Vector 214"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m234 465.5 3.5-6 3.5 2 3.5-6 3.5 2 3.5-6 3.5 2 3.5-6 3.5 2"
+                />
+                <path
+                  id="Vector 207"
+                  fill="#D9D9D9"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m262 445.5-28 16v-24l28-16v24Z"
+                />
+                <path
+                  id="Vector 209"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m230.5 459.5 3.5 2v4l-3.5-2v-4Z"
+                />
+                <path
+                  id="Vector 208"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="M234 465.5v-4l28-16v4l-28 16Z"
+                />
+                <path
+                  id="Vector 210"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="M234 437.5v24l-3.5-2v-24l3.5 2Z"
+                />
+                <path
+                  id="Vector 211"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m262 421.5-28 16-3.5-2 28-16 3.5 2Z"
+                />
+                <path
+                  id="Vector 212"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="M230.5 435.5h7v-4h7v-4h7v-4h7v-4"
+                />
+                <path
+                  id="Vector 215"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m230.5 459.5 3.5 6"
+                />
+                <path
+                  id="Vector 217"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m230.5 435.5 3.5 6.5-3.5 2.5 3.5 5.5-3.5 2.5 3.5 5.5-3.5 1.5"
+                />
+              </g>
+              <g id="Billboard_2">
+                <path
+                  id="Vector 227_3"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m269 445.5-3.5-2V455l3.5 2v-11.5Z"
+                />
+                <path
+                  id="Vector 228_3"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m272.5 455-3.5 2v-11.5l3.5-2V455Z"
+                />
+                <path
+                  id="Vector 229_3"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m269 441.5-3.5 2 3.5 2 3.5-2-3.5-2Z"
+                />
+                <path
+                  id="Vector 227_4"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m293.5 431.5-3.5-2V441l3.5 2v-11.5Z"
+                />
+                <path
+                  id="Vector 228_4"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m297 441-3.5 2v-11.5l3.5-2V441Z"
+                />
+                <path
+                  id="Vector 229_4"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m293.5 427.5-3.5 2 3.5 2 3.5-2-3.5-2Z"
+                />
+                <path
+                  id="Vector"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m269 445.5 3.5-6 3.5 2 3.5-6 3.5 2 3.5-6 3.5 2 3.5-6 3.5 2"
+                />
+                <path
+                  id="Vector 207_2"
+                  fill="#D9D9D9"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m297 425.5-28 16v-24l28-16v24Z"
+                />
+                <path
+                  id="Vector 209_2"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m265.5 439.5 3.5 2v4l-3.5-2v-4Z"
+                />
+                <path
+                  id="Vector_2"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="M269 445.5v-4l28-16v4l-28 16Z"
+                />
+                <path
+                  id="Vector_3"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="M269 417.5v24l-3.5-2v-24l3.5 2Z"
+                />
+                <path
+                  id="Vector_4"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m297 401.5-28 16-3.5-2 28-16 3.5 2Z"
+                />
+                <path
+                  id="Vector 212_2"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="M265.5 415.5h7v-4h7v-4h7v-4h7v-4"
+                />
+                <path
+                  id="Vector 215_2"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m265.5 439.5 3.5 6"
+                />
+                <path
+                  id="Vector 217_2"
+                  stroke="#363636"
+                  stroke-linejoin="round"
+                  d="m265.5 415.5 3.5 6.5-3.5 2.5 3.5 5.5-3.5 2.5 3.5 5.5-3.5 1.5"
+                />
+                <path
+                  id="asd"
+                  fill="#363636"
+                  d="M277.757 430.15c-.36.205-.685.313-.977.323-.292.008-.524-.088-.695-.289-.171-.203-.255-.519-.253-.946.002-.376.067-.717.196-1.024.129-.309.301-.592.515-.848.215-.257.452-.491.71-.704a14.7 14.7 0 0 1 .787-.612c.345-.248.624-.446.838-.594.217-.152.375-.289.473-.411a.662.662 0 0 0 .153-.428v-.034c.002-.422-.096-.692-.294-.812-.196-.121-.494-.067-.895.162a2.914 2.914 0 0 0-.98.875 3.902 3.902 0 0 0-.501.96l-.825.13c.149-.483.347-.906.594-1.268.25-.367.521-.679.814-.934.296-.26.587-.472.872-.635.182-.104.391-.198.627-.281.238-.088.468-.119.689-.091.223.026.408.152.554.378.146.226.218.599.216 1.121l-.02 4.323-.871.498.004-.889-.044.026a3.99 3.99 0 0 1-.849 1.354 3.569 3.569 0 0 1-.838.65Zm.136-.982c.345-.197.636-.441.872-.733.24-.293.42-.598.542-.914.124-.318.187-.614.188-.887l.004-.923a1.151 1.151 0 0 1-.244.28c-.123.11-.266.227-.429.351-.16.12-.316.235-.469.345-.15.106-.272.192-.365.26-.227.164-.439.34-.636.529a2.544 2.544 0 0 0-.474.608 1.46 1.46 0 0 0-.179.708c-.002.35.109.551.332.602.225.048.512-.028.858-.226Zm8.09-8.952-.784.703a.839.839 0 0 0-.215-.315.526.526 0 0 0-.383-.14c-.162-.001-.369.071-.623.216a2.754 2.754 0 0 0-.868.773c-.23.313-.345.61-.346.892-.002.251.076.404.233.459.157.056.402.036.736-.058l.841-.242c.506-.147.883-.145 1.13.006.247.149.37.452.367.911a2.77 2.77 0 0 1-.285 1.169 4.423 4.423 0 0 1-.778 1.143 4.815 4.815 0 0 1-1.16.919c-.578.33-1.056.458-1.433.384-.378-.074-.616-.361-.714-.862l.828-.711c.077.308.224.488.443.539.22.05.509-.027.866-.231.406-.232.728-.515.968-.851.242-.34.364-.651.365-.933.001-.228-.067-.38-.204-.455-.137-.078-.348-.073-.633.013l-.944.283c-.518.155-.899.152-1.141-.008-.24-.164-.359-.473-.357-.926.002-.37.093-.749.274-1.136.184-.389.432-.754.745-1.095a4.49 4.49 0 0 1 1.071-.855c.561-.32 1.001-.43 1.319-.328.321.101.549.346.682.736Zm3.531 3.198c-.472.27-.889.37-1.249.301-.361-.073-.642-.304-.844-.695-.202-.393-.301-.937-.298-1.632a6.295 6.295 0 0 1 .315-1.969 5.709 5.709 0 0 1 .857-1.662 4.193 4.193 0 0 1 1.264-1.136c.369-.211.661-.306.874-.286.216.016.38.081.492.196.115.11.204.204.268.282l.074-.042.014-3.23.871-.498-.039 8.75-.842.481.005-1.009-.104.059c-.064.157-.156.359-.275.609a3.946 3.946 0 0 1-.507.772c-.22.265-.512.501-.876.709Zm.122-.973c.35-.2.645-.474.887-.822.242-.352.427-.751.554-1.199.127-.45.192-.924.194-1.419.002-.49-.057-.884-.179-1.181-.121-.3-.302-.483-.542-.551-.24-.07-.537-.004-.891.199a2.79 2.79 0 0 0-.925.856 4.011 4.011 0 0 0-.553 1.199 5.062 5.062 0 0 0-.187 1.35c-.002.468.058.857.179 1.168.124.307.307.504.549.59.246.081.55.018.914-.19Z"
                 />
               </g>
               <g id="Blue-B2">
@@ -959,21 +2737,21 @@ const FigmaIsometric = () => {
                   fill="#5454DB"
                   stroke="#3F3FAE"
                   stroke-linejoin="round"
-                  d="m294 392 28-16V270l-28 16v106Z"
+                  d="m294 391 28-16V269l-28 16v106Z"
                 />
                 <path
                   id="Vector 94"
                   fill="#5454DB"
                   stroke="#3F3FAE"
                   stroke-linejoin="round"
-                  d="m294 392-28-16V270l28 16v106Z"
+                  d="m294 391-28-16V269l28 16v106Z"
                 />
                 <path
                   id="Vector 97"
                   fill="#2F2F8E"
                   stroke="#3F3FAE"
                   stroke-linejoin="round"
-                  d="M301 372v16l7-4v-16l-7 4Z"
+                  d="M301 371v16l7-4v-16l-7 4Z"
                 />
                 <g id="Group 1">
                   <path
@@ -981,28 +2759,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M308 358.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M308 357.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 169"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M301 362.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M301 361.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 170"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M294 366.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M294 365.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 171"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M315 354.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M315 353.959v-8l7-3.959v8l-7 3.959Z"
                   />
                 </g>
                 <g id="Group 2">
@@ -1011,28 +2789,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M308 342.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M308 341.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 169_2"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M301 346.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M301 345.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 170_2"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M294 350.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M294 349.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 171_2"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M315 338.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M315 337.959v-8l7-3.959v8l-7 3.959Z"
                   />
                 </g>
                 <g id="Group 3">
@@ -1041,28 +2819,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M308 326.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M308 325.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 169_3"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M301 330.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M301 329.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 170_3"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M294 334.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M294 333.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 171_3"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M315 322.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M315 321.959v-8l7-3.959v8l-7 3.959Z"
                   />
                 </g>
                 <g id="Group 4">
@@ -1071,28 +2849,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M308 310.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M308 309.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 169_4"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M301 314.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M301 313.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 170_4"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M294 318.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M294 317.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 171_4"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M315 306.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M315 305.959v-8l7-3.959v8l-7 3.959Z"
                   />
                 </g>
                 <g id="Group 5">
@@ -1101,28 +2879,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M308 294.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M308 293.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 169_5"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M301 298.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M301 297.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 170_5"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M294 302.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M294 301.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 171_5"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M315 290.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M315 289.959v-8l7-3.959v8l-7 3.959Z"
                   />
                 </g>
                 <g id="Group 6">
@@ -1131,28 +2909,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M280 358.959v-8L273 347v8l7 3.959Z"
+                    d="M280 357.959v-8L273 346v8l7 3.959Z"
                   />
                   <path
                     id="Vector 169_6"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M287 362.959v-8L280 351v8l7 3.959Z"
+                    d="M287 361.959v-8L280 350v8l7 3.959Z"
                   />
                   <path
                     id="Vector 170_6"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M294 366.959v-8L287 355v8l7 3.959Z"
+                    d="M294 365.959v-8L287 354v8l7 3.959Z"
                   />
                   <path
                     id="Vector 171_6"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M273 354.959v-8L266 343v8l7 3.959Z"
+                    d="M273 353.959v-8L266 342v8l7 3.959Z"
                   />
                 </g>
                 <g id="Group 7">
@@ -1161,28 +2939,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M280 342.959v-8L273 331v8l7 3.959Z"
+                    d="M280 341.959v-8L273 330v8l7 3.959Z"
                   />
                   <path
                     id="Vector 169_7"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M287 346.959v-8L280 335v8l7 3.959Z"
+                    d="M287 345.959v-8L280 334v8l7 3.959Z"
                   />
                   <path
                     id="Vector 170_7"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M294 350.959v-8L287 339v8l7 3.959Z"
+                    d="M294 349.959v-8L287 338v8l7 3.959Z"
                   />
                   <path
                     id="Vector 171_7"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M273 338.959v-8L266 327v8l7 3.959Z"
+                    d="M273 337.959v-8L266 326v8l7 3.959Z"
                   />
                 </g>
                 <g id="Group 8">
@@ -1191,28 +2969,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M280 326.959v-8L273 315v8l7 3.959Z"
+                    d="M280 325.959v-8L273 314v8l7 3.959Z"
                   />
                   <path
                     id="Vector 169_8"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M287 330.959v-8L280 319v8l7 3.959Z"
+                    d="M287 329.959v-8L280 318v8l7 3.959Z"
                   />
                   <path
                     id="Vector 170_8"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M294 334.959v-8L287 323v8l7 3.959Z"
+                    d="M294 333.959v-8L287 322v8l7 3.959Z"
                   />
                   <path
                     id="Vector 171_8"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M273 322.959v-8L266 311v8l7 3.959Z"
+                    d="M273 321.959v-8L266 310v8l7 3.959Z"
                   />
                 </g>
                 <g id="Group 9">
@@ -1221,28 +2999,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M280 310.959v-8L273 299v8l7 3.959Z"
+                    d="M280 309.959v-8L273 298v8l7 3.959Z"
                   />
                   <path
                     id="Vector 169_9"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M287 314.959v-8L280 303v8l7 3.959Z"
+                    d="M287 313.959v-8L280 302v8l7 3.959Z"
                   />
                   <path
                     id="Vector 170_9"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M294 318.959v-8L287 307v8l7 3.959Z"
+                    d="M294 317.959v-8L287 306v8l7 3.959Z"
                   />
                   <path
                     id="Vector 171_9"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M273 306.959v-8L266 295v8l7 3.959Z"
+                    d="M273 305.959v-8L266 294v8l7 3.959Z"
                   />
                 </g>
                 <g id="Group 10">
@@ -1251,28 +3029,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M280 294.959v-8L273 283v8l7 3.959Z"
+                    d="M280 293.959v-8L273 282v8l7 3.959Z"
                   />
                   <path
                     id="Vector 169_10"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M287 298.959v-8L280 287v8l7 3.959Z"
+                    d="M287 297.959v-8L280 286v8l7 3.959Z"
                   />
                   <path
                     id="Vector 170_10"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M294 302.959v-8L287 291v8l7 3.959Z"
+                    d="M294 301.959v-8L287 290v8l7 3.959Z"
                   />
                   <path
                     id="Vector 171_10"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M273 290.959v-8L266 279v8l7 3.959Z"
+                    d="M273 289.959v-8L266 278v8l7 3.959Z"
                   />
                 </g>
                 <path
@@ -1281,7 +3059,7 @@ const FigmaIsometric = () => {
                   stroke="#3F3FAE"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="m266 262 28 24-28-16v-8Z"
+                  d="m266 261 28 24-28-16v-8Z"
                 />
                 <path
                   id="Vector 172"
@@ -1289,7 +3067,7 @@ const FigmaIsometric = () => {
                   stroke="#3F3FAE"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="m266 262 28-16 28 24-28 16-28-24Z"
+                  d="m266 261 28-16 28 24-28 16-28-24Z"
                 />
               </g>
               <g id="Blue-B">
@@ -1298,21 +3076,21 @@ const FigmaIsometric = () => {
                   fill="#5454DB"
                   stroke="#3F3FAE"
                   stroke-linejoin="round"
-                  d="m259 412 28-16V290l-28 16v106Z"
+                  d="m259 411 28-16V289l-28 16v106Z"
                 />
                 <path
                   id="Vector 94_2"
                   fill="#5454DB"
                   stroke="#3F3FAE"
                   stroke-linejoin="round"
-                  d="m259 412-28-16V290l28 16v106Z"
+                  d="m259 411-28-16V289l28 16v106Z"
                 />
                 <path
                   id="Vector 97_2"
                   fill="#2F2F8E"
                   stroke="#3F3FAE"
                   stroke-linejoin="round"
-                  d="M266 392v16l7-4v-16l-7 4Z"
+                  d="M266 391v16l7-4v-16l-7 4Z"
                 />
                 <g id="Group 1_2">
                   <path
@@ -1320,28 +3098,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M273 378.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M273 377.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 169_11"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M266 382.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M266 381.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 170_11"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M259 386.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M259 385.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 171_11"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M280 374.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M280 373.959v-8l7-3.959v8l-7 3.959Z"
                   />
                 </g>
                 <g id="Group 2_2">
@@ -1350,28 +3128,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M273 362.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M273 361.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 169_12"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M266 366.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M266 365.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 170_12"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M259 370.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M259 369.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 171_12"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M280 358.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M280 357.959v-8l7-3.959v8l-7 3.959Z"
                   />
                 </g>
                 <g id="Group 3_2">
@@ -1380,28 +3158,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M273 346.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M273 345.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 169_13"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M266 350.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M266 349.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 170_13"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M259 354.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M259 353.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 171_13"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M280 342.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M280 341.959v-8l7-3.959v8l-7 3.959Z"
                   />
                 </g>
                 <g id="Group 4_2">
@@ -1410,28 +3188,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M273 330.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M273 329.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 169_14"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M266 334.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M266 333.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 170_14"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M259 338.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M259 337.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 171_14"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M280 326.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M280 325.959v-8l7-3.959v8l-7 3.959Z"
                   />
                 </g>
                 <g id="Group 5_2">
@@ -1440,28 +3218,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M273 314.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M273 313.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 169_15"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M266 318.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M266 317.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 170_15"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M259 322.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M259 321.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 171_15"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M280 310.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M280 309.959v-8l7-3.959v8l-7 3.959Z"
                   />
                 </g>
                 <g id="Group 6_2">
@@ -1470,28 +3248,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M245 378.959v-8L238 367v8l7 3.959Z"
+                    d="M245 377.959v-8L238 366v8l7 3.959Z"
                   />
                   <path
                     id="Vector 169_16"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M252 382.959v-8L245 371v8l7 3.959Z"
+                    d="M252 381.959v-8L245 370v8l7 3.959Z"
                   />
                   <path
                     id="Vector 170_16"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M259 386.959v-8L252 375v8l7 3.959Z"
+                    d="M259 385.959v-8L252 374v8l7 3.959Z"
                   />
                   <path
                     id="Vector 171_16"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M238 374.959v-8L231 363v8l7 3.959Z"
+                    d="M238 373.959v-8L231 362v8l7 3.959Z"
                   />
                 </g>
                 <g id="Group 7_2">
@@ -1500,28 +3278,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M245 362.959v-8L238 351v8l7 3.959Z"
+                    d="M245 361.959v-8L238 350v8l7 3.959Z"
                   />
                   <path
                     id="Vector 169_17"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M252 366.959v-8L245 355v8l7 3.959Z"
+                    d="M252 365.959v-8L245 354v8l7 3.959Z"
                   />
                   <path
                     id="Vector 170_17"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M259 370.959v-8L252 359v8l7 3.959Z"
+                    d="M259 369.959v-8L252 358v8l7 3.959Z"
                   />
                   <path
                     id="Vector 171_17"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M238 358.959v-8L231 347v8l7 3.959Z"
+                    d="M238 357.959v-8L231 346v8l7 3.959Z"
                   />
                 </g>
                 <g id="Group 8_2">
@@ -1530,28 +3308,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M245 346.959v-8L238 335v8l7 3.959Z"
+                    d="M245 345.959v-8L238 334v8l7 3.959Z"
                   />
                   <path
                     id="Vector 169_18"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M252 350.959v-8L245 339v8l7 3.959Z"
+                    d="M252 349.959v-8L245 338v8l7 3.959Z"
                   />
                   <path
                     id="Vector 170_18"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M259 354.959v-8L252 343v8l7 3.959Z"
+                    d="M259 353.959v-8L252 342v8l7 3.959Z"
                   />
                   <path
                     id="Vector 171_18"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M238 342.959v-8L231 331v8l7 3.959Z"
+                    d="M238 341.959v-8L231 330v8l7 3.959Z"
                   />
                 </g>
                 <g id="Group 9_2">
@@ -1560,28 +3338,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M245 330.959v-8L238 319v8l7 3.959Z"
+                    d="M245 329.959v-8L238 318v8l7 3.959Z"
                   />
                   <path
                     id="Vector 169_19"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M252 334.959v-8L245 323v8l7 3.959Z"
+                    d="M252 333.959v-8L245 322v8l7 3.959Z"
                   />
                   <path
                     id="Vector 170_19"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M259 338.959v-8L252 327v8l7 3.959Z"
+                    d="M259 337.959v-8L252 326v8l7 3.959Z"
                   />
                   <path
                     id="Vector 171_19"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M238 326.959v-8L231 315v8l7 3.959Z"
+                    d="M238 325.959v-8L231 314v8l7 3.959Z"
                   />
                 </g>
                 <g id="Group 10_2">
@@ -1590,28 +3368,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M245 314.959v-8L238 303v8l7 3.959Z"
+                    d="M245 313.959v-8L238 302v8l7 3.959Z"
                   />
                   <path
                     id="Vector 169_20"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M252 318.959v-8L245 307v8l7 3.959Z"
+                    d="M252 317.959v-8L245 306v8l7 3.959Z"
                   />
                   <path
                     id="Vector 170_20"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M259 322.959v-8L252 311v8l7 3.959Z"
+                    d="M259 321.959v-8L252 310v8l7 3.959Z"
                   />
                   <path
                     id="Vector 171_20"
                     fill="#fff"
                     stroke="#3F3FAE"
                     stroke-linejoin="round"
-                    d="M238 310.959v-8L231 299v8l7 3.959Z"
+                    d="M238 309.959v-8L231 298v8l7 3.959Z"
                   />
                 </g>
                 <path
@@ -1620,7 +3398,7 @@ const FigmaIsometric = () => {
                   stroke="#3F3FAE"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="m231 282 28 24-28-16v-8Z"
+                  d="m231 281 28 24-28-16v-8Z"
                 />
                 <path
                   id="Vector 172_2"
@@ -1628,7 +3406,7 @@ const FigmaIsometric = () => {
                   stroke="#3F3FAE"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="m231 282 28-16 28 24-28 16-28-24Z"
+                  d="m231 281 28-16 28 24-28 16-28-24Z"
                 />
               </g>
               <g id="Pruple-B">
@@ -1637,91 +3415,91 @@ const FigmaIsometric = () => {
                   fill="#9771AA"
                   stroke="#7B5B8B"
                   stroke-linejoin="round"
-                  d="m471 295-42 24v-32l42-24v32Z"
+                  d="m471 294-42 24v-32l42-24v32Z"
                 />
                 <path
                   id="Vector 157"
                   fill="#9771AA"
                   stroke="#7B5B8B"
                   stroke-linejoin="round"
-                  d="m408 307 21 12v-32l-21-12v32Z"
+                  d="m408 306 21 12v-32l-21-12v32Z"
                 />
                 <path
                   id="Vector 158"
                   fill="#9771AA"
                   stroke="#7B5B8B"
                   stroke-linejoin="round"
-                  d="m429 287-21-12 21-20 21 12-21 20Z"
+                  d="m429 286-21-12 21-20 21 12-21 20Z"
                 />
                 <path
                   id="Vector 159"
                   fill="#9771AA"
                   stroke="#7B5B8B"
                   stroke-linejoin="round"
-                  d="m457 263-7 4-21-12 7-4 21 12Z"
+                  d="m457 262-7 4-21-12 7-4 21 12Z"
                 />
                 <path
                   id="Vector 160"
                   fill="#9771AA"
                   stroke="#7B5B8B"
                   stroke-linejoin="round"
-                  d="M471 263h-14l-21-12h14l21 12Z"
+                  d="M471 262h-14l-21-12h14l21 12Z"
                 />
                 <path
                   id="Vector 161"
                   fill="#9771AA"
                   stroke="#7B5B8B"
                   stroke-linejoin="round"
-                  d="m450 267-21 20 42-24h-14l-7 4Z"
+                  d="m450 266-21 20 42-24h-14l-7 4Z"
                 />
                 <path
                   id="Vector 162"
                   fill="#664C74"
                   stroke="#7B5B8B"
                   stroke-linejoin="round"
-                  d="m443 311-7 4v-16l7-4v16Z"
+                  d="m443 310-7 4v-16l7-4v16Z"
                 />
                 <path
                   id="Vector 163"
                   fill="#fff"
                   stroke="#7B5B8B"
                   stroke-linejoin="round"
-                  d="m429 281-13-7.5 13-12.5 13 7.5-13 12.5Z"
+                  d="m429 280-13-7.5 13-12.5 13 7.5-13 12.5Z"
                 />
                 <path
                   id="Vector 164"
                   stroke="#7B5B8B"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="m435 265-12 12"
+                  d="m435 264-12 12"
                 />
                 <path
                   id="Vector 165"
                   stroke="#7B5B8B"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="m435.5 274.753-13-7.506"
+                  d="m435.5 273.753-13-7.506"
                 />
                 <path
                   id="Vector 166"
                   fill="#fff"
                   stroke="#7B5B8B"
                   stroke-linejoin="round"
-                  d="m461.356 293.062-.035-8.062-13.857 8 .036 8.062 13.856-8Z"
+                  d="m461.356 292.062-.035-8.062-13.857 8 .036 8.062 13.856-8Z"
                 />
                 <g id="Chimney">
                   <path
-                    id="Vector"
+                    id="Vector_5"
                     fill="#9771AA"
                     fill-rule="evenodd"
                     stroke="#7B5B8B"
-                    d="M454 258.597c0 .584.244 1.167.732 1.612.977.89 2.559.89 3.536 0a2.174 2.174 0 0 0 .732-1.612v-5.318c0-.583-.244-1.166-.732-1.611-.977-.891-2.559-.891-3.536 0a2.174 2.174 0 0 0-.732 1.611v5.318Z"
+                    d="M454 257.597c0 .584.244 1.167.732 1.612.977.89 2.559.89 3.536 0a2.174 2.174 0 0 0 .732-1.612v-5.318c0-.583-.244-1.166-.732-1.611-.977-.891-2.559-.891-3.536 0a2.174 2.174 0 0 0-.732 1.611v5.318Z"
                     clip-rule="evenodd"
                   />
                   <path
                     id="Ellipse"
                     fill="#50375D"
-                    d="M457.561 252.293c.585.39.585 1.024 0 1.414-.586.391-1.536.391-2.122 0-.585-.39-.585-1.024 0-1.414.586-.391 1.536-.391 2.122 0Z"
+                    d="M457.561 251.293c.585.39.585 1.024 0 1.414-.586.391-1.536.391-2.122 0-.585-.39-.585-1.024 0-1.414.586-.391 1.536-.391 2.122 0Z"
                   />
                 </g>
               </g>
@@ -1731,42 +3509,48 @@ const FigmaIsometric = () => {
                   fill="#79BC91"
                   stroke="#679F7B"
                   stroke-linejoin="round"
-                  d="M175 348v112l28-16-21-100-7 4Z"
+                  d="M175 347v112l28-16-21-100-7 4Z"
                 />
                 <path
                   id="Vector 154"
                   fill="#fff"
                   stroke="#679F7B"
                   stroke-linejoin="round"
-                  d="M181 373.172V428.5l12-7.5-10-49-2 1.172Z"
+                  d="M181 372.172V427.5l12-7.5-10-49-2 1.172Z"
                 />
                 <path
                   id="Vector 151"
                   fill="#79BC91"
                   stroke="#679F7B"
                   stroke-linejoin="round"
-                  d="M175 348v112l-28-16 21-100 7 4Z"
+                  d="M175 347v112l-28-16 21-100 7 4Z"
                 />
                 <path
                   id="Vector 153"
                   fill="#79BC91"
                   stroke="#679F7B"
                   stroke-linejoin="round"
-                  d="m182 344-7 4-7-4 7-4 7 4Z"
+                  d="m182 343-7 4-7-4 7-4 7 4Z"
                 />
                 <path
                   id="Vector 115"
                   fill="#497559"
                   stroke="#679F7B"
                   stroke-linejoin="round"
-                  d="M182 440v16l14-8v-16l-14 8Z"
+                  d="M182 439v16l14-8v-16l-14 8Z"
                 />
                 <path
                   id="Vector 155"
                   fill="#8CDBA8"
                   stroke="#679F7B"
                   stroke-linejoin="round"
-                  d="M175 334c-1 0-.926 10-.926 10h1.852s.074-10-.926-10Z"
+                  d="M175 333c-1 0-.926 10-.926 10h1.852s.074-10-.926-10Z"
+                />
+                <path
+                  id="Vector 206"
+                  stroke="#679F7B"
+                  stroke-linejoin="round"
+                  d="m192.5 429 3.5 2-14 8-3.5-2 14-8Z"
                 />
               </g>
               <g id="Orange-B2">
@@ -1775,56 +3559,56 @@ const FigmaIsometric = () => {
                   fill="#FFA03A"
                   stroke="#CE8232"
                   stroke-linejoin="round"
-                  d="m140 481 28-16V359l-28 16v106Z"
+                  d="m147 475 28-16V355l-28 16v104Z"
                 />
                 <path
                   id="Vector 94_3"
                   fill="#FFA03A"
                   stroke="#CE8232"
                   stroke-linejoin="round"
-                  d="m140 481-28-16V359l28 16v106Z"
+                  d="m147 475-28-16V355l28 16v104Z"
                 />
                 <path
                   id="Vector 103"
                   fill="#fff"
                   stroke="#CE8232"
                   stroke-linejoin="round"
-                  d="M147 421v-8l14-8v8l-14 8Z"
+                  d="M154 415v-8l14-8v8l-14 8Z"
                 />
                 <path
                   id="Vector 106"
                   fill="#fff"
                   stroke="#CE8232"
                   stroke-linejoin="round"
-                  d="M147 405v-8l14-8v8l-14 8Z"
+                  d="M154 399v-8l14-8v8l-14 8Z"
                 />
                 <path
                   id="Vector 169_21"
                   fill="#fff"
                   stroke="#CE8232"
                   stroke-linejoin="round"
-                  d="M147 389v-8l14-8v8l-14 8Z"
+                  d="M154 383v-8l14-8v8l-14 8Z"
                 />
                 <path
                   id="Vector 97_3"
                   fill="#9C6326"
                   stroke="#CE8232"
                   stroke-linejoin="round"
-                  d="M147 461v16l7-4v-16l-7 4Z"
+                  d="M154 455v16l7-4v-16l-7 4Z"
                 />
                 <path
                   id="Vector 98_21"
                   fill="#fff"
                   stroke="#CE8232"
                   stroke-linejoin="round"
-                  d="M147 453v-8l14-8v8l-14 8Z"
+                  d="M154 447v-8l14-8v8l-14 8Z"
                 />
                 <path
                   id="Vector 101"
                   fill="#fff"
                   stroke="#CE8232"
                   stroke-linejoin="round"
-                  d="M147 437v-8l14-8v8l-14 8Z"
+                  d="M154 431v-8l14-8v8l-14 8Z"
                 />
                 <path
                   id="Vector 168"
@@ -1832,7 +3616,7 @@ const FigmaIsometric = () => {
                   stroke="#CE8232"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="M140 343v32l28-16-28-16Z"
+                  d="M147 339v32l28-16-28-16Z"
                 />
                 <path
                   id="Vector 167_3"
@@ -1840,66 +3624,118 @@ const FigmaIsometric = () => {
                   stroke="#CE8232"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="M140 343v32l-28-16 28-16Z"
+                  d="M147 339v32l-28-16 28-16Z"
                 />
               </g>
-              <g id="Orange-B">
-                <path
-                  id="Vector 95_4"
-                  fill="#FFA03A"
-                  stroke="#CE8232"
-                  stroke-linejoin="round"
-                  d="m105 500 28-16v-96l-28 16v96Z"
-                />
-                <path
-                  id="Vector 94_4"
-                  fill="#FFA03A"
-                  stroke="#CE8232"
-                  stroke-linejoin="round"
-                  d="m105 500-28-16v-96l28 16v96Z"
-                />
-                <path
-                  id="Vector 103_2"
-                  fill="#fff"
-                  stroke="#CE8232"
-                  stroke-linejoin="round"
-                  d="M112 440v-8l14-8v8l-14 8Z"
-                />
-                <path
-                  id="Vector 106_2"
-                  fill="#fff"
-                  stroke="#CE8232"
-                  stroke-linejoin="round"
-                  d="M112 424v-8l14-8v8l-14 8Z"
-                />
-                <path
-                  id="Vector 97_4"
-                  fill="#9C6326"
-                  stroke="#CE8232"
-                  stroke-linejoin="round"
-                  d="M112 480v16l7-4v-16l-7 4Z"
-                />
-                <path
-                  id="Vector 98_22"
-                  fill="#fff"
-                  stroke="#CE8232"
-                  stroke-linejoin="round"
-                  d="M112 472v-8l14-8v8l-14 8Z"
-                />
-                <path
-                  id="Vector 101_2"
-                  fill="#fff"
-                  stroke="#CE8232"
-                  stroke-linejoin="round"
-                  d="M112 456v-8l14-8v8l-14 8Z"
-                />
+              <g id="Orange-B2_2">
                 <path
                   id="Vector 168_2"
                   fill="#FFA03A"
                   stroke="#CE8232"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="M105 372v32l28-16-28-16Z"
+                  d="m147 403-28-16-28 16 28 16 28-16Z"
+                />
+                <path
+                  id="Vector 95_4"
+                  fill="#FFA03A"
+                  stroke="#CE8232"
+                  stroke-linejoin="round"
+                  d="m119 491 28-16v-72l-28 16v72Z"
+                />
+                <path
+                  id="Vector 94_4"
+                  fill="#FFA03A"
+                  stroke="#CE8232"
+                  stroke-linejoin="round"
+                  d="m119 491-28-16v-72l28 16v72Z"
+                />
+                <path
+                  id="Vector 103_2"
+                  fill="#fff"
+                  stroke="#CE8232"
+                  stroke-linejoin="round"
+                  d="M126 431v-8l14-8v8l-14 8Z"
+                />
+                <path
+                  id="Vector 97_4"
+                  fill="#9C6326"
+                  stroke="#CE8232"
+                  stroke-linejoin="round"
+                  d="M126 471v16l7-4v-16l-7 4Z"
+                />
+                <path
+                  id="Vector 98_22"
+                  fill="#fff"
+                  stroke="#CE8232"
+                  stroke-linejoin="round"
+                  d="M126 463v-8l14-8v8l-14 8Z"
+                />
+                <path
+                  id="Vector 101_2"
+                  fill="#fff"
+                  stroke="#CE8232"
+                  stroke-linejoin="round"
+                  d="M126 447v-8l14-8v8l-14 8Z"
+                />
+              </g>
+              <g id="Orange-B">
+                <path
+                  id="Vector 95_5"
+                  fill="#FFA03A"
+                  stroke="#CE8232"
+                  stroke-linejoin="round"
+                  d="m91 507 28-16v-88l-28 16v88Z"
+                />
+                <path
+                  id="Vector 94_5"
+                  fill="#FFA03A"
+                  stroke="#CE8232"
+                  stroke-linejoin="round"
+                  d="m91 507-28-16v-88l28 16v88Z"
+                />
+                <path
+                  id="Vector 103_3"
+                  fill="#fff"
+                  stroke="#CE8232"
+                  stroke-linejoin="round"
+                  d="M98 447v-8l14-8v8l-14 8Z"
+                />
+                <path
+                  id="Vector 106_2"
+                  fill="#fff"
+                  stroke="#CE8232"
+                  stroke-linejoin="round"
+                  d="M98 431v-8l14-8v8l-14 8Z"
+                />
+                <path
+                  id="Vector 97_5"
+                  fill="#9C6326"
+                  stroke="#CE8232"
+                  stroke-linejoin="round"
+                  d="M98 487v16l7-4v-16l-7 4Z"
+                />
+                <path
+                  id="Vector 98_23"
+                  fill="#fff"
+                  stroke="#CE8232"
+                  stroke-linejoin="round"
+                  d="M98 479v-8l14-8v8l-14 8Z"
+                />
+                <path
+                  id="Vector 101_3"
+                  fill="#fff"
+                  stroke="#CE8232"
+                  stroke-linejoin="round"
+                  d="M98 463v-8l14-8v8l-14 8Z"
+                />
+                <path
+                  id="Vector 168_3"
+                  fill="#FFA03A"
+                  stroke="#CE8232"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M91 387v32l28-16-28-16Z"
                 />
                 <path
                   id="Vector 167_4"
@@ -1907,7 +3743,7 @@ const FigmaIsometric = () => {
                   stroke="#CE8232"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="M105 372v32l-28-16 28-16Z"
+                  d="M91 387v32l-28-16 28-16Z"
                 />
               </g>
               <g id="Cyan-B">
@@ -1916,107 +3752,100 @@ const FigmaIsometric = () => {
                   fill="#3E9E9E"
                   stroke="#235A5A"
                   stroke-linejoin="round"
-                  d="m56 504 21 12v-81l-21-12v81Z"
+                  d="m49 507 21 12v-81l-21-12v81Z"
                 />
                 <path
                   id="Vector 106_3"
                   fill="#3E9E9E"
                   stroke="#235A5A"
                   stroke-linejoin="round"
-                  d="m98 504-21 12v-81l21-12v81Z"
+                  d="m91 507-21 12v-81l21-12v81Z"
                 />
                 <path
                   id="Vector 108"
                   fill="#3E9E9E"
                   stroke="#235A5A"
                   stroke-linejoin="round"
-                  d="m77 411 21 12-21 12-21-12 21-12Z"
+                  d="m70 414 21 12-21 12-21-12 21-12Z"
                 />
                 <path
                   id="Vector 109"
                   fill="#163A3A"
                   stroke="#235A5A"
                   stroke-linejoin="round"
-                  d="m91 508-7 4v-16l7-4v16Z"
+                  d="m84 511-7 4v-16l7-4v16Z"
                 />
                 <path
                   id="Vector 110"
                   fill="#fff"
                   stroke="#235A5A"
                   stroke-linejoin="round"
-                  d="m91 482-7 4v-16l7-4v16Z"
+                  d="m84 485-7 4v-16l7-4v16Z"
                 />
                 <path
                   id="Vector 111"
                   fill="#fff"
                   stroke="#235A5A"
                   stroke-linejoin="round"
-                  d="m91 455-7 4v-16l7-4v16Z"
+                  d="m84 458-7 4v-16l7-4v16Z"
                 />
               </g>
-              <path
-                id="Road"
-                fill="#1A1A1A"
-                stroke="#000"
-                stroke-linejoin="round"
-                d="M336 376 0 568v16l350-200-14-8Z"
-              />
               <g id="RedPink-B3">
                 <path
                   id="Vector 116"
                   fill="#EB465C"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="M56 464v64l14-8v-64l-14 8Z"
+                  d="M56 463v64l14-8v-64l-14 8Z"
                 />
                 <path
                   id="Vector 115_2"
                   fill="#EB465C"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="M56 464v64l-28-16v-64l28 16Z"
+                  d="M56 463v64l-28-16v-64l28 16Z"
                 />
                 <path
                   id="Vector 117"
                   fill="#EB465C"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m28 432 28 32-28-16v-16Z"
+                  d="m28 431 28 32-28-16v-16Z"
                 />
                 <path
                   id="Vector 118"
                   fill="#EB465C"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m42 424 28 32-14 8-28-32 14-8Z"
+                  d="m42 423 28 32-14 8-28-32 14-8Z"
                 />
                 <path
                   id="Vector 115_3"
                   fill="#AE3949"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="M60 509.628v16l7-4v-16l-7 4Z"
+                  d="M60 508.628v16l7-4v-16l-7 4Z"
                 />
                 <path
                   id="Vector 111_2"
                   fill="#fff"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m67 470.5-7 4V466l7-4v8.5Z"
+                  d="m67 469.5-7 4V465l7-4v8.5Z"
                 />
                 <path
                   id="Vector 119"
                   fill="#fff"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m67 485.5-7 4V481l7-4v8.5Z"
+                  d="m67 484.5-7 4V480l7-4v8.5Z"
                 />
                 <path
                   id="Vector 120"
                   fill="#fff"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m67 500.5-7 4V496l7-4v8.5Z"
+                  d="m67 499.5-7 4V495l7-4v8.5Z"
                 />
               </g>
               <g id="RedPink-B2">
@@ -2025,56 +3854,56 @@ const FigmaIsometric = () => {
                   fill="#EB465C"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="M42 472v64l14-8v-64l-14 8Z"
+                  d="M42 471v64l14-8v-64l-14 8Z"
                 />
                 <path
                   id="Vector 115_4"
                   fill="#EB465C"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="M42 472v64l-28-16v-64l28 16Z"
+                  d="M42 471v64l-28-16v-64l28 16Z"
                 />
                 <path
                   id="Vector 117_2"
                   fill="#EB465C"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m14 440 28 32-28-16v-16Z"
+                  d="m14 439 28 32-28-16v-16Z"
                 />
                 <path
                   id="Vector 118_2"
                   fill="#EB465C"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m28 432 28 32-14 8-28-32 14-8Z"
+                  d="m28 431 28 32-14 8-28-32 14-8Z"
                 />
                 <path
                   id="Vector 115_5"
                   fill="#AE3949"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="M46 517.628v16l7-4v-16l-7 4Z"
+                  d="M46 516.628v16l7-4v-16l-7 4Z"
                 />
                 <path
                   id="Vector 111_3"
                   fill="#fff"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m53 478.5-7 4V474l7-4v8.5Z"
+                  d="m53 477.5-7 4V473l7-4v8.5Z"
                 />
                 <path
                   id="Vector 119_2"
                   fill="#fff"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m53 493.5-7 4V489l7-4v8.5Z"
+                  d="m53 492.5-7 4V488l7-4v8.5Z"
                 />
                 <path
                   id="Vector 120_2"
                   fill="#fff"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m53 508.5-7 4V504l7-4v8.5Z"
+                  d="m53 507.5-7 4V503l7-4v8.5Z"
                 />
               </g>
               <g id="RedPink-B">
@@ -2083,774 +3912,79 @@ const FigmaIsometric = () => {
                   fill="#EB465C"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="M28 480v64l14-8v-64l-14 8Z"
+                  d="M28 479v64l14-8v-64l-14 8Z"
                 />
                 <path
                   id="Vector 115_6"
                   fill="#EB465C"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="M28 480v64L0 528v-64l28 16Z"
+                  d="M28 479v64L0 527v-64l28 16Z"
                 />
                 <path
                   id="Vector 117_3"
                   fill="#EB465C"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m0 448 28 32-28-16v-16Z"
+                  d="m0 447 28 32-28-16v-16Z"
                 />
                 <path
                   id="Vector 118_3"
                   fill="#EB465C"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m14 440 28 32-14 8-28-32 14-8Z"
+                  d="m14 439 28 32-14 8-28-32 14-8Z"
                 />
                 <path
                   id="Vector 115_7"
                   fill="#AE3949"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="M32 525.628v16l7-4v-16l-7 4Z"
+                  d="M32 524.628v16l7-4v-16l-7 4Z"
                 />
                 <path
                   id="Vector 111_4"
                   fill="#fff"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m39 486.5-7 4V482l7-4v8.5Z"
+                  d="m39 485.5-7 4V481l7-4v8.5Z"
                 />
                 <path
                   id="Vector 119_3"
                   fill="#fff"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m39 501.5-7 4V497l7-4v8.5Z"
+                  d="m39 500.5-7 4V496l7-4v8.5Z"
                 />
                 <path
                   id="Vector 120_3"
                   fill="#fff"
                   stroke="#CC3C4F"
                   stroke-linejoin="round"
-                  d="m39 516.5-7 4V512l7-4v8.5Z"
-                />
-              </g>
-              <g id="Sidewalks">
-                <path
-                  id="Vector 121"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m0 560-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 129"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m56 528-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 137"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m112 496-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 125"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m28 544-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 130"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m84 512-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 138"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m140 480-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 123"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m14 552-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 131"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m70 520-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 139"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m126 488-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 126"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m42 536-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 132"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m98 504-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 140"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m154 472-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 122"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m7 556-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 133"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m63 524-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 141"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m119 492-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 127"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m35 540-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 134"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m91 508-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 142"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m147 476-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 124"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m21 548-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 135"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m77 516-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 143"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m133 484-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 128"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m49 532-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 136"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m105 500-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 144"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m161 468-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 121_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m168 464-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 129_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m224 432-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 137_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m280 400-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 125_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m196 448-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 130_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m252 416-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 138_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m308 384-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 123_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m182 456-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 131_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m238 424-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 139_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m294 392-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 126_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m210 440-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 132_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m266 408-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 140_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m322 376-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 122_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m175 460-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 133_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m231 428-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 141_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m287 396-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 127_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m203 444-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 134_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m259 412-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 142_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m315 380-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 124_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m189 452-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 135_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m245 420-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 143_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m301 388-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 128_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m217 436-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 136_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m273 404-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 144_2"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m329 372-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 121_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m21 572-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 145"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m14 576-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 146"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m7 580-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 147"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m0 584-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 129_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m77 540-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 137_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m133 508-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 125_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m49 556-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 130_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m105 524-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 138_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m161 492-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 123_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m35 564-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 131_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m91 532-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 139_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m147 500-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 126_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m63 548-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 132_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m119 516-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 140_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m175 484-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 122_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m28 568-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 133_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m84 536-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 141_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m140 504-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 127_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m56 552-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 134_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m112 520-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 142_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m168 488-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 124_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m42 560-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 135_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m98 528-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 143_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m154 496-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 128_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m70 544-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 136_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m126 512-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 121_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m189 476-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 129_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m245 444-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 137_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m301 412-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 125_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m217 460-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 130_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m273 428-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 138_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m329 396-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 123_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m203 468-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 131_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m259 436-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 139_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m315 404-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 126_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m231 452-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 132_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m287 420-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 140_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m343 388-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 122_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m196 472-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 133_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m252 440-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 141_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m308 408-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 127_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m224 456-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 134_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m280 424-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 142_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m336 392-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 124_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m210 464-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 135_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m266 432-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 143_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m322 400-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 128_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m238 448-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 136_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m294 416-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 144_3"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m350 384-7 4 7 4 7-4-7-4Z"
-                />
-                <path
-                  id="Vector 144_4"
-                  fill="silver"
-                  stroke="#9D9D9D"
-                  stroke-linejoin="round"
-                  d="m182 480-7 4 7 4 7-4-7-4Z"
+                  d="m39 515.5-7 4V511l7-4v8.5Z"
                 />
               </g>
               <g id="LightBlue-B">
                 <path
-                  id="Vector 95_5"
+                  id="Vector 95_6"
                   fill="#5EA0D9"
                   stroke="#5189B9"
                   stroke-linejoin="round"
-                  d="m364 450 28-16v-66l-28 16v66Z"
+                  d="m364 449 28-16v-66l-28 16v66Z"
                 />
                 <path
-                  id="Vector 94_5"
+                  id="Vector 94_6"
                   fill="#5EA0D9"
                   stroke="#5189B9"
                   stroke-linejoin="round"
-                  d="m364 450-28-16v-66l28 16v66Z"
+                  d="m364 449-28-16v-66l28 16v66Z"
                 />
                 <path
-                  id="Vector 97_5"
+                  id="Vector 97_6"
                   fill="#416D94"
                   stroke="#5189B9"
                   stroke-linejoin="round"
-                  d="M371 430v16l7-4v-16l-7 4Z"
+                  d="M371 429v16l7-4v-16l-7 4Z"
                 />
                 <path
                   id="Vector 167_5"
@@ -2858,42 +3992,42 @@ const FigmaIsometric = () => {
                   stroke="#5189B9"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="m336 368 28-16 28 16-28 16-28-16Z"
+                  d="m336 367 28-16 28 16-28 16-28-16Z"
                 />
                 <path
-                  id="Vector 168_3"
+                  id="Vector 168_4"
                   fill="#5EA0D9"
                   stroke="#5189B9"
                   stroke-linejoin="round"
-                  d="m364 381-23-13v-9l23 13v9Z"
+                  d="m364 380-23-13v-9l23 13v9Z"
                 />
                 <path
                   id="Vector 169_22"
                   fill="#5EA0D9"
                   stroke="#5189B9"
                   stroke-linejoin="round"
-                  d="m364 381 23-13v-9l-23 13v9Z"
+                  d="m364 380 23-13v-9l-23 13v9Z"
                 />
                 <path
                   id="Vector 184"
                   fill="#5EA0D9"
                   stroke="#5188B9"
                   stroke-linejoin="round"
-                  d="m387 359-23 13-23-13 23-13 23 13Z"
+                  d="m387 358-23 13-23-13 23-13 23 13Z"
                 />
                 <path
                   id="Vector 186"
                   fill="#5EA0D9"
                   stroke="#5188B9"
                   stroke-linejoin="round"
-                  d="M347 359.286 364 369v-8l-17-9.714v8Z"
+                  d="M347 358.286 364 368v-8l-17-9.714v8Z"
                 />
                 <path
                   id="Vector 187"
                   fill="#5EA0D9"
                   stroke="#5188B9"
                   stroke-linejoin="round"
-                  d="m347 351 17 10 17-9.786-17-9.714-17 9.5Z"
+                  d="m347 350 17 10 17-9.786-17-9.714-17 9.5Z"
                 />
                 <g id="Group 11">
                   <path
@@ -2901,28 +4035,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M378 418.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M378 417.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 173"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M371 422.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M371 421.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 174"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M364 426.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M364 425.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 175"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M385 414.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M385 413.959v-8l7-3.959v8l-7 3.959Z"
                   />
                 </g>
                 <g id="Group 12">
@@ -2931,28 +4065,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M378 405.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M378 404.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 173_2"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M371 409.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M371 408.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 174_2"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M364 413.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M364 412.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 175_2"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M385 401.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M385 400.959v-8l7-3.959v8l-7 3.959Z"
                   />
                 </g>
                 <g id="Group 13">
@@ -2961,28 +4095,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M378 392.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M378 391.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 173_3"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M371 396.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M371 395.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 174_3"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M364 400.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M364 399.959v-8l7-3.959v8l-7 3.959Z"
                   />
                   <path
                     id="Vector 175_3"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M385 388.959v-8l7-3.959v8l-7 3.959Z"
+                    d="M385 387.959v-8l7-3.959v8l-7 3.959Z"
                   />
                 </g>
                 <g id="Group 14">
@@ -2991,28 +4125,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M350 418.959v-8L343 407v8l7 3.959Z"
+                    d="M350 417.959v-8L343 406v8l7 3.959Z"
                   />
                   <path
                     id="Vector 173_4"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M357 422.959v-8L350 411v8l7 3.959Z"
+                    d="M357 421.959v-8L350 410v8l7 3.959Z"
                   />
                   <path
                     id="Vector 174_4"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M364 426.959v-8L357 415v8l7 3.959Z"
+                    d="M364 425.959v-8L357 414v8l7 3.959Z"
                   />
                   <path
                     id="Vector 175_4"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M343 414.959v-8L336 403v8l7 3.959Z"
+                    d="M343 413.959v-8L336 402v8l7 3.959Z"
                   />
                 </g>
                 <g id="Group 15">
@@ -3021,28 +4155,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M350 405.959v-8L343 394v8l7 3.959Z"
+                    d="M350 404.959v-8L343 393v8l7 3.959Z"
                   />
                   <path
                     id="Vector 173_5"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M357 409.959v-8L350 398v8l7 3.959Z"
+                    d="M357 408.959v-8L350 397v8l7 3.959Z"
                   />
                   <path
                     id="Vector 174_5"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M364 413.959v-8L357 402v8l7 3.959Z"
+                    d="M364 412.959v-8L357 401v8l7 3.959Z"
                   />
                   <path
                     id="Vector 175_5"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M343 401.959v-8L336 390v8l7 3.959Z"
+                    d="M343 400.959v-8L336 389v8l7 3.959Z"
                   />
                 </g>
                 <g id="Group 16">
@@ -3051,28 +4185,28 @@ const FigmaIsometric = () => {
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M350 392.959v-8L343 381v8l7 3.959Z"
+                    d="M350 391.959v-8L343 380v8l7 3.959Z"
                   />
                   <path
                     id="Vector 173_6"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M357 396.959v-8L350 385v8l7 3.959Z"
+                    d="M357 395.959v-8L350 384v8l7 3.959Z"
                   />
                   <path
                     id="Vector 174_6"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M364 400.959v-8L357 389v8l7 3.959Z"
+                    d="M364 399.959v-8L357 388v8l7 3.959Z"
                   />
                   <path
                     id="Vector 175_6"
                     fill="#fff"
                     stroke="#5188B9"
                     stroke-linejoin="round"
-                    d="M343 388.959v-8L336 377v8l7 3.959Z"
+                    d="M343 387.959v-8L336 376v8l7 3.959Z"
                   />
                 </g>
                 <path
@@ -3080,7 +4214,7 @@ const FigmaIsometric = () => {
                   fill="#5EA0D9"
                   stroke="#5188B9"
                   stroke-linejoin="round"
-                  d="M381 359.286 364 369v-8l17-9.714v8Z"
+                  d="M381 358.286 364 368v-8l17-9.714v8Z"
                 />
               </g>
               <g id="Tree">
@@ -3091,7 +4225,7 @@ const FigmaIsometric = () => {
                     stroke="#44351A"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m210 570 7 4v-16l-7-4v16Z"
+                    d="m210 569 7 4v-16l-7-4v16Z"
                   />
                   <path
                     id="Vector 173_7"
@@ -3099,7 +4233,7 @@ const FigmaIsometric = () => {
                     stroke="#44351A"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m224 570-7 4v-16l7-4v16Z"
+                    d="m224 569-7 4v-16l7-4v16Z"
                   />
                 </g>
                 <g id="Leaves">
@@ -3109,7 +4243,7 @@ const FigmaIsometric = () => {
                     stroke="#2E4B2B"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m217 566-21-12v-8l21 12v8Z"
+                    d="m217 565-21-12v-8l21 12v8Z"
                   />
                   <path
                     id="Vector 176"
@@ -3117,7 +4251,7 @@ const FigmaIsometric = () => {
                     stroke="#2E4B2B"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m217 566 21-12v-8l-21 12v8Z"
+                    d="m217 565 21-12v-8l-21 12v8Z"
                   />
                   <path
                     id="Vector 179"
@@ -3125,7 +4259,7 @@ const FigmaIsometric = () => {
                     stroke="#2E4B2B"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m217 534-21 12 21 12 21-12-21-12Z"
+                    d="m217 533-21 12 21 12 21-12-21-12Z"
                   />
                   <path
                     id="Vector 178"
@@ -3133,7 +4267,7 @@ const FigmaIsometric = () => {
                     stroke="#2E4B2B"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m217 550 7-4v-8l-7 4v8Z"
+                    d="m217 549 7-4v-8l-7 4v8Z"
                   />
                   <path
                     id="Vector 177"
@@ -3141,7 +4275,7 @@ const FigmaIsometric = () => {
                     stroke="#2E4B2B"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m217 550-7-4v-8l7 4v8Z"
+                    d="m217 549-7-4v-8l7 4v8Z"
                   />
                   <path
                     id="Vector 180"
@@ -3149,7 +4283,7 @@ const FigmaIsometric = () => {
                     stroke="#2E4B2B"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m217 542-7-4 7-4 7 4-7 4Z"
+                    d="m217 541-7-4 7-4 7 4-7 4Z"
                   />
                 </g>
               </g>
@@ -3161,7 +4295,7 @@ const FigmaIsometric = () => {
                     stroke="#44351A"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m245 548 7 4v-8l-7-4v8Z"
+                    d="m245 547 7 4v-8l-7-4v8Z"
                   />
                   <path
                     id="Vector 173_8"
@@ -3169,7 +4303,7 @@ const FigmaIsometric = () => {
                     stroke="#44351A"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m259 548-7 4v-8l7-4v8Z"
+                    d="m259 547-7 4v-8l7-4v8Z"
                   />
                 </g>
                 <g id="Leaves_2">
@@ -3179,7 +4313,7 @@ const FigmaIsometric = () => {
                     stroke="#2E4B2B"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m252 544 7-4v-16l-7 4v16Z"
+                    d="m252 543 7-4v-16l-7 4v16Z"
                   />
                   <path
                     id="Vector 182"
@@ -3187,7 +4321,7 @@ const FigmaIsometric = () => {
                     stroke="#2E4B2B"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m252 544-7-4v-16l7 4v16Z"
+                    d="m252 543-7-4v-16l7 4v16Z"
                   />
                   <path
                     id="Vector 183"
@@ -3195,7 +4329,7 @@ const FigmaIsometric = () => {
                     stroke="#2E4B2B"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m252 528-7-4 7-4 7 4-7 4Z"
+                    d="m252 527-7-4 7-4 7 4-7 4Z"
                   />
                 </g>
               </g>
@@ -3206,7 +4340,7 @@ const FigmaIsometric = () => {
                   stroke="#2E4B2B"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="m242 558 7-4v-8l-7 4v8Z"
+                  d="m242 557 7-4v-8l-7 4v8Z"
                 />
                 <path
                   id="Vector 182_2"
@@ -3214,7 +4348,7 @@ const FigmaIsometric = () => {
                   stroke="#2E4B2B"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="m242 558-7-4v-8l7 4v8Z"
+                  d="m242 557-7-4v-8l7 4v8Z"
                 />
                 <path
                   id="Vector 183_2"
@@ -3222,882 +4356,8 @@ const FigmaIsometric = () => {
                   stroke="#2E4B2B"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="m242 550-7-4 7-4 7 4-7 4Z"
+                  d="m242 549-7-4 7-4 7 4-7 4Z"
                 />
-              </g>
-              <g id="TramTracks">
-                <path
-                  id="Vector 188"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m7 588 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 193"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m35 572 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 198"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m91 540 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 191"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m21 580 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 199"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m77 548 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 194"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m49 564 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 200"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m105 532 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 189"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m0 592 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 195"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m28 576 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 202"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m84 544 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 192"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m14 584 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 203"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m70 552 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 196"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m42 568 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 204"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m98 536 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 190"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="M.5 600.33 7 604l-7 4-6.5-3.67 7-4Z"
-                />
-                <path
-                  id="Vector 188_2"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m119 524 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 193_2"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m147 508 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 198_2"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m203 476 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 191_2"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m133 516 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 199_2"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m189 484 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 194_2"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m161 500 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 200_2"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m217 468 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 189_2"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m112 528 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 195_2"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m140 512 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 202_2"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m196 480 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 192_2"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m126 520 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 203_2"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m182 488 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 196_2"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m154 504 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 204_2"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m210 472 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 188_3"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m231 460 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 193_3"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m259 444 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 198_3"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m301 420 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 191_3"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m245 452 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 199_3"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m287 428 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 194_3"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m273 436 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 200_3"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m315 412 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 189_3"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m224 464 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 195_3"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m252 448 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 202_3"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m294 424 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 192_3"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m238 456 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 203_3"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m280 432 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 196_3"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m266 440 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 204_3"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m308 416 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 197"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m63 556 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 202_4"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m175 492 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 201"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m56 560 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 203_4"
-                  fill="#9A9A9A"
-                  stroke="#7D7D7D"
-                  stroke-linejoin="round"
-                  d="m168 496 14 8-7 4-14-8 7-4Z"
-                />
-                <path
-                  id="Vector 205"
-                  stroke="#2A2A2A"
-                  stroke-linecap="round"
-                  stroke-linejoin="bevel"
-                  d="m0 600 322-184"
-                />
-              </g>
-              <g id="TramTrain">
-                <g id="Tram">
-                  <path
-                    id="Vector 59_2"
-                    fill="#fff"
-                    stroke="#DBDBDB"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="M87 545.379h-6.632l-3.315-1.922v-3.845L93.632 530h6.631l3.316 1.922v3.845L87 545.379Z"
-                  />
-                  <g id="Group 31">
-                    <path
-                      id="Vector 61_2"
-                      fill="#E90000"
-                      stroke="#A00"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M80.368 556.913v-3.844H87v3.844h-6.632Z"
-                    />
-                    <path
-                      id="Vector 62_2"
-                      fill="#E90000"
-                      stroke="#A00"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M103.579 543.457 87 553.069v3.844l16.579-9.612v-3.844Z"
-                    />
-                    <path
-                      id="Vector 63_2"
-                      fill="#E90000"
-                      stroke="#A00"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m77.053 551.146 3.315 1.923v3.844l-3.315-1.922v-3.845Z"
-                    />
-                  </g>
-                  <g id="Group 32">
-                    <path
-                      id="Vector 64_2"
-                      fill="#fff"
-                      stroke="#DBDBDB"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M80.368 553.069v-7.69H87v7.69h-6.632Z"
-                    />
-                    <path
-                      id="Vector 65_2"
-                      fill="#fff"
-                      stroke="#DBDBDB"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M103.579 535.767 87 545.379v7.69l16.579-9.612v-7.69Z"
-                    />
-                    <path
-                      id="Vector 66_2"
-                      fill="#fff"
-                      stroke="#DBDBDB"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m77.053 543.457 3.315 1.922v7.69l-3.315-1.923v-7.689Z"
-                    />
-                  </g>
-                  <g id="Group 30">
-                    <path
-                      id="Vector 69_2"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m92.05 543.457-4.102 2.403v5.766l4.101-2.403v-5.766Z"
-                    />
-                    <path
-                      id="Vector 70_2"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m97.4 540.333-4.103 2.403v5.767L97.4 546.1v-5.767Z"
-                    />
-                    <path
-                      id="Vector 71_2"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m102.749 537.21-4.102 2.402v5.767l4.102-2.403v-5.766Z"
-                    />
-                    <path
-                      id="Vector 67_2"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M86.053 546.34h-4.737v5.767h4.737v-5.767Z"
-                    />
-                    <path
-                      id="Vector 68_2"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m79.73 545.89-2.024-1.232v5.977l2.024 1.232v-5.977Z"
-                    />
-                  </g>
-                  <path
-                    id="Vector 72_2"
-                    fill="#D9D9D9"
-                    stroke="#9A9A9A"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="m83.684 542.015-3.316-1.922 16.58-9.612 3.315 1.922-16.579 9.612Z"
-                  />
-                  <path
-                    id="Vector 73_2"
-                    fill="#D9D9D9"
-                    stroke="#9A9A9A"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="M80.368 541.534v-1.442l3.316 1.923v1.442l-3.316-1.923Z"
-                  />
-                  <path
-                    id="Vector 74_2"
-                    fill="#D9D9D9"
-                    stroke="#9A9A9A"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="m100.263 533.845-16.579 9.612v-1.442l16.579-9.612v1.442Z"
-                  />
-                </g>
-                <g id="Tram_2">
-                  <path
-                    id="Vector 59_3"
-                    fill="#fff"
-                    stroke="#DBDBDB"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="M62.474 559.583h-6.632l-3.316-1.922v-3.845l16.58-9.612h6.63l3.317 1.923v3.844l-16.58 9.612Z"
-                  />
-                  <g id="Group 31_2">
-                    <path
-                      id="Vector 61_3"
-                      fill="#E90000"
-                      stroke="#A00"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M55.842 571.118v-3.845h6.632v3.845h-6.632Z"
-                    />
-                    <path
-                      id="Vector 62_3"
-                      fill="#E90000"
-                      stroke="#A00"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m79.053 557.661-16.58 9.612v3.845l16.58-9.612v-3.845Z"
-                    />
-                    <path
-                      id="Vector 63_3"
-                      fill="#E90000"
-                      stroke="#A00"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m52.526 565.351 3.316 1.922v3.845l-3.316-1.923v-3.844Z"
-                    />
-                  </g>
-                  <g id="Group 32_2">
-                    <path
-                      id="Vector 64_3"
-                      fill="#fff"
-                      stroke="#DBDBDB"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M55.842 567.273v-7.69h6.632v7.69h-6.632Z"
-                    />
-                    <path
-                      id="Vector 65_3"
-                      fill="#fff"
-                      stroke="#DBDBDB"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m79.053 549.971-16.58 9.612v7.69l16.58-9.612v-7.69Z"
-                    />
-                    <path
-                      id="Vector 66_3"
-                      fill="#fff"
-                      stroke="#DBDBDB"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m52.526 557.661 3.316 1.922v7.69l-3.316-1.922v-7.69Z"
-                    />
-                  </g>
-                  <g id="Group 30_2">
-                    <path
-                      id="Vector 69_3"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m67.523 557.661-4.102 2.403v5.766l4.102-2.402v-5.767Z"
-                    />
-                    <path
-                      id="Vector 70_3"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m72.873 554.537-4.102 2.403v5.767l4.102-2.403v-5.767Z"
-                    />
-                    <path
-                      id="Vector 71_3"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m78.223 551.414-4.102 2.403v5.766l4.102-2.403v-5.766Z"
-                    />
-                    <path
-                      id="Vector 67_3"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M61.526 560.545H56.79v5.767h4.737v-5.767Z"
-                    />
-                    <path
-                      id="Vector 68_3"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m55.203 560.095-2.024-1.232v5.976l2.024 1.232v-5.976Z"
-                    />
-                  </g>
-                  <path
-                    id="Vector 72_3"
-                    fill="#D9D9D9"
-                    stroke="#9A9A9A"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="m59.158 556.219-3.316-1.922 16.579-9.612 3.316 1.922-16.58 9.612Z"
-                  />
-                  <path
-                    id="Vector 73_3"
-                    fill="#D9D9D9"
-                    stroke="#9A9A9A"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="M55.842 555.739v-1.442l3.316 1.922v1.442l-3.316-1.922Z"
-                  />
-                  <path
-                    id="Vector 74_3"
-                    fill="#D9D9D9"
-                    stroke="#9A9A9A"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="m75.737 548.049-16.58 9.612v-1.442l16.58-9.612v1.442Z"
-                  />
-                </g>
-                <g id="Tram_3">
-                  <path
-                    id="Vector 59_4"
-                    fill="#fff"
-                    stroke="#DBDBDB"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="M37.947 573.788h-6.631L28 571.865v-3.844l16.579-9.612h6.632l3.315 1.922v3.845l-16.579 9.612Z"
-                  />
-                  <g id="Group 31_3">
-                    <path
-                      id="Vector 61_4"
-                      fill="#E90000"
-                      stroke="#A00"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M31.316 585.322v-3.845h6.631v3.845h-6.631Z"
-                    />
-                    <path
-                      id="Vector 62_4"
-                      fill="#E90000"
-                      stroke="#A00"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m54.526 571.865-16.579 9.612v3.845l16.58-9.612v-3.845Z"
-                    />
-                    <path
-                      id="Vector 63_4"
-                      fill="#E90000"
-                      stroke="#A00"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m28 579.555 3.316 1.922v3.845L28 583.4v-3.845Z"
-                    />
-                  </g>
-                  <g id="Group 32_3">
-                    <path
-                      id="Vector 64_4"
-                      fill="#fff"
-                      stroke="#DBDBDB"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M31.316 581.477v-7.689h6.631v7.689h-6.631Z"
-                    />
-                    <path
-                      id="Vector 65_4"
-                      fill="#fff"
-                      stroke="#DBDBDB"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m54.526 564.176-16.579 9.612v7.689l16.58-9.612v-7.689Z"
-                    />
-                    <path
-                      id="Vector 66_4"
-                      fill="#fff"
-                      stroke="#DBDBDB"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m28 571.865 3.316 1.923v7.689L28 579.555v-7.69Z"
-                    />
-                  </g>
-                  <g id="Group 30_3">
-                    <path
-                      id="Vector 69_4"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m42.997 571.865-4.102 2.403v5.767l4.101-2.403v-5.767Z"
-                    />
-                    <path
-                      id="Vector 70_4"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m48.347 568.742-4.102 2.403v5.766l4.101-2.403v-5.766Z"
-                    />
-                    <path
-                      id="Vector 71_4"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m53.697 565.618-4.102 2.403v5.767l4.101-2.403v-5.767Z"
-                    />
-                    <path
-                      id="Vector 67_4"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M37 574.749h-4.737v5.767H37v-5.767Z"
-                    />
-                    <path
-                      id="Vector 68_4"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m30.677 574.299-2.024-1.232v5.977l2.024 1.232v-5.977Z"
-                    />
-                  </g>
-                  <path
-                    id="Vector 72_4"
-                    fill="#D9D9D9"
-                    stroke="#9A9A9A"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="m34.632 570.424-3.316-1.923 16.579-9.612 3.316 1.923-16.58 9.612Z"
-                  />
-                  <path
-                    id="Vector 73_4"
-                    fill="#D9D9D9"
-                    stroke="#9A9A9A"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="M31.316 569.943v-1.442l3.316 1.922v1.442l-3.316-1.922Z"
-                  />
-                  <path
-                    id="Vector 74_4"
-                    fill="#D9D9D9"
-                    stroke="#9A9A9A"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="m51.21 562.253-16.578 9.612v-1.441l16.579-9.612v1.441Z"
-                  />
-                </g>
-                <g id="Tram_4">
-                  <path
-                    id="Vector 59_5"
-                    fill="#fff"
-                    stroke="#DBDBDB"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="M13.421 587.992H6.79l-3.315-1.922v-3.845l16.579-9.612h6.631L30 574.535v3.845l-16.579 9.612Z"
-                  />
-                  <g id="Group 31_4">
-                    <path
-                      id="Vector 61_5"
-                      fill="#E90000"
-                      stroke="#A00"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M6.79 599.526v-3.844h6.631v3.844H6.79Z"
-                    />
-                    <path
-                      id="Vector 62_5"
-                      fill="#E90000"
-                      stroke="#A00"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m30 586.07-16.579 9.612v3.844L30 589.914v-3.844Z"
-                    />
-                    <path
-                      id="Vector 63_5"
-                      fill="#E90000"
-                      stroke="#A00"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m3.474 593.759 3.315 1.923v3.844l-3.315-1.922v-3.845Z"
-                    />
-                  </g>
-                  <g id="Group 32_4">
-                    <path
-                      id="Vector 64_5"
-                      fill="#fff"
-                      stroke="#DBDBDB"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M6.79 595.682v-7.69h6.631v7.69H6.79Z"
-                    />
-                    <path
-                      id="Vector 65_5"
-                      fill="#fff"
-                      stroke="#DBDBDB"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m30 578.38-16.579 9.612v7.69L30 586.07v-7.69Z"
-                    />
-                    <path
-                      id="Vector 66_5"
-                      fill="#fff"
-                      stroke="#DBDBDB"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m3.474 586.07 3.315 1.922v7.69l-3.315-1.923v-7.689Z"
-                    />
-                  </g>
-                  <g id="Group 30_4">
-                    <path
-                      id="Vector 69_5"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m18.47 586.07-4.101 2.403v5.766l4.101-2.403v-5.766Z"
-                    />
-                    <path
-                      id="Vector 70_5"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m23.82 582.946-4.102 2.403v5.767l4.102-2.403v-5.767Z"
-                    />
-                    <path
-                      id="Vector 71_5"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m29.17 579.823-4.102 2.402v5.767l4.102-2.403v-5.766Z"
-                    />
-                    <path
-                      id="Vector 67_5"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M12.474 588.953H7.737v5.767h4.737v-5.767Z"
-                    />
-                    <path
-                      id="Vector 68_5"
-                      fill="#EAF1FF"
-                      stroke="#B1B6C1"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="m6.15 588.503-2.023-1.232v5.977l2.024 1.232v-5.977Z"
-                    />
-                  </g>
-                  <path
-                    id="Vector 72_5"
-                    fill="#D9D9D9"
-                    stroke="#9A9A9A"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="m10.105 584.628-3.316-1.923 16.58-9.611 3.315 1.922-16.579 9.612Z"
-                  />
-                  <path
-                    id="Vector 73_5"
-                    fill="#D9D9D9"
-                    stroke="#9A9A9A"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="M6.79 584.147v-1.442l3.315 1.923v1.442l-3.316-1.923Z"
-                  />
-                  <path
-                    id="Vector 74_5"
-                    fill="#D9D9D9"
-                    stroke="#9A9A9A"
-                    stroke-linejoin="round"
-                    stroke-width=".5"
-                    d="m26.684 576.458-16.579 9.612v-1.442l16.58-9.612v1.442Z"
-                  />
-                  <g id="extrude-group">
-                    <g id="side-faces_3">
-                      <path
-                        id="side-face_3"
-                        fill="#949494"
-                        fill-rule="evenodd"
-                        stroke="#4C4C4C"
-                        stroke-linejoin="round"
-                        stroke-width=".5"
-                        d="M3.3 595.824c.186-.109.442-.093.726.073.566.331 1.025 1.138 1.025 1.802 0 .332-.115.565-.3.674l.945-.554c.185-.109.3-.342.3-.674 0-.663-.459-1.47-1.025-1.802-.284-.166-.54-.181-.726-.073l-.945.554Z"
-                        clip-rule="evenodd"
-                      />
-                    </g>
-                    <path
-                      id="cap-face_3"
-                      fill="#949494"
-                      stroke="#4C4C4C"
-                      stroke-linejoin="round"
-                      stroke-width=".5"
-                      d="M5.051 597.699c0 .663-.459.932-1.025.601-.567-.332-1.026-1.139-1.026-1.803 0-.663.46-.932 1.026-.6.566.331 1.025 1.138 1.025 1.802Z"
-                    />
-                  </g>
-                </g>
               </g>
             </g>
           </g>
