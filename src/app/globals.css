@@ -256,7 +256,12 @@ code {
   background-size: 81px 46px;
 }
 
-#IslWGroup {
+.makeBright {
+  filter: brightness(150%);
+  border: 10px solid black;
+}
+
+/* #IslWGroup {
   transition: all 0.3s;
   transform-origin: center center;
 }
@@ -285,4 +290,4 @@ code {
   scale: 101%;
   filter:saturate(50%);
   rotate: 1deg;
-}
+} */

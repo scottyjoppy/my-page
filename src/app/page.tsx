@@ -5,6 +5,7 @@ import GridSection from "@/components/GridSection";
 import GridSectionCenterFull from "@/components/GridSectionCenterFull";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   // const postMetadata = getPostMetadata();
@@ -12,12 +13,42 @@ export default function Home() {
   //   <PostPreview key={postMetadata[0].slug} {...postMetadata[0]} />
   // );
 
+  const [zoomClass, setZoomClass] = useState("");
+  const handleIslChange = (isl: string | null): void => {
+    // switch (isl) {
+    //   case "isl-w":
+    //     setZoomClass("scale-[700%] translate-x-[1600px] translate-y-[1000px]");
+    //     break;
+    //   case "isl-s":
+    //     setZoomClass("scale-[700%] translate-x-[1900px] translate-y-[1000px]");
+    //     break;
+    //   default:
+    //     setZoomClass("");
+    //     break;
+    // }
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && zoomClass !== "") {
+        handleIslChange("");
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  });
+
   return (
     <>
-    {/* <div className="background-grid w-screen h-screen z-10 absolute top-0"></div> */}
+      {/* <div className="background-grid w-screen h-screen z-10 absolute top-0"></div> */}
       <section className="fixed z-0 w-full h-full overflow-hidden bg-[#143D60]">
-        <div className="relative w-full h-full flex justify-center items-center active:scale-[700%] origin-left active:-translate-x-[3000px] active:translate-y-[1200px] transition-all duration-[2s]">
-          <FigmaIsometric />
+        <div
+          className={`relative w-full h-full flex justify-center items-center transition-all duration-[1s] origin-center ${zoomClass}`}
+        >
+          <FigmaIsometric onIslChange={handleIslChange} />
         </div>
       </section>
       <section className="h-screen"></section>
