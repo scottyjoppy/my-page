@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
-const IsometricMap = () => {
+interface IsoMapProps {
+  onActiveIsl: (value: string | null) => void
+}
+
+const IsometricMap: React.FC<IsoMapProps> = ({ onActiveIsl }) => {
   const [activeIsl, setActiveIsl] = useState<string | null>(null);
   const [zoomViewBox, setZoomViewBox] = useState("0 0 1288 1344");
   const svgRef = useRef<SVGSVGElement | null>(null);
@@ -12,9 +16,40 @@ const IsometricMap = () => {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && activeIsl !== "") {
-        setZoomViewBox("0 0 1288 1344");
-        setActiveIsl(null);
+      const moveWithKeys = (direction: string) => {
+        const [x, y, w, h] = zoomViewBox.split(" ").map(Number);
+        switch (direction) {
+          case "up":
+            return `${x} ${y - 100} ${w} ${h}`;
+          case "down":
+            return `${x} ${y + 100} ${w} ${h}`;
+          case "left":
+            return `${x - 100} ${y} ${w} ${h}`;
+          case "right":
+            return `${x + 100} ${y} ${w} ${h}`;
+        }
+        return zoomViewBox
+      };
+      if (activeIsl !== null) {
+        e.preventDefault();
+        switch (e.key) {
+          case "Escape":
+            setZoomViewBox("0 0 1288 1344");
+            setActiveIsl(null);
+            break;
+          case "ArrowDown":
+            setZoomViewBox(moveWithKeys("down"));
+            break;
+          case "ArrowRight":
+            setZoomViewBox(moveWithKeys("right"));
+            break;
+          case "ArrowLeft":
+            setZoomViewBox(moveWithKeys("left"));
+            break;
+          case "ArrowUp":
+            setZoomViewBox(moveWithKeys("up"));
+            break;
+        }
       }
     };
     window.addEventListener("keydown", handleKeyDown);
@@ -30,6 +65,7 @@ const IsometricMap = () => {
     } else {
       setZoomViewBox("0 0 1288 1344");
     }
+    onActiveIsl(activeIsl)
   }, [activeIsl]);
 
   const duration = 1000; // in ms
