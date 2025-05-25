@@ -1,19 +1,28 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-interface IslNameProps {
-  onIslChange: (isl: string | null) => void;
-}
-
-const FigmaIsometric = ({ onIslChange }: IslNameProps) => {
+const IsometricMap = () => {
   const [activeIsl, setActiveIsl] = useState<string | null>(null);
+  const [zoomViewBox, setZoomViewBox] = useState("0 0 1288 1344");
+  const svgRef = useRef<SVGSVGElement | null>(null);
 
   const toggleIsl = (isl: string) => {
     const newIsl = activeIsl === isl ? null : isl;
     setActiveIsl(newIsl);
-    onIslChange(newIsl);
   };
 
-  const [zoomViewBox, setZoomViewBox] = useState("0 0 1288 1344");
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && activeIsl !== "") {
+        setZoomViewBox("0 0 1288 1344");
+        setActiveIsl(null);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  });
 
   useEffect(() => {
     if (activeIsl === "isl-w") {
@@ -21,8 +30,48 @@ const FigmaIsometric = ({ onIslChange }: IslNameProps) => {
     } else {
       setZoomViewBox("0 0 1288 1344");
     }
-    console.log(activeIsl)
   }, [activeIsl]);
+
+  const duration = 1000; // in ms
+  const fps = 60;
+
+  useEffect(() => {
+    const svg = svgRef.current;
+    if (!svg) return;
+
+    const currentViewBoxStr = svg.getAttribute("viewBox") || zoomViewBox;
+    const currentViewBox = currentViewBoxStr.split(" ").map(Number);
+    const targetViewBox = zoomViewBox.split(" ").map(Number);
+
+    if (currentViewBox.toString() === targetViewBox.toString()) return;
+
+    const steps = Math.floor((duration / 1000) * fps);
+    let frame = 0;
+
+    const easeInOutSine = (t: number) => -(Math.cos(Math.PI * t) - 1) / 2;
+
+    const step = () => {
+      if (!svg) return;
+
+      if (frame >= steps) {
+        svg.setAttribute("viewBox", targetViewBox.join(" "));
+        return;
+      }
+
+      const progress = easeInOutSine(frame / steps);
+
+      const interpolated = currentViewBox.map(
+        (start, i) => start + (targetViewBox[i] - start) * progress
+      );
+
+      svg.setAttribute("viewBox", interpolated.join(" "));
+      frame++;
+      requestAnimationFrame(step);
+    };
+
+    requestAnimationFrame(step);
+  }, [zoomViewBox]);
+
   return (
     // <svg
     //   xmlns="http://www.w3.org/2000/svg"
@@ -46,10 +95,11 @@ const FigmaIsometric = ({ onIslChange }: IslNameProps) => {
     //               </textPath>
     //             </text>
     <svg
+      ref={svgRef}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      // viewBox="0 0 1288 1344"
-      viewBox={zoomViewBox}
+      viewBox="0 0 1288 1344"
+      // viewBox={zoomViewBox}
       className="w-full h-full"
     >
       <g id="SquareMask">
@@ -74,7 +124,7 @@ const FigmaIsometric = ({ onIslChange }: IslNameProps) => {
                 height="1344"
                 fill="#143D60"
               />
-              <g id="IslS" onClick={() => onIslChange("isl-s")}>
+              <g id="IslS" onClick={() => setActiveIsl("isl-s")}>
                 <g id="IslSDepth" opacity=".65">
                   <path
                     id="Vector 27"
@@ -260,7 +310,7 @@ const FigmaIsometric = ({ onIslChange }: IslNameProps) => {
                   d="M1288 1039v112l-28 16 14 8-42 24 14 8-28 16 14 8-42 24-14-8-42 24-14-8-42 24-14-8-42 24-14-8-56 32-14-8-42 24H308l14-8-14-8 28-16-14-8 42-24-14-8 42-24-14-8 56-32-14-8 42-24-14-8 28-16-14-8 14-8-28-16 14-8-28-16 14-8-14-8 28-16-14-8 42-24 14 8 56-32 14 8 14-8 28 16 14-8 14 8 70-40 14 8 112-64 14 8 42-24 14 8 28-16 14 8 14-8 28 16 14-8 56 32 14-8 84 48 14-8 112 64Z"
                 />
               </g>
-              <g id="IslE" onClick={() => onIslChange("isl-e")}>
+              <g id="IslE" onClick={() => setActiveIsl("isl-e")}>
                 <g id="IslEDepth" opacity=".65">
                   <path
                     id="Vector 1"
@@ -4427,4 +4477,4 @@ const FigmaIsometric = ({ onIslChange }: IslNameProps) => {
   );
 };
 
-export default FigmaIsometric;
+export default IsometricMap;
