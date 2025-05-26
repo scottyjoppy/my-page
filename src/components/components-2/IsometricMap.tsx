@@ -1,12 +1,16 @@
+import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 
 interface IsoMapProps {
-  onActiveIsl: (value: string | null) => void
+  onActiveIsl: (value: string | null) => void;
 }
 
 const IsometricMap: React.FC<IsoMapProps> = ({ onActiveIsl }) => {
   const [activeIsl, setActiveIsl] = useState<string | null>(null);
   const [zoomViewBox, setZoomViewBox] = useState("0 0 1288 1344");
+  const [animationTrigger, setAnimationTrigger] = useState<
+    "keyboard" | "default" | null
+  >(null);
   const svgRef = useRef<SVGSVGElement | null>(null);
 
   const toggleIsl = (isl: string) => {
@@ -16,40 +20,39 @@ const IsometricMap: React.FC<IsoMapProps> = ({ onActiveIsl }) => {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      const moveWithKeys = (direction: string) => {
-        const [x, y, w, h] = zoomViewBox.split(" ").map(Number);
-        switch (direction) {
-          case "up":
-            return `${x} ${y - 100} ${w} ${h}`;
-          case "down":
-            return `${x} ${y + 100} ${w} ${h}`;
-          case "left":
-            return `${x - 100} ${y} ${w} ${h}`;
-          case "right":
-            return `${x + 100} ${y} ${w} ${h}`;
-        }
-        return zoomViewBox
-      };
       if (activeIsl !== null) {
-        e.preventDefault();
-        switch (e.key) {
-          case "Escape":
-            setZoomViewBox("0 0 1288 1344");
-            setActiveIsl(null);
-            break;
-          case "ArrowDown":
-            setZoomViewBox(moveWithKeys("down"));
-            break;
-          case "ArrowRight":
-            setZoomViewBox(moveWithKeys("right"));
-            break;
-          case "ArrowLeft":
-            setZoomViewBox(moveWithKeys("left"));
-            break;
-          case "ArrowUp":
-            setZoomViewBox(moveWithKeys("up"));
-            break;
-        }
+        setZoomViewBox((prevZoomViewBox) => {
+          const [x, y, w, h] = prevZoomViewBox.split(" ").map(Number);
+          let newViewBoxValue: string | null = null;
+
+          switch (e.key) {
+            case "Escape":
+              setZoomViewBox("0 0 1288 1344");
+              setActiveIsl(null);
+              setAnimationTrigger("default"); // Escape returns to default, so use 'default' duration
+              return prevZoomViewBox; // Return prev here as it's set above
+            case "ArrowDown":
+              newViewBoxValue = `${x} ${y + 50} ${w} ${h}`;
+              break;
+            case "ArrowRight":
+              newViewBoxValue = `${x + 50} ${y} ${w} ${h}`;
+              break;
+            case "ArrowLeft":
+              newViewBoxValue = `${x - 50} ${y} ${w} ${h}`;
+              break;
+            case "ArrowUp":
+              newViewBoxValue = `${x} ${y - 50} ${w} ${h}`;
+              break;
+          }
+
+          if (newViewBoxValue) {
+            e.preventDefault();
+            setAnimationTrigger("keyboard"); // Mark as keyboard-triggered
+            return newViewBoxValue;
+          }
+
+          return prevZoomViewBox;
+        });
       }
     };
     window.addEventListener("keydown", handleKeyDown);
@@ -57,56 +60,36 @@ const IsometricMap: React.FC<IsoMapProps> = ({ onActiveIsl }) => {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  });
+  }, [activeIsl]);
 
   useEffect(() => {
     if (activeIsl === "isl-w") {
       setZoomViewBox("200 300 300 300");
-    } else {
+      setAnimationTrigger("default"); // This is a default animation
+    } else if (activeIsl === null) {
       setZoomViewBox("0 0 1288 1344");
+      setAnimationTrigger("default"); // This is a default animation
     }
-    onActiveIsl(activeIsl)
-  }, [activeIsl]);
-
-  const duration = 1000; // in ms
-  const fps = 60;
+    onActiveIsl(activeIsl);
+  }, [activeIsl, onActiveIsl]);
 
   useEffect(() => {
     const svg = svgRef.current;
     if (!svg) return;
 
-    const currentViewBoxStr = svg.getAttribute("viewBox") || zoomViewBox;
-    const currentViewBox = currentViewBoxStr.split(" ").map(Number);
-    const targetViewBox = zoomViewBox.split(" ").map(Number);
+    gsap.killTweensOf(svg);
 
-    if (currentViewBox.toString() === targetViewBox.toString()) return;
+    const duration = animationTrigger === "keyboard" ? 0.1 : 1; // Shorter for keyboard, longer for default transitions
 
-    const steps = Math.floor((duration / 1000) * fps);
-    let frame = 0;
-
-    const easeInOutSine = (t: number) => -(Math.cos(Math.PI * t) - 1) / 2;
-
-    const step = () => {
-      if (!svg) return;
-
-      if (frame >= steps) {
-        svg.setAttribute("viewBox", targetViewBox.join(" "));
-        return;
-      }
-
-      const progress = easeInOutSine(frame / steps);
-
-      const interpolated = currentViewBox.map(
-        (start, i) => start + (targetViewBox[i] - start) * progress
-      );
-
-      svg.setAttribute("viewBox", interpolated.join(" "));
-      frame++;
-      requestAnimationFrame(step);
-    };
-
-    requestAnimationFrame(step);
-  }, [zoomViewBox]);
+    gsap.to(svg, {
+      duration: duration,
+      ease: "power3.inOut",
+      attr: {
+        viewBox: zoomViewBox,
+      },
+      overwrite: true,
+    });
+  }, [zoomViewBox, animationTrigger]); // Now also depends on animationTrigger
 
   return (
     // <svg
@@ -134,8 +117,8 @@ const IsometricMap: React.FC<IsoMapProps> = ({ onActiveIsl }) => {
       ref={svgRef}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      viewBox="0 0 1288 1344"
       // viewBox={zoomViewBox}
+      viewBox="0 0 1288 1344"
       className="w-full h-full"
     >
       <g id="SquareMask">

@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
-  const [activeIsl, setActiveIsl] = useState<string | null>("");
+  const [activeIsl, setActiveIsl] = useState<string | null>(null);
   const handleActiveIsl = (value: string | null) => {
     setActiveIsl(value);
     console.log(value)
