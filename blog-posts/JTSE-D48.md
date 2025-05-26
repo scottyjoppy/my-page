@@ -1,5 +1,5 @@
 ---
-title: "Day 47: React Hooks"
+title: "Day 48: React Hooks"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
 date: "May 24, 2025"
