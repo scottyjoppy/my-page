@@ -2,7 +2,7 @@
 title: "Day 49: Animating the SVG"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
-date: "May 24, 2025"
+date: "May 25, 2025"
 description: "My process in animating the SVG image."
 ---
 
