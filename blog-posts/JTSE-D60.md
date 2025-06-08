@@ -1,9 +1,9 @@
 ---
-title: "Day 60: "
+title: "Day 60: Sorting & Frequency"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
 date: "June 5, 2025"
-description: "."
+description: "Adding sorting functions and modifying the frequency settings."
 ---
 
 Hello,
