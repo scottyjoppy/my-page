@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import fs from "fs";
 import matter from "gray-matter";
 import "highlight.js/styles/monokai.css";
@@ -22,7 +24,7 @@ export const generateStaticParams = async () => {
 };
 
 interface Props {
-  params: { slug: string };
+  params: { slug: any };
 }
 
 export default async function BlogPage({ params }: Props) {
