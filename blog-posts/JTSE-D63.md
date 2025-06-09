@@ -1,9 +1,9 @@
 ---
-title: "Day 63: "
+title: "Day 63: Responsive Layout"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
 date: "June 8, 2025"
-description: "."
+description: "Adding in styles to better support various device screens."
 ---
 
 Hello,
