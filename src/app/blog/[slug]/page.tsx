@@ -21,13 +21,13 @@ export const generateStaticParams = async () => {
   }));
 };
 
-interface PageProps {
+interface Props {
   params: { slug: string };
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
-const BlogPage = (props: PageProps) => {
-  const slug = props.params.slug;
+export default async function BlogPage({ params, searchParams }: Props) {
+  const slug = params.slug;
   const post = getPostContent(slug);
   return (
     <>
@@ -70,6 +70,4 @@ const BlogPage = (props: PageProps) => {
       </div>
     </>
   );
-};
-
-export default BlogPage;
+}
