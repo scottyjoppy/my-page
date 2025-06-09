@@ -21,13 +21,12 @@ export const generateStaticParams = async () => {
   }));
 };
 
-interface BlogPageProps {
-  params: {
-    slug: string;
-  };
+interface PageProps {
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
-const BlogPage = (props: BlogPageProps) => {
+const BlogPage = (props: PageProps) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
   return (
