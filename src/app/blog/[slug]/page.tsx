@@ -23,10 +23,9 @@ export const generateStaticParams = async () => {
 
 interface Props {
   params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export default async function BlogPage({ params, searchParams }: Props) {
+export default async function BlogPage({ params }: Props) {
   const slug = params.slug;
   const post = getPostContent(slug);
   return (
