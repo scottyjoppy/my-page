@@ -13,8 +13,8 @@ function About() {
       <GridSection>
         <GridSectionCenterFull colSpan={{ lg: 2, md: 1 }}>
           <p className="max-w-sm text-foreground">
-            My name is Alexander Delisle. I'm 24, and I relocated to Vienna from
-            Canada last year. I'm transitioning into software engineering and am
+            My name is Alexander Delisle. I&apos;m 24, and I relocated to Vienna from
+            Canada last year. I&apos;m transitioning into software engineering and am
             currently educating myself on the programming fundamentals,
             security, web design, and data storage.
           </p>
@@ -50,7 +50,7 @@ function About() {
           <p className="max-w-sm text-foreground">
             Aside from film, music has always been an important part of my life.
             I love piano and have been making songs from a very young age. In
-            and out of school I've grown to love making scores for short films.
+            and out of school I&apos;ve grown to love making scores for short films.
             My final project was a{" "}
             <Link href="https://vimeo.com/720844027" target="_blank" className="font-bold hover:underline">documentary</Link> about me
             making a song.

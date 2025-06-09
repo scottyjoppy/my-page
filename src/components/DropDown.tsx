@@ -11,7 +11,7 @@ import { Link } from "lucide-react";
 import { MenuItem } from "./navbar/types";
 
 interface DropdownProps {
-  label: String;
+  label: string;
   items: MenuItem[];
 }
 

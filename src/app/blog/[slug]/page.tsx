@@ -21,7 +21,13 @@ export const generateStaticParams = async () => {
   }));
 };
 
-const BlogPage = (props: any) => {
+interface BlogPageProps {
+  params: {
+    slug: string;
+  };
+}
+
+const BlogPage = (props: BlogPageProps) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
   return (
@@ -41,21 +47,21 @@ const BlogPage = (props: any) => {
             remarkPlugins={[remarkBreaks]} // Handle line breaks (two spaces or <br>)
             rehypePlugins={[rehypeRaw, rehypeHighlight]} // Render raw HTML (e.g., <u>) and syntax highlight code
             components={{
-              u: ({ node, ...props }) => <u {...props} />, // Custom component for <u> tag
-              a: ({ node, ...props }) => <a target="_blank" {...props} />, // Add target="_blank" to links
-              ul: ({ node, ...props }) => (
+              u: ({ ...props }) => <u {...props} />, // Custom component for <u> tag
+              a: ({ ...props }) => <a target="_blank" {...props} />, // Add target="_blank" to links
+              ul: ({ ...props }) => (
                 <ul
                   className="list-disc list-inside my-6 space-y-2"
                   {...props}
                 />
               ),
-              ol: ({ node, ...props }) => (
+              ol: ({ ...props }) => (
                 <ol
                   className="list-decimal list-inside my-6 space-y-2"
                   {...props}
                 />
               ),
-              li: ({ node, ...props }) => <li className="ml-4" {...props} />,
+              li: ({ ...props }) => <li className="ml-4" {...props} />,
             }}
             skipHtml={false}
           >

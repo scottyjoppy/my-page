@@ -18,9 +18,10 @@ export default function Home() {
         <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
           <div className="h-full w-full flex flex-col items-center justify-center">
             <div className="flex flex-col gap-4 md:text-right text-center">
-              <h1>Welcome</h1>
+              <h1>Welcome</h1>{" "}
               <p className="text-secondary">
-                My name is Alexander Delisle, <br /> and I'm a Software Engineer
+                My name is Alexander Delisle, <br /> and I&apos;m a Software
+                Engineer
               </p>
             </div>
           </div>
@@ -41,7 +42,9 @@ export default function Home() {
             <h2 className="text-2xl">Projects</h2>
             <div className="flex gap-3 items-center">
               <p>Current: </p>
-              <Link href="https://github.com/scottyjoppy/my-page"><Button className="hover:cursor-pointer">My-Page</Button></Link>
+              <Link href="https://github.com/scottyjoppy/my-page">
+                <Button className="hover:cursor-pointer">My-Page</Button>
+              </Link>
             </div>
             <div className="flex gap-3">
               <p>Desc: </p>
