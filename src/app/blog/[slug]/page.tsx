@@ -1,6 +1,3 @@
-// @ts-nocheck
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import fs from "fs";
 import matter from "gray-matter";
 import "highlight.js/styles/monokai.css";
@@ -30,6 +27,8 @@ interface Props {
 
 export default async function BlogPage({ params }: Props) {
   const slug = params.slug;
+const BlogPage = (props: any) => {
+  const slug = props.params.slug;
   const post = getPostContent(slug);
   return (
     <>
@@ -48,21 +47,21 @@ export default async function BlogPage({ params }: Props) {
             remarkPlugins={[remarkBreaks]} // Handle line breaks (two spaces or <br>)
             rehypePlugins={[rehypeRaw, rehypeHighlight]} // Render raw HTML (e.g., <u>) and syntax highlight code
             components={{
-              u: ({ ...props }) => <u {...props} />, // Custom component for <u> tag
-              a: ({ ...props }) => <a target="_blank" {...props} />, // Add target="_blank" to links
-              ul: ({ ...props }) => (
+              u: ({ node, ...props }) => <u {...props} />, // Custom component for <u> tag
+              a: ({ node, ...props }) => <a target="_blank" {...props} />, // Add target="_blank" to links
+              ul: ({ node, ...props }) => (
                 <ul
                   className="list-disc list-inside my-6 space-y-2"
                   {...props}
                 />
               ),
-              ol: ({ ...props }) => (
+              ol: ({ node, ...props }) => (
                 <ol
                   className="list-decimal list-inside my-6 space-y-2"
                   {...props}
                 />
               ),
-              li: ({ ...props }) => <li className="ml-4" {...props} />,
+              li: ({ node, ...props }) => <li className="ml-4" {...props} />,
             }}
             skipHtml={false}
           >

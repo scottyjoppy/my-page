@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import React from "react";
+import Texture from "./Texture";
 
 interface GridTitleProps {
   children: React.ReactNode;
@@ -18,7 +19,9 @@ const GridTitleSection = ({ children, className }: GridTitleProps) => {
       )}
     >
       <div className="min-h-[200px] row-span-2 flex flex-col items-center justify-center container mx-auto">
-        <div className="items-start">{children}</div>
+        <div className="items-start">
+          {children}
+        </div>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import { Terminal } from "lucide-react";
 
-import { Alert, AlertTitle } from "@/components/ui/alert";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 interface Messages {
   message: string;
