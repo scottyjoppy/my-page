@@ -21,12 +21,6 @@ export const generateStaticParams = async () => {
   }));
 };
 
-interface Props {
-  params: { slug: any };
-}
-
-export default async function BlogPage({ params }: Props) {
-  const slug = params.slug;
 const BlogPage = (props: any) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
@@ -71,4 +65,6 @@ const BlogPage = (props: any) => {
       </div>
     </>
   );
-}
+};
+
+export default BlogPage;
