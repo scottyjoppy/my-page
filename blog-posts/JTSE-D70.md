@@ -22,7 +22,7 @@ The main thing I wanted to do today, is deal with the edge case that someone cle
 
 <br>
 
-This is a common issue. It happens because on mount, my current project uses javascript to pull the data in the users cookei jar, and then saves them to use in components. Once things are mounted, there are no further checks to re-validate tokens. So while there are a couple solutions, the one I went with is a simple context component. In a useEffect hook I check if there is an auth-token in my cookie jar. Simple as that, if there is, do nothing, if not, logout and redirect the user.
+This is a common issue. It happens because on mount, my current project uses JavaScript to pull the data in the users cookie jar, and then saves them to use in components. Once things are mounted, there are no further checks to re-validate tokens. So while there are a couple solutions, the one I went with is a simple context component. In a useEffect hook I check if there is an auth-token in my cookie jar. Simple as that, if there is, do nothing, if not, logout and redirect the user.
 
 <br>
 
