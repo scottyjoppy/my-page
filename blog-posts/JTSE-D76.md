@@ -3,7 +3,7 @@ title: "Day 76: RLS - The Solution"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
 date: "June 21, 2025"
-description: "Using RLS to fix my sorting issues"
+description: "Using RLS to fix my sorting issues."
 ---
 
 Hello friends,
@@ -26,7 +26,7 @@ There's so much in regards to using GitHub that I'm so far from understanding. T
 
 <br>
 
-Supabase's AI agent was super helpful in spinning up a few policies for my RLS. If I chose not to use AI, there's also a few common templates to pick from. All-in-all it worked like a charm. Once the policies were set I didn't have to change much of my code at all. If anything I was deleting more the code I had to select only user-specific data from the database. Instead just keeping a consistent select all. Then all that logic of separating data was handled by the row level security. I'm thrilled I could find such a simple solution to this seemingly complicated problem. 
+Supabase's AI agent was super helpful in spinning up a few policies for my RLS. If I chose not to use AI, there's also a few common templates to pick from. All-in-all it worked like a charm. Once the policies were set I didn't have to change much of my code at all. If anything I was deleting more the code I had to select only user-specific data from the database. Instead just keeping a consistent select all. Then all that logic of separating data was handled by the row level security. I'm thrilled I could find such a simple solution to this seemingly complicated problem.
 
 <br>
 

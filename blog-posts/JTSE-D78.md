@@ -1,9 +1,9 @@
 ---
-title: "Day 78:"
+title: "Day 78: Auth User Table & Jobs"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
 date: "June 23, 2025"
-description: ""
+description: "Working with the Supabase auth.users table an finding work."
 ---
 
 Hello friends,
