@@ -28,9 +28,10 @@ The problem began when I went to update the auth.users table. I currently have a
 
 ```ts
 export const getUser = async () => {
-const { data, error } = await supabase.auth.getUsers();
+  const { data, error } = await supabase.auth.getUsers();
 
-return data.user;
+  return data.user;
+};
 ```
 
 <br>
@@ -43,7 +44,7 @@ _Using the user object as returned from supabase.auth.getSession() or from some 
 
 <br>
 
-I went through changing everything everywhere trying to stop this warning from popping up. Part of me now just believes it showed for no reason or was bugged for some reason. Either way I couldn’t solve it and I’ll have to revisit it tomorrow, but it’s super annoying to deal with problems like this when it's not at all clear where it originates from. 
+I went through changing everything everywhere trying to stop this warning from popping up. Part of me now just believes it showed for no reason or was bugged for some reason. Either way I couldn’t solve it and I’ll have to revisit it tomorrow, but it’s super annoying to deal with problems like this when it's not at all clear where it originates from.
 
 <br>
 
