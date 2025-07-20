@@ -1,9 +1,9 @@
 ---
-title: "Day 97:"
+title: "Day 97: API Route Variables"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
 date: "July 18, 2025"
-description: ""
+description: "Passing variables into API routes."
 ---
 
 Hello friends,
