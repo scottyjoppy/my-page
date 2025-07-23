@@ -1,5 +1,5 @@
 ---
-title: "Day 99: Bugs and Vars 
+title: "Day 99: Bugs and Vars"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
 date: "July 20, 2025"

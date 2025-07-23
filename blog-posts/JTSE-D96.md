@@ -1,9 +1,9 @@
 ---
-title: "Day 96:"
+title: "Day 96: React Email, Deeper"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
 date: "July 17, 2025"
-description: ""
+description: "Delving deeper into using React Email practically."
 ---
 
 Hello friends,
