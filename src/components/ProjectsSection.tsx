@@ -15,7 +15,7 @@ export default function ProjectSection({
         <div className="flex flex-col w-full h-full items-center justify-center gap-5">
           <div className="flex items-center justify-center">
             <Link href={project.gLink} target="_blank">
-              <div className="flex flex-col items-center gap-2 hover:text-primary/80 transition-all hover:scale-105">
+              <div className="flex flex-col items-center gap-2 hover:opacity-75 transition-all hover:scale-105">
                 {children}
               </div>
             </Link>
@@ -24,7 +24,7 @@ export default function ProjectSection({
             {project.tech.map((icon, index) => (
               <div
                 key={index}
-                className="relative flex flex-col items-center [&>h3]:opacity-0 hover:[&>h3]:opacity-100 [&>h3]:transition-opacity"
+                className="relative flex flex-col justify-center items-center [&>h3]:opacity-0 hover:[&>h3]:opacity-100 [&>h3]:transition-opacity"
               >
                 {icon}
               </div>

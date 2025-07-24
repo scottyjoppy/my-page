@@ -18,7 +18,7 @@ Structure structure structure. Man do I struggle sometimes to do things in steps
 
 <br>
 
-Take my current situation, I want a map of isometrically built islands representing the different proffessional parts of my life. I want animations and dynamic components that I can move and change within my React project. Knowing all of this, I’ll quickly divide this into phases.
+Take my current situation, I want a map of isometrically built islands representing the different professional parts of my life. I want animations and dynamic components that I can move and change within my React project. Knowing all of this, I’ll quickly divide this into phases.
 
 <br>
 
