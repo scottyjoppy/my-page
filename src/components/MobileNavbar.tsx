@@ -14,8 +14,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { MenuIcon, MoonIcon, SunIcon } from "lucide-react";
-import { useTheme } from "next-themes";
+import { MenuIcon } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { IconsMap } from "./navbar/iconMap";
@@ -27,10 +26,10 @@ interface MobileNavbarProps {
 
 function MobileNavbar({ items }: MobileNavbarProps) {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const { theme, setTheme } = useTheme();
+  // const { theme, setTheme } = useTheme();
   return (
     <div className="flex md:hidden items-center space-x-2">
-      <Button
+      {/* <Button
         variant="ghost"
         size="icon"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -39,7 +38,7 @@ function MobileNavbar({ items }: MobileNavbarProps) {
         <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
         <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
         <span className="sr-only">Toggle theme</span>
-      </Button>
+      </Button> */}
 
       <Sheet open={showMobileMenu} onOpenChange={setShowMobileMenu}>
         <SheetTrigger asChild>
@@ -52,7 +51,10 @@ function MobileNavbar({ items }: MobileNavbarProps) {
             <SheetTitle>Menu</SheetTitle>
           </SheetHeader>
           <nav className="h-full space-y-4 mt-6">
-            <Accordion type="multiple" className="flex flex-col gap-5 h-full w-full">
+            <Accordion
+              type="multiple"
+              className="flex flex-col gap-5 h-full w-full"
+            >
               {items.map((item) => {
                 const Icon = item.iconName ? IconsMap[item.iconName] : null;
 

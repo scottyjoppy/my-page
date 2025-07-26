@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import ModeToggle from "./ModeToggle";
 import { IconsMap } from "./navbar/iconMap";
 import { MenuItem } from "./navbar/types";
 import {
@@ -34,11 +33,11 @@ async function DesktopNavbar({ items }: DesktopNavbarProps) {
                     </Link>
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                      {item.dropdown.map((ddItem) => (
-                        <NavigationMenuLink href={ddItem.href} key={ddItem.label}>
-                          {ddItem.label}
-                        </NavigationMenuLink>
-                      ))}
+                    {item.dropdown.map((ddItem) => (
+                      <NavigationMenuLink href={ddItem.href} key={ddItem.label}>
+                        {ddItem.label}
+                      </NavigationMenuLink>
+                    ))}
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               </NavigationMenuList>
@@ -61,7 +60,7 @@ async function DesktopNavbar({ items }: DesktopNavbarProps) {
         );
       })}
 
-      <ModeToggle />
+      {/* <ModeToggle /> */}
     </div>
   );
 }
