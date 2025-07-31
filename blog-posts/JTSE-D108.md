@@ -1,5 +1,5 @@
 ---
-title: "Day 108: Notifications & C++
+title: "Day 108: Notifications & C++"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
 date: "July 29, 2025"
