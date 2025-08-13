@@ -34,7 +34,7 @@ I thought I'd just focus on explaining collision detection through this function
 
 <br>
 
-So what's collision? Simply put, it's when one bounding box intersects with another bounding box. What's a bounding box? It's a rectangle you draw around an object, player, wall... And an integral part of collision detection.
+So what's collision? Simply put, it's when one bounding box intersects with another bounding box. What's a bounding box? It's a rectangle you draw around an object, player, wall... And an integral part of collision detection
 
 <br>
 
