@@ -30,7 +30,7 @@ Step 1 is to calculate the direction, AKA how the bullet gets from the player to
 
 <br>
 
-```
+```cpp
 sf::Vector2f bulletDirection = enemy.getPosition() - bullet.getPosition();
 ```
 
