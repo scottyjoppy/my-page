@@ -2,7 +2,7 @@
 title: "Day 144: Verlet Integration"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
-date: "September 04-07 , 2025"
+date: "September 04-08 , 2025"
 description: "Looking into Verlet Integration"
 ---
 
