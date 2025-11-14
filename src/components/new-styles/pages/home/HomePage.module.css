@@ -1,0 +1,9 @@
+.container {
+  background-color: var(--primary);
+  height: 100vh;
+
+}
+
+.body {
+    font-size: 10rem;
+}

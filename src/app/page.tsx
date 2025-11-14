@@ -4,9 +4,12 @@ import GridTitleSection from "@/components/GridTitleSection";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+import HomePage from "@/components/new-styles/pages/home/HomePage";
+
 export default function Home() {
   return (
     <>
+      <HomePage></HomePage>
       <GridTitleSection>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
           <div className="h-full w-full flex flex-col items-center justify-center">

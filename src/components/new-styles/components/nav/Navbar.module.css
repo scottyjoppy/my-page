@@ -1,0 +1,35 @@
+.nav {
+  background-color: var(--secondary);
+  color: var(--off-black);
+  padding: 2px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  font-size: xx-large;
+  font-weight: bold;
+  transition: color 200ms ease-out, transform 100ms;
+}
+
+.icon:hover {
+  color: var(--secondary-120);
+  text-decoration: underline;
+}
+
+.icon:active {
+  transform: scale(98%) rotate(1deg);
+}
+
+.pages-container {
+  display: flex;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.page-link:hover {
+  text-decoration: underline;
+  background: ;
+}
