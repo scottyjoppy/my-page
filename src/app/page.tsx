@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import getPostMetadata from "utils/getPostMetadata";
 
+import HomePage from "@/components/new-styles/pages/home/HomePage";
+
 export default function Home() {
   const postMetadata = getPostMetadata();
   const postPreview = (
@@ -14,6 +16,7 @@ export default function Home() {
 
   return (
     <>
+      <HomePage></HomePage>
       <GridTitleSection>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
           <div className="h-full w-full flex flex-col items-center justify-center">
@@ -41,7 +44,9 @@ export default function Home() {
             <h2 className="text-2xl">Projects</h2>
             <div className="flex gap-3 items-center">
               <p>Current: </p>
-              <Link href="https://github.com/scottyjoppy/my-page"><Button className="hover:cursor-pointer">My-Page</Button></Link>
+              <Link href="https://github.com/scottyjoppy/my-page">
+                <Button className="hover:cursor-pointer">My-Page</Button>
+              </Link>
             </div>
             <div className="flex gap-3">
               <p>Desc: </p>
