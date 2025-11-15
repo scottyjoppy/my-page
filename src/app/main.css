@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -14,7 +14,22 @@
   --off-white: #fefefe;
   --off-black: #222222;
 
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+h1 {
+  font-size: xx-large;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: medium;
 }
