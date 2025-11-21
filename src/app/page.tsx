@@ -1,19 +1,12 @@
 import GridSection from "@/components/GridSection";
 import GridSectionCenterFull from "@/components/GridSectionCenterFull";
 import GridTitleSection from "@/components/GridTitleSection";
-import PostPreview from "@/components/PostPreview";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import getPostMetadata from "utils/getPostMetadata";
 
 import HomePage from "@/components/new-styles/pages/home/HomePage";
 
 export default function Home() {
-  const postMetadata = getPostMetadata();
-  const postPreview = (
-    <PostPreview key={postMetadata[0].slug} {...postMetadata[0]} />
-  );
-
   return (
     <>
       <HomePage></HomePage>
@@ -55,7 +48,6 @@ export default function Home() {
           </div>
         </GridSectionCenterFull>
         <GridSectionCenterFull className="flex flex-col">
-          {postPreview}
           <Button className="hover:cursor-pointer">
             <Link href="/blog">All Blogs</Link>
           </Button>

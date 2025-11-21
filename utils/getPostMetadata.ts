@@ -22,13 +22,12 @@ const getPostMetadata = (): PostMetadata[] => {
   });
   // Sort based on the number in the slug (e.g., jtse-d1 → 1)
   const sortedPosts = posts.sort((a, b) => {
-    const getNum = (slug: string) => parseInt(slug.match(/D(\d+)/i)?.[1] || "0");
+    const getNum = (slug: string) =>
+      parseInt(slug.match(/D(\d+)/i)?.[1] || "0");
     return getNum(b.slug) - getNum(a.slug); // ascending order
   });
 
   return sortedPosts;
 };
-
-
 
 export default getPostMetadata;

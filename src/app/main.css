@@ -17,6 +17,8 @@
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
+
+  cursor: default;
 }
 
 h1 {
@@ -32,4 +34,8 @@ h2 {
 
 h3 {
   font-size: medium;
+}
+
+body {
+  background-color: var(--primary);
 }
