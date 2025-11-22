@@ -20,20 +20,18 @@ export default async function Test() {
     <>
       <ReactMarkdown
         components={{
-          u: ({ node, ...props }) => <u {...props} />, // Custom component for <u> tag
-          a: ({ node, ...props }) => <a target="_blank" {...props} />, // Add target="_blank" to links
-          ul: ({ node, ...props }) => (
+          a: ({ ...props }) => <a target="_blank" {...props} />, // Add target="_blank" to links
+          ul: ({ ...props }) => (
             <ul className="list-disc list-inside my-6 space-y-2" {...props} />
           ),
-          ol: ({ node, ...props }) => (
+          ol: ({ ...props }) => (
             <ol
               className="list-decimal list-inside my-6 space-y-2"
               {...props}
             />
           ),
-          li: ({ node, ...props }) => <li className="ml-4" {...props} />,
-          code(props) {
-            const { children, className } = props;
+          li: ({ ...props }) => <li className="ml-4" {...props} />,
+          code: ({ children, className, ...props }) => {
             const match = /language-(\w+)/.exec(className || "");
             return match ? (
               <SyntaxHighlighter
@@ -48,9 +46,14 @@ export default async function Test() {
                 children={String(children).replace(/\n$/, "")}
               />
             ) : (
-              <code className={className}>{children}</code>
+              <code className={className} {...props}>
+                {children}
+              </code>
             );
           },
+          img: ({ src, alt, ...props }) => (
+            <img alt={alt} src={src} {...props} className="w-1/2" />
+          ),
         }}
         skipHtml={false}
       >
