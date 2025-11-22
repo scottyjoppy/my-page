@@ -31,15 +31,33 @@ export default function Navbar() {
               </svg>
             </div>
           ) : (
-            <div onClick={() => setExpandNav((prev) => !prev)}>something</div>
+            <div className={styles["dropdown-container-expand"]}>
+              <svg
+                onClick={() => setExpandNav((prev) => !prev)}
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className={styles["exit-svg"]}
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 0 1 0-1.414Z"
+                />
+              </svg>
+              {menuItems.map((item, key) => {
+                return (
+                  <Link
+                    href={item.href}
+                    key={key}
+                    className={styles["page-link"]}
+                  >
+                    <div>{item.label}</div>
+                  </Link>
+                );
+              })}
+            </div>
           )}
-          <div
-            className={`${
-              expandNav
-                ? styles["links-container-expand"]
-                : styles["links-container"]
-            }`}
-          >
+          <div className={styles["links-container"]}>
             {menuItems.map((item, key) => {
               return (
                 <Link
@@ -47,7 +65,7 @@ export default function Navbar() {
                   key={key}
                   className={styles["page-link"]}
                 >
-                  <h3>{item.label}</h3>
+                  <div>{item.label}</div>
                 </Link>
               );
             })}

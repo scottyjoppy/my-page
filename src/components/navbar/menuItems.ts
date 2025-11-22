@@ -1,11 +1,4 @@
-import getPostMetadata from "utils/getPostMetadata";
 import { MenuItem } from "./types";
-
-// const postMetadata = getPostMetadata().slice(0, 5);
-// const postPreviews = postMetadata.map((post) => ({
-//   label: post.title as string,
-//   href: `/blog/${post.slug}`,
-// }));
 
 export const menuItems: MenuItem[] = [
   {
@@ -24,7 +17,7 @@ export const menuItems: MenuItem[] = [
     href: "/projects",
   },
   {
-    label: "Blog",
+    label: "Blogs",
     iconName: "Notebook",
     href: "/blog",
     // dropdown: postPreviews,
