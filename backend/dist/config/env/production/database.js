@@ -8,10 +8,7 @@ module.exports = ({ env }) => ({
             database: env("DATABASE_NAME", "strapi"),
             user: env("DATABASE_USERNAME", "strapi"),
             password: env("DATABASE_PASSWORD", "strapi"),
-            schema: env("DATABASE_SCHEMA", "public"), // Not required
-            ssl: env.bool("DATABASE_SSL", false) && {
-                ca: env("DATABASE_CA"),
-            },
+            schema: env("DATABASE_SCHEMA", "strapi"), // Not required
         },
         pool: {
             min: env.int("DATABASE_POOL_MIN", 2),
