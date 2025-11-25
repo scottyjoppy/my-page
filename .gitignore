@@ -19,13 +19,6 @@ build/
 .env.test
 .env.*.local
 
-# Prisma
-prisma/dev.db
-prisma/dev.db-journal
-prisma/migrations/
-prisma/generated/
-.prisma/
-
 # Logs & Debug
 logs/
 *.log
