@@ -1,21 +1,23 @@
+import { supabase } from "@/lib/getSeries";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 
-async function loader() {
-  const path = "/api/blog?populate=*";
-  const BASE_URL = "http://localhost:1337";
-
-  const url = new URL(path, BASE_URL);
-
-  const response = await fetch(url.href);
-  const data = await response.json();
-
-  return data;
-}
-
 export default async function Test() {
-  const { data } = await loader();
-  console.log(data.serie);
+  let { data: blogs, error } = await supabase.from("blogs").select("*");
+
+  if (blogs) {
+    let blog = blogs[0];
+    if (blog.blog_series) {
+      let { data: series, error } = await supabase
+        .from("series")
+        .select("*")
+        .eq("id", blog.blog_series);
+      console.log("Series:", series?.[0].title);
+    } else {
+      console.log("failed");
+    }
+  }
+
   return (
     <>
       <ReactMarkdown
@@ -57,7 +59,7 @@ export default async function Test() {
         }}
         skipHtml={false}
       >
-        {data.content}
+        {}
       </ReactMarkdown>
     </>
   );
