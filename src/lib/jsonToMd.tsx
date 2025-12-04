@@ -1,17 +1,12 @@
 import { Json } from "types/database.types";
 
-export type JsonBlock =
-  | {
-      type: string;
-      style?: string;
-      text: string;
-      marks?: string[];
-    }
-  | {
-      type: string;
-      style?: string;
-      children: JsonBlock[];
-    };
+export type JsonBlock = {
+  type: string;
+  style?: string;
+  text?: string;
+  children?: JsonBlock[];
+  marks?: string[];
+};
 
 const parseJson = (json: Json) => {
   let output: string[] = [];
@@ -19,10 +14,46 @@ const parseJson = (json: Json) => {
   if (typeof json !== "object" || json === null) return output;
 
   const recurseJson = (block: JsonBlock) => {
-    if ("children" in block && Array.isArray(block.children)) {
+    if (block.children) {
       block.children.forEach(recurseJson);
-    } else if ("text" in block && typeof block.text === "string") {
+    } else if (block.type === "span") {
+      const marks = block.marks || [];
+
+      // Open marks
+      for (const mark of marks) {
+        if (mark === "bold") output.push("**");
+        if (mark === "italic") output.push("*");
+      }
+
+      if (block.text) {
+        output.push(block.text);
+      }
+
+      for (const mark of marks.slice().reverse()) {
+        if (mark === "bold") output.push("**");
+        if (mark === "italic") output.push("*");
+      }
+    } else if ("text" in block) {
+      if (block.type === "heading") {
+        let hash = "";
+        switch (block.style) {
+          case "h2":
+            hash = "## ";
+            break;
+          case "h3":
+            hash = "### ";
+            break;
+          default:
+            hash = "# ";
+        }
+        output.push(hash);
+      } else if (block.type === "code") {
+      } else if (block.type === null || block.type === undefined) {
+        output.push;
+      }
+
       output.push(block.text);
+      output.push("\n");
     }
   };
 
@@ -33,7 +64,7 @@ const parseJson = (json: Json) => {
 export default function jsonToMd(json: Json) {
   const string = parseJson(json);
 
-  return <div>{string.join("")}</div>;
+  return string.join("");
 }
 
 /*
