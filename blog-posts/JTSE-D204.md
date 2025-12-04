@@ -2,7 +2,7 @@
 title: "Day 204: Json to MD"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
-date: "December 3, 2025"
+date: "December 03, 2025"
 description: "Working on the parsing component of the new blog page."
 ---
 
