@@ -1,9 +1,11 @@
 "use client";
 
 import { supabase } from "@/lib/getSeries";
+import jsonToMd from "@/lib/jsonToMd";
 import { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import SyntaxHighlighter from "react-syntax-highlighter";
 import { Database } from "types/database.types";
-import jsonToMd from "@/lib/jsonToMd"
 
 type Blog = Database["public"]["Tables"]["blogs"]["Row"];
 
@@ -45,11 +47,54 @@ export default function Test() {
         PREVIEW
       </button>
       {preview ? (
-        <div className="outline-none">
-          {JSON.stringify(blogs[selectedBlog].content, null, 2)}
+        <div className="outline-none" contentEditable>
+          <ReactMarkdown
+            components={{
+              a: ({ ...props }) => <a target="_blank" {...props} />, // Add target="_blank" to links
+              ul: ({ ...props }) => (
+                <ul
+                  className="list-disc list-inside my-6 space-y-2"
+                  {...props}
+                />
+              ),
+              ol: ({ ...props }) => (
+                <ol
+                  className="list-decimal list-inside my-6 space-y-2"
+                  {...props}
+                />
+              ),
+              li: ({ ...props }) => <li className="ml-4" {...props} />,
+              code: ({ children, className, ...props }) => {
+                const match = /language-(\w+)/.exec(className || "");
+                return match ? (
+                  <SyntaxHighlighter
+                    PreTag="div"
+                    language={match[1]}
+                    wrapLines
+                    customStyle={{
+                      backgroundColor: "var(--primary-90)",
+                      maxWidth: "100vw",
+                      whiteSpace: "wrap",
+                    }}
+                    children={String(children).replace(/\n$/, "")}
+                  />
+                ) : (
+                  <code className={className} {...props}>
+                    {children}
+                  </code>
+                );
+              },
+              img: ({ src, alt, ...props }) => (
+                <img alt={alt} src={src} {...props} className="w-1/2" />
+              ),
+            }}
+            skipHtml={false}
+          >
+            {jsonToMd(blogs[selectedBlog].content)}
+          </ReactMarkdown>
         </div>
       ) : (
-        <div>{jsonToMd(blogs[selectedBlog].content)}</div>
+        <pre contentEditable>{jsonToMd(blogs[selectedBlog].content)}</pre>
       )}
     </>
   );
@@ -57,46 +102,6 @@ export default function Test() {
 
 // return (
 //   <>
-//     <ReactMarkdown
-//       components={{
-//         a: ({ ...props }) => <a target="_blank" {...props} />, // Add target="_blank" to links
-//         ul: ({ ...props }) => (
-//           <ul className="list-disc list-inside my-6 space-y-2" {...props} />
-//         ),
-//         ol: ({ ...props }) => (
-//           <ol
-//             className="list-decimal list-inside my-6 space-y-2"
-//             {...props}
-//           />
-//         ),
-//         li: ({ ...props }) => <li className="ml-4" {...props} />,
-//         code: ({ children, className, ...props }) => {
-//           const match = /language-(\w+)/.exec(className || "");
-//           return match ? (
-//             <SyntaxHighlighter
-//               PreTag="div"
-//               language={match[1]}
-//               wrapLines
-//               customStyle={{
-//                 backgroundColor: "var(--primary-90)",
-//                 maxWidth: "100vw",
-//                 whiteSpace: "wrap",
-//               }}
-//               children={String(children).replace(/\n$/, "")}
-//             />
-//           ) : (
-//             <code className={className} {...props}>
-//               {children}
-//             </code>
-//           );
-//         },
-//         img: ({ src, alt, ...props }) => (
-//           <img alt={alt} src={src} {...props} className="w-1/2" />
-//         ),
-//       }}
-//       skipHtml={false}
-//     >
-//       {}
-//     </ReactMarkdown>
+
 //   </>
 // );
