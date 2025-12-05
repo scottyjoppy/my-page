@@ -1,100 +1,127 @@
 import { Json } from "types/database.types";
 
+//
+// 🔧 Easy-to-edit mappings
+//
+const markMap = {
+  bold: "**",
+  italic: "*",
+} as const;
+
+const headingMap: Record<string, string> = {
+  h1: "# ",
+  h2: "## ",
+  h3: "### ",
+  h4: "#### ",
+  h5: "##### ",
+  h6: "###### ",
+};
+
+//
+// 🔧 Strong type for our content blocks
+//
 export type JsonBlock = {
   type: string;
   style?: string;
   text?: string;
+  lang?: string;
+  href?: string;
+  number?: string;
   children?: JsonBlock[];
-  marks?: string[];
+  marks?: (keyof typeof markMap)[];
 };
 
-const parseJson = (json: Json) => {
-  let output: string[] = [];
+//
+// 🔧 Type guards
+//
+function isBlock(value: any): value is JsonBlock {
+  return typeof value === "object" && value !== null && "type" in value;
+}
 
-  if (typeof json !== "object" || json === null) return output;
+function isBlockArray(value: any): value is JsonBlock[] {
+  return Array.isArray(value) && value.every(isBlock);
+}
 
-  const recurseJson = (block: JsonBlock) => {
-    if (block.children) {
-      block.children.forEach(recurseJson);
-    } else if (block.type === "span") {
-      const marks = block.marks || [];
+//
+// 🔄 Recursively convert blocks
+//
+function convertBlock(block: JsonBlock): string {
+  const { type, text, marks, children, style, lang, href, number } = block;
 
-      // Open marks
-      for (const mark of marks) {
-        if (mark === "bold") output.push("**");
-        if (mark === "italic") output.push("*");
-      }
+  //
+  // Compute marks for ANY block
+  //
+  const markTokens = (marks || []).map((mark) => markMap[mark] ?? "*");
+  const open = markTokens.join("");
+  const close = markTokens.slice().reverse().join("");
 
-      if (block.text) {
-        output.push(block.text);
-      }
+  //
+  // Helper: wrap text with marks
+  //
+  const wrap = (str: string) => open + str + close;
 
-      for (const mark of marks.slice().reverse()) {
-        if (mark === "bold") output.push("**");
-        if (mark === "italic") output.push("*");
-      }
-    } else if ("text" in block) {
-      if (block.type === "heading") {
-        let hash = "";
-        switch (block.style) {
-          case "h2":
-            hash = "## ";
-            break;
-          case "h3":
-            hash = "### ";
-            break;
-          default:
-            hash = "# ";
-        }
-        output.push(hash);
-      } else if (block.type === "code") {
-      } else if (block.type === null || block.type === undefined) {
-        output.push;
-      }
+  // ---- SPAN -----------------------------------------------------
+  if (type === "span") {
+    return wrap(text ?? "");
+  }
 
-      output.push(block.text);
-      output.push("\n");
+  // ---- LINK -----------------------------------------------------
+  // Marks wrap the LABEL, not the URL.
+  if (type === "link") {
+    return wrap(`[${text}](${href})`);
+  }
+
+  // ---- HEADING --------------------------------------------------
+  if (type === "heading") {
+    const prefix = headingMap[style ?? "h1"] ?? "# ";
+    const content = text ?? "";
+    return prefix + wrap(content) + "\n";
+  }
+
+  // ---- PARAGRAPH / BLOCK ---------------------------------------
+  if (type === "block" || type === "paragraph") {
+    const inner = (children || []).map(convertBlock).join("");
+    return wrap(inner) + "\n";
+  }
+
+  // ---- CODE BLOCK ----------------------------------------------
+  // Markdown spec: marks SHOULD NOT wrap code content.
+  if (type === "code") {
+    return "\n" + "```" + (lang ?? "") + "\n" + (text ?? "") + "\n```\n";
+  }
+
+  // ---- LIST ----------------------------------------------------
+  if (type === "list") {
+    if (style === "number") {
+      return (number ?? "") + ". " + (children || []).map(convertBlock).join("");
+    } else {
+      return "- " + (children || []).map(convertBlock).join("");
     }
-  };
+  }
 
-  recurseJson(json as JsonBlock);
-  return output;
-};
+  // ---- FALLBACK -------------------------------------------------
+  if (text) {
+    return wrap(text) + "\n";
+  }
+
+  return "";
+}
+
+//
+// 🌲 Main JSON → Markdown converter
+//
+function parseJson(json: Json): string {
+  if (isBlock(json)) {
+    return convertBlock(json);
+  }
+
+  if (isBlockArray(json)) {
+    return json.map(convertBlock).join("");
+  }
+
+  return ""; // ignored non-blocks
+}
 
 export default function jsonToMd(json: Json) {
-  const string = parseJson(json);
-
-  return string.join("");
+  return parseJson(json);
 }
-
-/*
-types
-
-heading 1-6 #
-paragraph
-code ```
-img ![](/assets/images/boat.jpg "image of boat")
-link []()
-uolist -
-olist 1.
-blockquotes >
-line ---
-
-style
-italics <em> *cat*
-bold <strong> **cat**
-both <em><strong> ***cat***
-
-
-jsonBlock {
-  type: string;
-  style?: string;
-  text or children
-  text?: string
-  chidren?: array
-  marks?: string
-
-}
-
-
-*/
