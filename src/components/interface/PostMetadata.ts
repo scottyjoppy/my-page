@@ -4,5 +4,5 @@ export interface PostMetadata {
   blogLine?: string;
   date?: string;
   description?: string;
-  slug?: string;
+  slug: string;
 }
