@@ -49,6 +49,45 @@ export type Database = {
           },
         ]
       }
+      icons: {
+        Row: {
+          id: number
+          link: string | null
+          svg: string
+          title: string | null
+        }
+        Insert: {
+          id?: number
+          link?: string | null
+          svg: string
+          title?: string | null
+        }
+        Update: {
+          id?: number
+          link?: string | null
+          svg?: string
+          title?: string | null
+        }
+        Relationships: []
+      }
+      nav: {
+        Row: {
+          id: number
+          link: string | null
+          title: string
+        }
+        Insert: {
+          id?: number
+          link?: string | null
+          title: string
+        }
+        Update: {
+          id?: number
+          link?: string | null
+          title?: string
+        }
+        Relationships: []
+      }
       series: {
         Row: {
           description: string | null
