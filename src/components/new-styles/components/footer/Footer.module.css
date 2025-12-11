@@ -1,0 +1,27 @@
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--primary-110);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: none;
+  gap: 4px;
+}
+
+.icon {
+  height: 70%;
+  aspect-ratio: 1/1;
+}
+
+.icon > svg {
+    fill: var(--off-black);
+  transition: fill 200ms;
+}
+
+.icon:hover > svg {
+  fill: var(--off-black-90);
+  cursor: pointer;
+}

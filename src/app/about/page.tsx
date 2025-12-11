@@ -1,15 +1,12 @@
 import GridSection from "@/components/GridSection";
 import GridSectionCenterFull from "@/components/GridSectionCenterFull";
-import GridTitleSection from "@/components/GridTitleSection";
 import Image from "next/image";
 import Link from "next/link";
 
 function About() {
   return (
     <>
-      <GridTitleSection>
-        <h1>About page</h1>
-      </GridTitleSection>
+      <h1>About page</h1>
       <GridSection>
         <GridSectionCenterFull colSpan={{ lg: 2, md: 1 }}>
           <p className="max-w-sm text-foreground">
@@ -52,8 +49,14 @@ function About() {
             I love piano and have been making songs from a very young age. In
             and out of school I've grown to love making scores for short films.
             My final project was a{" "}
-            <Link href="https://vimeo.com/720844027" target="_blank" className="font-bold hover:underline">documentary</Link> about me
-            making a song.
+            <Link
+              href="https://vimeo.com/720844027"
+              target="_blank"
+              className="font-bold hover:underline"
+            >
+              documentary
+            </Link>{" "}
+            about me making a song.
           </p>
         </GridSectionCenterFull>
         <GridSectionCenterFull className="relative overflow-hidden">

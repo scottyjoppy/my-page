@@ -1,12 +1,13 @@
 "use client";
 
-import { menuItems } from "@/components/navbar/menuItems";
+import { useNav } from "@/composables/useNav";
 import Link from "next/link";
 import { useState } from "react";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
   const [expandNav, setExpandNav] = useState(false);
+  const { pages, loading, error } = useNav();
 
   return (
     <>
@@ -44,28 +45,28 @@ export default function Navbar() {
                   d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 0 1 0-1.414Z"
                 />
               </svg>
-              {menuItems.map((item, key) => {
+              {pages.map((page, key) => {
                 return (
                   <Link
-                    href={item.href}
+                    href={page.link || ""}
                     key={key}
                     className={styles["page-link"]}
                   >
-                    <div>{item.label}</div>
+                    <div>{page.title}</div>
                   </Link>
                 );
               })}
             </div>
           )}
           <div className={styles["links-container"]}>
-            {menuItems.map((item, key) => {
+            {pages.map((page, key) => {
               return (
                 <Link
-                  href={item.href}
+                  href={page.link || ""}
                   key={key}
                   className={styles["page-link"]}
                 >
-                  <div>{item.label}</div>
+                  <div>{page.title}</div>
                 </Link>
               );
             })}

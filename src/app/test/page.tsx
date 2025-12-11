@@ -1,6 +1,6 @@
 "use client";
 
-import { supabase } from "@/lib/getSeries";
+import { supabase } from "@/lib/supabaseClient";
 import jsonToMd from "@/lib/jsonToMd";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
@@ -47,7 +47,7 @@ export default function Test() {
         PREVIEW
       </button>
       {preview ? (
-        <div className="outline-none" contentEditable>
+        <div className="outline-none" contentEditable={true}>
           <ReactMarkdown
             components={{
               a: ({ ...props }) => <a target="_blank" {...props} />, // Add target="_blank" to links
