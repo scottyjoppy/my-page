@@ -7,7 +7,7 @@ import styles from "./Navbar.module.css";
 
 export default function Navbar() {
   const [expandNav, setExpandNav] = useState(false);
-  const { pages, loading, error } = useNav();
+  const { pages } = useNav();
 
   return (
     <>

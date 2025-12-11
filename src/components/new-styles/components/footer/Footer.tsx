@@ -4,13 +4,10 @@ import { useIcons } from "@/composables/useIcons";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
-  const { icons, loading, error } = useIcons();
-
-  if (loading) return <div>Loading…</div>;
-  if (error) return <div>Failed to load icons</div>;
+  const { icons } = useIcons();
 
   return (
-    <section className={styles["footer-container"]}>
+    <footer className={styles["footer-container"]}>
       {icons.map((icon) => (
         <a
           key={icon.id}
@@ -20,6 +17,6 @@ export default function Footer() {
           target="_blank"
         />
       ))}
-    </section>
+    </footer>
   );
 }
