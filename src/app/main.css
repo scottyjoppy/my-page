@@ -27,17 +27,32 @@ h1 {
   font-size: xx-large;
   font-weight: bold;
   text-decoration: underline;
+  color: var(--off-black);
 }
 
 h2 {
   font-size: x-large;
   font-weight: bold;
+  color: var(--off-black);
 }
 
 h3 {
   font-size: medium;
+  color: var(--off-black);
 }
 
 body {
   background-color: var(--primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body > section {
+  flex: 1;
+}
+
+::selection {
+  background: rgba(93, 134, 108, 30%);
 }
