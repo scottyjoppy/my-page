@@ -5,14 +5,14 @@ import { PostgrestError } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 import { Database } from "types/database.types";
 
-type Page = Database["public"]["Tables"]["nav"]["Row"];
+type Nav = Database["public"]["Tables"]["nav"]["Row"];
 
 export function useNav() {
-  const [pages, setPages] = useState<Page[]>([]);
+  const [navs, setNavs] = useState<Nav[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<PostgrestError | null>(null);
 
-  const loadPages = async () => {
+  const loadNav = async () => {
     setLoading(true);
     const { data, error } = await supabase.from("nav").select("*");
 
@@ -23,13 +23,13 @@ export function useNav() {
       return;
     }
 
-    setPages(data);
+    setNavs(data);
     setLoading(false);
   };
 
   useEffect(() => {
-    loadPages();
+    loadNav();
   }, []);
 
-  return { pages, loading, error, reload: loadPages };
+  return { navs, loading, error, reload: loadNav };
 }
