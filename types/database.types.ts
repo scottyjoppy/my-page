@@ -49,6 +49,32 @@ export type Database = {
           },
         ]
       }
+      footer: {
+        Row: {
+          icon_id: number | null
+          id: number
+          order: number
+        }
+        Insert: {
+          icon_id?: number | null
+          id?: number
+          order: number
+        }
+        Update: {
+          icon_id?: number | null
+          id?: number
+          order?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "footer_icon_id_fkey"
+            columns: ["icon_id"]
+            isOneToOne: false
+            referencedRelation: "icons"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       icons: {
         Row: {
           id: number

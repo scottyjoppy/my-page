@@ -15,7 +15,7 @@
 }
 
 .icon > svg {
-    fill: var(--off-black);
+  fill: var(--off-black);
   transition: fill 200ms;
 }
 

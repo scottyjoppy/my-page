@@ -1,19 +1,19 @@
 "use client";
 
-import { useIcons } from "@/composables/useIcons";
+import { useFooter } from "@/composables/useFooter";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
-  const { icons } = useIcons();
+  const { footers } = useFooter();
 
   return (
     <footer className={styles["footer-container"]}>
-      {icons.map((icon) => (
+      {footers.map((item) => (
         <a
-          key={icon.id}
-          dangerouslySetInnerHTML={{ __html: icon.svg }}
+          key={item.id}
+          dangerouslySetInnerHTML={{ __html: item.icons?.svg || "" }}
           className={styles.icon}
-          href={icon.link || ""}
+          href={item.icons?.link || ""}
           target="_blank"
         />
       ))}
