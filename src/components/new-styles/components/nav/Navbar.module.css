@@ -9,12 +9,17 @@
   align-items: center;
 }
 
+
 .icon {
   position: relative;
   display: inline-block;
   font-size: xx-large;
   font-weight: bold;
   line-height: 1;
+}
+
+.icon:focus {
+  outline: 3px dotted var(--secondary-120)
 }
 
 .icon::before {
@@ -76,6 +81,10 @@
   justify-content: center;
   align-items: center;
   font-size: medium;
+}
+
+.page-link:focus {
+  outline: 3px dotted var(--secondary-120)
 }
 
 .page-link:hover {
