@@ -114,6 +114,74 @@ export type Database = {
         }
         Relationships: []
       }
+      project_tools: {
+        Row: {
+          icon_id: number
+          project_id: number
+        }
+        Insert: {
+          icon_id: number
+          project_id: number
+        }
+        Update: {
+          icon_id?: number
+          project_id?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "project_tools_icon_id_fkey"
+            columns: ["icon_id"]
+            isOneToOne: false
+            referencedRelation: "icons"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "project_tools_project_id_fkey"
+            columns: ["project_id"]
+            isOneToOne: false
+            referencedRelation: "projects"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      projects: {
+        Row: {
+          github_repo: string | null
+          id: number
+          order: number
+          project_description: string | null
+          project_icon: number | null
+          project_link: string | null
+          project_name: string
+        }
+        Insert: {
+          github_repo?: string | null
+          id?: number
+          order: number
+          project_description?: string | null
+          project_icon?: number | null
+          project_link?: string | null
+          project_name: string
+        }
+        Update: {
+          github_repo?: string | null
+          id?: number
+          order?: number
+          project_description?: string | null
+          project_icon?: number | null
+          project_link?: string | null
+          project_name?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "projects_project_icon_fkey"
+            columns: ["project_icon"]
+            isOneToOne: false
+            referencedRelation: "icons"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       series: {
         Row: {
           description: string | null

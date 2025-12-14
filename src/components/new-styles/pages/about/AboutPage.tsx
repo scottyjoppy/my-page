@@ -1,8 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import styles from "./AboutPage.module.css";
 
-export default function AboutPage() {
+const AboutPage = () => {
   return (
     <>
       <section className={styles["page-container"]}>
@@ -56,4 +55,6 @@ export default function AboutPage() {
       </section>
     </>
   );
-}
+};
+
+export default AboutPage;
