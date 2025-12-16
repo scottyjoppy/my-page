@@ -6,11 +6,6 @@
   padding: 1rem 0;
 }
 
-.title {
-  top: 0;
-  text-decoration: none;
-}
-
 .image {
   object-fit: cover;
   position: relative;
