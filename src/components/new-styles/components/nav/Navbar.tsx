@@ -2,16 +2,19 @@
 
 import { useNav } from "@/composables/useNav";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
   const [expandNav, setExpandNav] = useState(false);
   const { navs } = useNav();
+  const pathname = usePathname();
+  const switchColor = pathname !== "/projects";
 
   return (
     <>
-      <nav className={styles.nav}>
+      <nav className={switchColor ? styles.nav : styles["nav-2"]}>
         <Link href="/" className={styles.icon}>
           <span className={styles["icon-text"]}>ALEX</span>
         </Link>
@@ -32,7 +35,13 @@ export default function Navbar() {
               </svg>
             </div>
           ) : (
-            <div className={styles["dropdown-container-expand"]}>
+            <div
+              className={
+                switchColor
+                  ? styles["dropdown-container-expand"]
+                  : styles["dropdown-container-expand-2"]
+              }
+            >
               <svg
                 onClick={() => setExpandNav((prev) => !prev)}
                 xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +59,9 @@ export default function Navbar() {
                   <Link
                     href={page.link || ""}
                     key={key}
-                    className={styles["page-link"]}
+                    className={
+                      switchColor ? styles["page-link"] : styles["page-link-2"]
+                    }
                   >
                     <div>{page.title}</div>
                   </Link>

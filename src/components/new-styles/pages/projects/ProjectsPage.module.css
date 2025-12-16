@@ -1,0 +1,106 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-90);
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  height: 15rem;
+  width: 50rem;
+  padding: 1rem;
+}
+
+.project-row:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.project-info {
+  grid-column: span 3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.project-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  grid-column: span 1;
+  transition: opacity 100ms;
+  outline: none !important;
+}
+
+.project-icon:hover {
+  opacity: 90%;
+}
+
+.project-icon > svg {
+  height: 100%;
+  width: auto;
+  fill: var(--off-black);
+}
+
+.icon {
+  height: 70%;
+  aspect-ratio: 1/1;
+}
+
+.link-container {
+  display: flex;
+  gap: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.link-container > a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.icon-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tool-icon-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 1rem;
+  fill: var(--off-black);
+  gap: 0.5rem;
+}
+
+.project-tool {
+  height: auto;
+}
+
+.project-tool:after {
+  content: attr(data-label);
+  text-transform: capitalize;
+  position: absolute;
+  opacity: 0;
+}
+
+.project-tool:hover::after {
+  opacity: 1;
+}
