@@ -14,7 +14,14 @@ const ProjectsPage = () => {
           {projects.map((proj) => (
             <div key={proj.id} className={styles["project-row"]}>
               <div className={styles["project-info"]}>
-                <h2 className="underline">{proj.project_name}</h2>
+                  <a href={`#${proj.project_name}`} className={styles.anchor}>
+                    <h2
+                      id={`${proj.project_name}`}
+                      className="underline"
+                    >
+                      {proj.project_name}
+                    </h2>
+                  </a>
                 <p>{proj.project_description}</p>
                 <div className={styles["link-container"]}>
                   <a href={proj.github_repo || ""} target="_blank">

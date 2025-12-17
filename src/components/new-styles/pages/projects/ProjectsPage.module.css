@@ -35,6 +35,21 @@
   justify-content: space-between;
 }
 
+.anchor {
+  cursor: default;
+  outline: none !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.anchor:hover::after {
+  content: "#";
+  font-size: larger;
+  font-weight: bold;
+  position: relative;
+}
+
 .project-icon {
   display: flex;
   align-items: center;
@@ -84,23 +99,35 @@
 .tool-icon-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100%;
-  width: 1rem;
+  width: 2rem;
   fill: var(--off-black);
-  gap: 0.5rem;
+  gap: 4px;
 }
 
 .project-tool {
-  height: auto;
+  height: 1rem;
+  width: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: opacity 100ms;
 }
 
-.project-tool:after {
+.project-tool::after {
   content: attr(data-label);
   text-transform: capitalize;
   position: absolute;
+  transform: translateX(1.5rem);
   opacity: 0;
 }
 
-.project-tool:hover::after {
+.project-tool:hover {
+  opacity: 90%;
+}
+
+.project-tool:has(svg:hover)::after {
   opacity: 1;
 }
