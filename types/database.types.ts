@@ -51,19 +51,19 @@ export type Database = {
       }
       footer: {
         Row: {
+          display_order: number
           icon_id: number | null
           id: number
-          order: number
         }
         Insert: {
+          display_order: number
           icon_id?: number | null
           id?: number
-          order: number
         }
         Update: {
+          display_order?: number
           icon_id?: number | null
           id?: number
-          order?: number
         }
         Relationships: [
           {
@@ -146,27 +146,27 @@ export type Database = {
       }
       projects: {
         Row: {
+          display_order: number | null
           github_repo: string | null
           id: number
-          order: number
           project_description: string | null
           project_icon: number | null
           project_link: string | null
           project_name: string
         }
         Insert: {
+          display_order?: number | null
           github_repo?: string | null
           id?: number
-          order: number
           project_description?: string | null
           project_icon?: number | null
           project_link?: string | null
           project_name: string
         }
         Update: {
+          display_order?: number | null
           github_repo?: string | null
           id?: number
-          order?: number
           project_description?: string | null
           project_icon?: number | null
           project_link?: string | null

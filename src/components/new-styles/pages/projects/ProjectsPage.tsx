@@ -14,22 +14,23 @@ const ProjectsPage = () => {
           {projects.map((proj) => (
             <div key={proj.id} className={styles["project-row"]}>
               <div className={styles["project-info"]}>
-                  <a href={`#${proj.project_name}`} className={styles.anchor}>
-                    <h2
-                      id={`${proj.project_name}`}
-                      className="underline"
-                    >
-                      {proj.project_name}
-                    </h2>
-                  </a>
+                <a href={`#${proj.project_name}`} className={styles.anchor}>
+                  <h2 id={`${proj.project_name}`} className="underline">
+                    {proj.project_name}
+                  </h2>
+                </a>
                 <p>{proj.project_description}</p>
                 <div className={styles["link-container"]}>
                   <a href={proj.github_repo || ""} target="_blank">
                     Github
                   </a>
-                  <a href={proj.project_link || ""} target="_blank">
-                    Projects
-                  </a>
+                  {proj.project_link ? (
+                    <a href={proj.project_link || ""} target="_blank">
+                      Project
+                    </a>
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
               <div className={styles["icon-container"]}>
@@ -39,7 +40,7 @@ const ProjectsPage = () => {
                   }}
                   target="_blank"
                   className={styles["project-icon"]}
-                  href={proj.project_link || ""}
+                  href={proj.github_repo || ""}
                 />
                 <div className={styles["tool-icon-container"]}>
                   {proj.project_tools.slice(0, 7).map((tool, id) => (

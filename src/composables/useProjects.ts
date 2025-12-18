@@ -13,7 +13,7 @@ type ProjectWithIcons = {
   project_description: string | null;
   project_link: string | null;
   github_repo: string | null;
-  order: number;
+  display_order: number | null;
   project_icon: Icon | null;
   project_tools: {
     icons: Icon;
@@ -37,14 +37,15 @@ export function useProjects() {
     project_description,
     project_link,
     github_repo,
-    order,
+    display_order,
     project_icon:icons(*),
     project_tools:project_tools(
       icons(*)
     )
   `
       )
-      .order("order", { ascending: true });
+      .not("display_order", "is", null)
+      .order("display_order", { ascending: true });
 
     if (error) {
       setError(error);

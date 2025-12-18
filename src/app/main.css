@@ -57,7 +57,7 @@ body > section {
 }
 
 a:focus {
-  outline: 2px solid var(--secondary-120);
+  outline: 1px solid var(--secondary-120);
   border-radius: 4px;
   outline-offset: 0;
 }
