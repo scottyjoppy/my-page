@@ -1,26 +1,54 @@
 "use client";
 
-import { supabase } from "@/lib/supabaseClient";
+import { useBlogs } from "@/composables/useBlogs";
 import jsonToMd from "@/lib/jsonToMd";
-import { useEffect, useState } from "react";
+import { mdToJson } from "@/lib/mdToJson";
+import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { Database } from "types/database.types";
-
-type Blog = Database["public"]["Tables"]["blogs"]["Row"];
 
 export default function Test() {
-  const [blogs, setBlogs] = useState<Blog[]>([]);
+  const { blogs, updateBlogs } = useBlogs();
   const [selectedBlog, setSelectedBlog] = useState(0);
   const [preview, setPreview] = useState(false);
+  const [draft, setDraft] = useState("");
+
+  const editorRef = useRef<HTMLPreElement>(null);
+  const saveTimeout = useRef<NodeJS.Timeout | null>(null);
+
+  const togglePreview = () => {
+    if (!preview && editorRef.current) {
+      setDraft(editorRef.current.innerText);
+    }
+    setPreview(!preview);
+  };
+
+  const saveDraft = async () => {
+    const blog = blogs[selectedBlog];
+    if (!blog) return;
+
+    const json = mdToJson(draft);
+    await updateBlogs(blog.id, json);
+  };
 
   useEffect(() => {
-    async function fetchBlogs() {
-      const { data, error } = await supabase.from("blogs").select("*");
-      if (!error && data) setBlogs(data);
-    }
-    fetchBlogs();
-  }, []);
+    const blog = blogs[selectedBlog];
+    if (!blog || !editorRef.current) return;
+
+    const md = jsonToMd(blog.content);
+    editorRef.current.innerText = md;
+    setDraft(md);
+  }, [selectedBlog]);
+
+  useEffect(() => {
+    const handler = () => {
+      if (draft.trim()) {
+        saveDraft();
+      }
+    };
+    window.addEventListener("beforeunload", handler);
+    return () => window.removeEventListener("beforeunload", handler);
+  }, [draft, selectedBlog]);
 
   if (!blogs || blogs.length === 0) {
     return <div>No Blogs</div>;
@@ -41,13 +69,14 @@ export default function Test() {
         ))}
       </select>
       <button
-        onClick={() => setPreview(!preview)}
-        className="p-2 bg-white hover:bg-gray-100 active:scale-90 transition-all"
+        onClick={togglePreview}
+        className="p-2 bg-white hover:bg-gray-100 transition-all"
       >
-        PREVIEW
+        {preview ? "Preview" : "Markdown"}
       </button>
+      <button onClick={saveDraft}>Save</button>
       {preview ? (
-        <div className="outline-none" contentEditable={true}>
+        <div className="outline-none">
           <ReactMarkdown
             components={{
               a: ({ ...props }) => <a target="_blank" {...props} />, // Add target="_blank" to links
@@ -90,18 +119,20 @@ export default function Test() {
             }}
             skipHtml={false}
           >
-            {jsonToMd(blogs[selectedBlog].content)}
+            {draft}
           </ReactMarkdown>
         </div>
       ) : (
-        <pre contentEditable>{jsonToMd(blogs[selectedBlog].content)}</pre>
+        <pre
+          ref={editorRef}
+          contentEditable
+          suppressContentEditableWarning
+          onInput={() => {
+            if (!editorRef.current) return;
+            setDraft(editorRef.current.innerText);
+          }}
+        />
       )}
     </>
   );
 }
-
-// return (
-//   <>
-
-//   </>
-// );

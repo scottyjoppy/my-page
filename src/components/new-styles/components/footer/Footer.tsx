@@ -18,9 +18,9 @@ export default function Footer() {
       {footers.map((item) => (
         <a
           key={item.id}
-          dangerouslySetInnerHTML={{ __html: item.icons?.svg || "" }}
+          dangerouslySetInnerHTML={{ __html: item.icon_id?.svg || "" }}
           className={styles.icon}
-          href={item.icons?.link || ""}
+          href={item.icon_id?.link || ""}
           target="_blank"
         />
       ))}

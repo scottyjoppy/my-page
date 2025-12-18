@@ -1,24 +1,14 @@
-import ReactMarkdown from "react-markdown";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+"use client"
 
-async function loader() {
-  const path = "/api/blog?populate=*";
-  const BASE_URL = "http://localhost:1337";
+import { useBlogs } from "@/composables/useBlogs";
 
-  const url = new URL(path, BASE_URL);
-
-  const response = await fetch(url.href);
-  const data = await response.json();
-
-  return data;
-}
-
-export default async function BlogPage() {
-  const { data } = await loader();
-  console.log(data.serie);
+export default function BlogsPage() {
+  const { blogs } = useBlogs();
+  console.log(blogs);
   return (
     <>
-      <ReactMarkdown
+      <h1>Blogs</h1>
+      {/* <ReactMarkdown
         components={{
           u: ({ node, ...props }) => <u {...props} />, // Custom component for <u> tag
           a: ({ node, ...props }) => <a target="_blank" {...props} />, // Add target="_blank" to links
@@ -55,7 +45,7 @@ export default async function BlogPage() {
         skipHtml={false}
       >
         {data.content}
-      </ReactMarkdown>
+      </ReactMarkdown> */}
     </>
   );
 }

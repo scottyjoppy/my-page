@@ -5,14 +5,13 @@ import { PostgrestError } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 import { Database } from "types/database.types";
 
-type Footer = Database["public"]["Tables"]["footer"]["Row"];
+export type Icons = Database["public"]["Tables"]["icons"]["Row"];
 
-type FooterWithIcon = Footer & {
-  icons: {
-    id: number;
-    svg: string;
-    link: string | null;
-  } | null;
+export type FooterWithIcon = Omit<
+  Database["public"]["Tables"]["footer"]["Row"],
+  "icon_id"
+> & {
+  icon_id: Icons | null;
 };
 
 export function useFooter() {
@@ -24,7 +23,7 @@ export function useFooter() {
     setLoading(true);
     const { data, error } = await supabase
       .from("footer")
-      .select("id, display_order, icon_id, icons(*)")
+      .select("*, icon_id:icons(*)")
       .order("display_order", { ascending: true });
 
     if (error) {
