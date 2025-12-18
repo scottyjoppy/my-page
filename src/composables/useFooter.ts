@@ -24,8 +24,8 @@ export function useFooter() {
     setLoading(true);
     const { data, error } = await supabase
       .from("footer")
-      .select("id, order, icon_id, icons(*)")
-      .order("order", { ascending: true });
+      .select("id, display_order, icon_id, icons(*)")
+      .order("display_order", { ascending: true });
 
     if (error) {
       console.error("Error loading footer:", error);
