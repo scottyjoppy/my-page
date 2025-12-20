@@ -14,31 +14,37 @@ export default function Test() {
   const [draft, setDraft] = useState("");
 
   const editorRef = useRef<HTMLPreElement>(null);
-  const saveTimeout = useRef<NodeJS.Timeout | null>(null);
 
-  const togglePreview = () => {
-    if (!preview && editorRef.current) {
-      setDraft(editorRef.current.innerText);
-    }
-    setPreview(!preview);
-  };
+  const getDraft = () => editorRef.current?.textContent ?? "";
 
   const saveDraft = async () => {
     const blog = blogs[selectedBlog];
     if (!blog) return;
 
-    const json = mdToJson(draft);
+    const md = getDraft();
+
+    if (!md.trim()) return;
+
+    const json = mdToJson(md);
     await updateBlogs(blog.id, json);
   };
 
-  useEffect(() => {
-    const blog = blogs[selectedBlog];
-    if (!blog || !editorRef.current) return;
+  const togglePreview = () => {
+    setDraft(getDraft());
+    setPreview(!preview);
+  };
 
-    const md = jsonToMd(blog.content);
-    editorRef.current.innerText = md;
-    setDraft(md);
-  }, [selectedBlog]);
+  useEffect(() => {
+    if (!editorRef.current || !blogs?.[selectedBlog]) return;
+
+    if (!preview || !draft) {
+      editorRef.current.textContent = jsonToMd(
+        blogs[selectedBlog].content ?? ""
+      );
+    } else {
+      editorRef.current.textContent = draft;
+    }
+  }, [selectedBlog, blogs, preview, draft]);
 
   useEffect(() => {
     const handler = () => {
@@ -54,11 +60,18 @@ export default function Test() {
     return <div>No Blogs</div>;
   }
 
+  if (!blogs || blogs.length === 0) {
+    return <div>No Blogs</div>;
+  }
+
   return (
     <>
       <select
         name="Blog"
-        onChange={(e) => setSelectedBlog(Number(e.target.value))}
+        onChange={(e) => {
+          setSelectedBlog(Number(e.target.value));
+          setPreview(false)
+        }}
       >
         <option disabled>Choose a blog</option>
 
