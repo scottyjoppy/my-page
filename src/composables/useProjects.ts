@@ -1,6 +1,6 @@
 "use client";
 
-import { supabase } from "@/lib/supabaseClient";
+import { supabase } from "@/lib/supabase/client";
 import { PostgrestError } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 import { Database } from "types/database.types";
