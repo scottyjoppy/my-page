@@ -1,6 +1,6 @@
 "use client";
 
-import { supabase } from "@/lib/supabase/client";
+import { createClient } from "@/lib/supabase/client";
 import { PostgrestError } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 import { Database } from "types/database.types";
@@ -13,6 +13,8 @@ export type FooterWithIcon = Omit<
 > & {
   icon_id: Icons | null;
 };
+
+const supabase = createClient()
 
 export function useFooter() {
   const [footers, setFooters] = useState<FooterWithIcon[]>([]);
