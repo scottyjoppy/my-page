@@ -1,11 +1,13 @@
 "use client";
 
-import { supabase } from "@/lib/supabase/client";
+import { createClient } from "@/lib/supabase/client";
 import { PostgrestError } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 import { Database } from "types/database.types";
 
 type Nav = Database["public"]["Tables"]["nav"]["Row"];
+
+const supabase = createClient()
 
 export function useNav() {
   const [navs, setNavs] = useState<Nav[]>([]);

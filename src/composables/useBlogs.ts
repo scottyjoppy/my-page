@@ -1,7 +1,7 @@
 "use client";
 
 import { JsonBlock } from "@/lib/jsonToMd";
-import { supabase } from "@/lib/supabase/client";
+import { createClient } from "@/lib/supabase/client";
 import { PostgrestError } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 import { Database } from "types/database.types";
@@ -14,6 +14,8 @@ export type BlogWithSeries = Omit<
 > & {
   blog_series: Series | null;
 };
+
+const supabase = createClient()
 
 export function useBlogs() {
   const [blogs, setBlogs] = useState<BlogWithSeries[]>([]);

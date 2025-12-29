@@ -1,6 +1,6 @@
 "use client";
 
-import { supabase } from "@/lib/supabase/client";
+import { createClient } from "@/lib/supabase/client";
 import { PostgrestError } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 import { Database } from "types/database.types";
@@ -19,6 +19,8 @@ type ProjectWithIcons = {
     icons: Icon;
   }[];
 };
+
+const supabase = createClient();
 
 export function useProjects() {
   const [projects, setProjects] = useState<ProjectWithIcons[]>([]);
