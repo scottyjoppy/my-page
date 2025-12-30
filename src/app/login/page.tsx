@@ -33,24 +33,24 @@ export default function Login() {
     router.push("/test");
   }
 
-  async function signUp() {
-    setLoading(true);
-    setError(null);
+  // async function signUp() {
+  //   setLoading(true);
+  //   setError(null);
 
-    const { error } = await supabase.auth.signUp({
-      email,
-      password,
-    });
+  //   const { error } = await supabase.auth.signUp({
+  //     email,
+  //     password,
+  //   });
 
-    setLoading(false);
+  //   setLoading(false);
 
-    if (error) {
-      setError(error.message);
-      return;
-    }
+  //   if (error) {
+  //     setError(error.message);
+  //     return;
+  //   }
 
-    alert("Check your email to confirm your account.");
-  }
+  //   alert("Check your email to confirm your account.");
+  // }
 
   return (
     <>
@@ -79,10 +79,8 @@ export default function Login() {
           >
             Sign In
           </button>
-          <button onClick={signUp} disabled={loading}>
-            Sign Up
-          </button>
         </div>
+        {/* <button onClick={signUp} disabled={loading}>Sign Up</button> */}
       </section>
     </>
   );
