@@ -42,10 +42,20 @@ export async function updateSession(request: NextRequest) {
   const user = data?.claims;
 
   if (!user && request.nextUrl.pathname.startsWith("/test")) {
-    // no user, potentially respond by redirecting the user to the login page
+    // no user at all → redirect to login
     const url = request.nextUrl.clone();
     url.pathname = "/login";
     return NextResponse.redirect(url);
+  }
+
+  // user exists, now check if it's the MAIN_USER
+  if (user && request.nextUrl.pathname.startsWith("/test")) {
+    if (user.sub !== process.env.MAIN_USER) {
+      // logged in, but not allowed → redirect to login
+      const url = request.nextUrl.clone();
+      url.pathname = "/login";
+      return NextResponse.redirect(url);
+    }
   }
 
   // IMPORTANT: You *must* return the supabaseResponse object as it is. If you're
