@@ -1,7 +1,12 @@
+"use client";
+
+import { useAboutBucket } from "@/composables/useBuckets";
 import Link from "next/link";
 import styles from "./HomePage.module.css";
 
 const HomePage = () => {
+  const { files } = useAboutBucket();
+
   return (
     <>
       <section className={styles.container}>
@@ -11,15 +16,13 @@ const HomePage = () => {
             <p>My name is Alexander Delisle</p>
             <p>I'm here to learn</p>
           </div>
-          <div className={styles["image-container"]}>
-            <Link href="/about">
-              <img
-                src="/images/alex-image.jpg"
-                alt="a picture of alex"
-                className={styles.image}
-              />
-            </Link>
-          </div>
+          {files[1] && (
+            <div className={styles["image-container"]}>
+              <Link href="/about">
+                <img src={files[1].url} className={styles.image} />
+              </Link>
+            </div>
+          )}
         </div>
         <div className={styles["info-container"]}></div>
       </section>
