@@ -1,28 +1,8 @@
-"use client";
+import BlogsClient from "@/components/new-styles/pages/blogs/BlogsClient";
+import getPostMetadata from "utils/getPostMetadata";
 
-import { useBlogs } from "@/composables/useBlogs";
-import { useState } from "react";
-import styles from "./BlogsPage.module.css";
+export default function Page() {
+  const blogs = getPostMetadata();
 
-export default function BlogsPage() {
-  const { blogs } = useBlogs();
-  const [blogAmount, setBlogAmount] = useState(3);
-
-  return (
-    <>
-      <section className={styles["page-container"]}>
-        <h1>Blogs</h1>
-        {blogs.length === 0 ? (
-          <div>No Blogs</div>
-        ) : (
-          blogs.slice(0, blogAmount).map((blog) => (
-            <>
-              <h2 key={blog.id}>{blog.title}</h2>
-              <div>{blog.description}</div>
-            </>
-          ))
-        )}
-      </section>
-    </>
-  );
+  return <BlogsClient blogs={blogs} />;
 }
