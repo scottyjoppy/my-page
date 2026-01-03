@@ -1,11 +1,5 @@
 import AboutPage from "@/components/new-styles/pages/about/AboutPage";
 
-function About() {
-  return (
-    <>
-      <AboutPage></AboutPage>
-    </>
-  );
+export default function About() {
+  return <AboutPage />;
 }
-
-export default About;

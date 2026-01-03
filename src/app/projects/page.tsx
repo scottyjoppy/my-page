@@ -1,11 +1,5 @@
 import ProjectsPage from "@/components/new-styles/pages/projects/ProjectsPage";
 
-function Projects() {
-  return (
-    <>
-      <ProjectsPage></ProjectsPage>
-    </>
-  );
+export default function Projects() {
+  return <ProjectsPage />;
 }
-
-export default Projects;
