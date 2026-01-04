@@ -12,7 +12,7 @@
 .footer-container-2 {
   width: 100%;
   height: 3rem;
-  background-color: var(--secondary);
+  background-color: var(--secondary-110);
   display: flex;
   justify-content: center;
   align-items: center;
