@@ -2,18 +2,18 @@
 @import "tailwindcss";
 
 :root {
-  --primary-90: #f5f5f0;
-  --primary: #e6d8c3;
-  --primary-110: #c2a68c;
-  --primary-120: #a38a72;
+  --primary-90: #f5f3f0;
+  --primary: #ebe8e1;
+  --primary-110: #d0c9b9;
+  --primary-120: #beb49d;
 
-  --secondary-90: #93b8a0;
-  --secondary: #5d866c;
-  --secondary-110: #3f4f44;
-  --secondary-120: #2c3930;
+  --secondary-90: #f0f1f5;
+  --secondary: #e1e9eb;
+  --secondary-110: #b9c0d0;
+  --secondary-120: #9da7be;
 
   --off-white: #fefefe;
-  --off-black: #222222;
+  --off-black: #32332e;
   --off-black-90: #333333;
 
   font-family: "Roboto Mono", monospace;
