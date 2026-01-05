@@ -57,7 +57,7 @@ body > section {
 }
 
 a:focus {
-  outline: 1px solid var(--secondary-120);
-  border-radius: 4px;
-  outline-offset: 0;
+  outline: none;
+  transform: rotate(2deg) scale(1.03);
+  transition: transform 100ms;
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { useAboutBucket } from "@/composables/useBuckets";
-import Link from "next/link";
+import ImageBorder from "../../components/ascii/ImageBorder";
 import styles from "./HomePage.module.css";
 
 const HomePage = () => {
@@ -18,13 +18,11 @@ const HomePage = () => {
           </div>
           {files[1] && (
             <div className={styles["image-container"]}>
-              <Link href="/about">
-                <img src={files[1].url} className={styles.image} />
-              </Link>
+              <img src={files[1].url} className={styles.image} />
+              <ImageBorder className={styles["ascii-pos"]} />
             </div>
           )}
         </div>
-        <div className={styles["info-container"]}></div>
       </section>
     </>
   );
