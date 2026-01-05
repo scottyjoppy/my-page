@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import styles from "./Navbar.module.css";
+import PlusDashBorder from "../ascii/PlusDashBorder";
 
 export default function Navbar() {
   const [expandNav, setExpandNav] = useState(false);
@@ -84,6 +85,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
+      <PlusDashBorder className="translate-y-[39px] absolute" />
     </>
   );
 }

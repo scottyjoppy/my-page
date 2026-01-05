@@ -24,18 +24,21 @@
   width: clamp(18rem, 25rem, 32rem);
   border-radius: 1rem;
   aspect-ratio: 1 / 1;
-  overflow: hidden;
   transition: all 100ms;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.image-container:hover {
-  scale: 100.5%;
-  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+  z-index: 1;
+  position: relative;
 }
 
 .image {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  border-radius: 8px;
+}
+
+.ascii-pos {
+  position: absolute;
+  top: -6%;
+  left: -5%;
+  z-index: 2;
 }

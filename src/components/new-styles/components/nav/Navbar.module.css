@@ -28,10 +28,6 @@
   line-height: 1;
 }
 
-.icon:focus {
-outline: 1px dashed var(--secondary-120);
-}
-
 .icon::before {
   content: "AL_X";
   opacity: 1;
@@ -91,6 +87,7 @@ outline: 1px dashed var(--secondary-120);
   justify-content: center;
   align-items: center;
   font-size: medium;
+  z-index: 10;
 }
 
 .page-link-2 {
@@ -100,14 +97,7 @@ outline: 1px dashed var(--secondary-120);
   justify-content: center;
   align-items: center;
   font-size: medium;
-}
-
-.page-link:focus {
-  outline: 1px dashed var(--secondary-120);
-}
-
-.page-link-2:focus {
-  outline: 1px dashed var(--primary-120);
+  z-index: 10;
 }
 
 .page-link:hover {
