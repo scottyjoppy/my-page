@@ -52,7 +52,11 @@ export default function Test() {
     const blog = blogs[selectedBlog];
     if (!blog) return;
 
-    const json = mdToJson(draft);
+    const md = getDraft();
+
+    if (!md.trim()) return;
+
+    const json = mdToJson(md);
     await updateBlogs(blog.id, json);
   };
 
@@ -61,10 +65,17 @@ export default function Test() {
     const blog = blogs[selectedBlog];
     if (!blog || !editorRef.current) return;
 
-    const md = jsonToMd(blog.content);
-    editorRef.current.innerText = md;
-    setDraft(md);
-  }, [selectedBlog]);
+  useEffect(() => {
+    if (!editorRef.current || !blogs?.[selectedBlog]) return;
+
+    if (!preview || !draft) {
+      editorRef.current.textContent = jsonToMd(
+        blogs[selectedBlog].content ?? ""
+      );
+    } else {
+      editorRef.current.textContent = draft;
+    }
+  }, [selectedBlog, blogs, preview, draft]);
 
   // Use effect to save when you close the page
   useEffect(() => {
@@ -151,15 +162,7 @@ export default function Test() {
           </ReactMarkdown>
         </div>
       ) : (
-        <pre
-          ref={editorRef}
-          contentEditable
-          suppressContentEditableWarning
-          onInput={() => {
-            if (!editorRef.current) return;
-            setDraft(editorRef.current.innerText);
-          }}
-        />
+        <pre ref={editorRef} contentEditable suppressContentEditableWarning />
       )}
     </>
   );
