@@ -1,7 +1,6 @@
 .footer-container {
   width: 100%;
   height: 3rem;
-  background-color: var(--primary-110);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +11,6 @@
 .footer-container-2 {
   width: 100%;
   height: 3rem;
-  background-color: var(--secondary-110);
   display: flex;
   justify-content: center;
   align-items: center;

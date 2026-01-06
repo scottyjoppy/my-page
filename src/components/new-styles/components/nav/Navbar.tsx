@@ -85,7 +85,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <PlusDashBorder className="translate-y-[39px] absolute" />
+      <PlusDashBorder className="translate-y-[39px]" />
     </>
   );
 }

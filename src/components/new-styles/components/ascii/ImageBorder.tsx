@@ -4,38 +4,39 @@ type Props = {
   className?: string;
 };
 
-const BrickBg = ({ className }: Props) => {
-  const asciiArt = String.raw`+================================================+
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                | 
-|                                                |  
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-|                                                |
-+================================================+`;
+const ImageBorder = ({ className }: Props) => {
+  const asciiArt = String.raw`++----------------------------------------------++
+++----------------------------------------------++
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+||                                              ||
+++----------------------------------------------++
+++----------------------------------------------++`;
 
   return (
-    <div className={className}>
+    <div className={`${className} absolute`}>
       <div className={styles["ascii-bg"]}>
         <pre>{asciiArt}</pre>
       </div>
@@ -43,4 +44,4 @@ const BrickBg = ({ className }: Props) => {
   );
 };
 
-export default BrickBg;
+export default ImageBorder;
