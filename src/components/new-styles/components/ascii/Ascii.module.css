@@ -10,10 +10,20 @@
   user-select: none;
 }
 
+.ascii-base {
+  white-space: pre;
+  max-height: 100vh;
+  height: max-content;
+  /* overflow: hidden; */
+  line-height: 1;
+  display: inline-block;
+  user-select: none;
+}
+
 .ascii-nav {
+  max-width: 100vw;
   overflow: hidden;
   font-size: small;
-  z-index: 0;
   display: flex;
 }
 
@@ -21,6 +31,10 @@
   display: inline-flex;
   width: auto;
   animation: scroll 250s linear infinite;
+}
+
+.ascii-track-reverse {
+  animation-direction: reverse;
 }
 
 @keyframes scroll {

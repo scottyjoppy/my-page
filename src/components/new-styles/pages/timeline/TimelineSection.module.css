@@ -1,0 +1,22 @@
+.container {
+  min-height: 190vh;
+  background: linear-gradient(180deg, var(--primary) 0, var(--primary-120) 50%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ascii-art {
+  color: var(--off-black);
+  mix-blend-mode: color-dodge;
+  font-size: xx-small;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ascii-border {
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -37,8 +37,7 @@ const RomanCol = ({ className, parentRef }: Props) => {
     return () => observer.disconnect();
   }, [parentRef]);
 
-  const asciiArt = `
-    ______________
+  const asciiArt = `    ______________
    (_,..........,_)
 ${Array.from({ length: rows })
   .map(() => PIPE_ROW)
