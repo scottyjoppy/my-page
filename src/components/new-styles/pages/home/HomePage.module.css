@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh; 
+  min-height: 90vh;
+  position: relative;
 }
 
 .body {
@@ -45,7 +46,6 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
-  border-radius: 8px;
 }
 
 .ascii-img-pos {
@@ -58,16 +58,30 @@
 .ascii-col-pos-l {
   left: 0;
   top: 0;
-  transform: translateY(22px);
+  transform: translateY(-10px);
 }
 
 .ascii-col-pos-r {
   right: 0;
   top: 0;
-  transform: translateY(22px);
+  transform: translateY(-10px);
 }
 
 .small-p {
   width: 10rem;
   font-size: small;
+}
+
+.ascii-art {
+  font-size: xx-small;
+  margin: auto;
+}
+
+.col-container {
+  width: 100%;
+  max-width: 200rem;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
 }

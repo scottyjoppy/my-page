@@ -32,14 +32,16 @@ const HomePage = () => {
             </p>
           </div>
         </div>
-        <RomanCol
-          className={styles["ascii-col-pos-l"]}
-          parentRef={sectionRef}
-        />
-        <RomanCol
-          className={styles["ascii-col-pos-r"]}
-          parentRef={sectionRef}
-        />
+        <div className={styles["col-container"]}>
+          <RomanCol
+            className={styles["ascii-col-pos-l"]}
+            parentRef={sectionRef}
+          />
+          <RomanCol
+            className={styles["ascii-col-pos-r"]}
+            parentRef={sectionRef}
+          />
+        </div>
       </section>
     </>
   );
