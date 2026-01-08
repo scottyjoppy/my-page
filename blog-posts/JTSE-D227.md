@@ -10,7 +10,7 @@ Hello friends,
 
 <br>
 
-I've been reading blogs and browsing websites in my spare time. There's such cool stuff on the internet if you look. [Henry Codes](https://henry.codes) and [Brad Woods Digital Garden](https://garden.bradwoods.io) just to name a few, have re-ignited my desire to put interesting stuff on the internet. Let's do just that.
+I've been reading blogs and browsing websites in my spare time. There's such cool stuff on the internet if you look. [Henry Codes](https://henry.codes) and [Brad Woods Digital Garden]`(https://garden.bradwoods.io) just to name a few, have re-ignited my desire to put interesting stuff on the internet. Let's do just that.
 
 <br>
 
