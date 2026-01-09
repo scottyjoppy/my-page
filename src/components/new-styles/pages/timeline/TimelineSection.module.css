@@ -1,22 +1,36 @@
 .container {
-  min-height: 190vh;
-  background: linear-gradient(180deg, var(--primary) 0, var(--primary-120) 50%);
+  min-height: 180vh;
   position: relative;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ascii-art {
   color: var(--off-black);
-  mix-blend-mode: color-dodge;
-  font-size: xx-small;
-  top: 1%;
-  left: 50%;
-  transform: translateX(-50%);
+  font-size: x-small;
 }
 
-.ascii-border {
+.ascii-tree {
+  color: var(--off-black);
+  font-size: x-small;
+  transform: translateX(-50%) translateX(3px);
+  position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+}
+
+.tree-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-box {
+  font-size: large;
+  text-align: center;
+  width: 10rem;
+  height: 10rem;
+  background-color: red;
 }

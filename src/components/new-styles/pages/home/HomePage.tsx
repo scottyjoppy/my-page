@@ -22,7 +22,8 @@ const HomePage = () => {
             </p>
             {files[1] && (
               <div className={styles["image-container"]}>
-                <img src={files[1].url} className={styles.image} />
+                {/* <img src={files[1].url} className={styles.image} /> */}
+                <img src="images/alex-camera-filter-1.jpg" className={styles.image} />
                 <ImageBorder className={styles["ascii-img-pos"]} />
               </div>
             )}

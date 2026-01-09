@@ -11,7 +11,7 @@ type Props = {
 const PIPE_ROW = "     ||||||||||||";
 
 const LINE_HEIGHT = 16;
-const FIXED_LINES = 7; // cap + base
+const FIXED_LINES = 6; // cap + base
 const MIN_ROWS = 6;
 const MAX_ROWS = 480;
 
