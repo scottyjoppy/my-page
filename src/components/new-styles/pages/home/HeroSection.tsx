@@ -4,9 +4,9 @@ import { useAboutBucket } from "@/composables/useBuckets";
 import { useRef } from "react";
 import ImageBorder from "../../components/ascii/ImageBorder";
 import RomanCol from "../../components/ascii/RomanCol";
-import styles from "./HomePage.module.css";
+import styles from "./HeroSection.module.css";
 
-const HomePage = () => {
+const HeroSection = () => {
   const { files } = useAboutBucket();
 
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -48,4 +48,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HeroSection;

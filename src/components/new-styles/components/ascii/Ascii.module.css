@@ -8,6 +8,7 @@
   display: inline-block;
   color: var(--off-black);
   user-select: none;
+  font-size: medium;
 }
 
 .ascii-base {
