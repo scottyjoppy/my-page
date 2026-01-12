@@ -30,6 +30,6 @@
 }
 
 .icon:hover > svg {
-  fill: var(--off-black-90);
+  opacity: 80%;
   cursor: pointer;
 }

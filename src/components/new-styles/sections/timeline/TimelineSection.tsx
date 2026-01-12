@@ -9,7 +9,15 @@ const TimelineSection = () => {
     <>
       <section className={styles.container}>
         <CreationOfAdam className={styles["ascii-art"]} />
+        <h2 className={styles["art-text"]}>
+          "I know I’m supposed to hate humans, but there’s something about them.
+          They don’t just survive. They discover, they create! Just look at what
+          they do with food!"
+          <br />
+          <a href="https://www.imdb.com/title/tt0382932/" target="_blank">- Remy</a>
+        </h2>
         <div className={styles["tree-container"]}>
+          <TreeImage className={styles["ascii-tree"]} />
           <h2 className={styles["grid-title"]}>TIMELINE TREE</h2>
           <div className={styles["grid-box"]}>
             <p className={styles["box-title"]}>2001</p>
@@ -59,7 +67,6 @@ const TimelineSection = () => {
               <em>Life Goal: Revolutionize Robotics</em>
             </p>
           </div>
-          <TreeImage className={styles["ascii-tree"]} />
         </div>
       </section>
     </>

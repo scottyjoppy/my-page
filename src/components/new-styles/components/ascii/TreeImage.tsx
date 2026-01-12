@@ -319,7 +319,7 @@ const CreationOfAdam = ({ className }: Props) => {
                                                                                                                                                                                                                                                                                                                                                                                                                      `;
  
  return (
-   <div className={`${className} relative`}>
+   <div className={`${className} relative`} inert>
       <div className={styles["ascii-base"]}>
         <pre>{asciiArt}</pre>
       </div>

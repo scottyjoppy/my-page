@@ -34,7 +34,7 @@ const ImageBorder = ({ className }: Props) => {
 +----------------------------------------------+`;
 
   return (
-    <div className={`${className} absolute`}>
+    <div className={`${className} absolute`} inert>
       <div className={styles["ascii-bg"]}>
         <pre>{asciiArt}</pre>
       </div>

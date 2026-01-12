@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useAboutBucket } from "@/composables/useBuckets";
 import Link from "next/link";
@@ -26,8 +26,8 @@ const AboutPage = () => {
       content: (
         <>
           I studied film production and wore many hats on and off set. I love
-          cameras, lighting, directing, writing, but was a video editor more than
-          anything.
+          cameras, lighting, directing, writing, but was a video editor more
+          than anything.
         </>
       ),
     },
@@ -37,9 +37,9 @@ const AboutPage = () => {
       content: (
         <>
           Aside from film, music has always been an important part of my life. I
-          love piano and have been making songs from a very young age. In and out
-          of school I've grown to love making scores for short films. My final
-          project was a{" "}
+          love piano and have been making songs from a very young age. In and
+          out of school I've grown to love making scores for short films. My
+          final project was a{" "}
           <Link
             href="https://vimeo.com/720844027"
             target="_blank"
@@ -55,8 +55,18 @@ const AboutPage = () => {
 
   return (
     <section className={styles["page-container"]}>
-      <h1 className={styles.title}>ABOUT PAGE</h1>
-
+      <h1 className={`${styles.title}`}>
+        ABO
+        <span className="relative inline-block w-[1ch] group">
+          <span className="block group-hover:opacity-0">
+            U
+          </span>
+          <span className="absolute inset-0 block opacity-0 group-hover:opacity-100">
+            O
+          </span>
+        </span>
+        T
+      </h1>
       {sections.map((section, i) => {
         const image = files[section.imageIndex];
 
