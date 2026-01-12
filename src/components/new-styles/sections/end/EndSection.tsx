@@ -10,7 +10,11 @@ const TimelineSection = () => {
         <FalseMirror className={styles["ascii-eye"]} />
         <h2 className={styles.title}>
           Life Obliges me to do <br />
-          <u>something</u>.
+          <br/>
+          <strong><u>something</u></strong>.
+          <br/>
+          <br/>
+          - René Magritte
         </h2>
       </section>
     </>

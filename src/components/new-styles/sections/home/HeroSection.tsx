@@ -21,13 +21,9 @@ const HeroSection = () => {
             <p className={`${styles["small-p"]} text-left`}>
               You've reached the personal page of this guy ====={">"}
             </p>
-            {files[1] && (
+            {files && (
               <div className={styles["image-container"]}>
-                {/* <img src={files[1].url} className={styles.image} /> */}
-                <img
-                  src="images/alex-camera-filter-1.jpg"
-                  className={styles.image}
-                />
+                <img src={files["alex-camera"]} className={styles.image} />
                 <ImageBorder className={styles["ascii-img-pos"]} />
               </div>
             )}

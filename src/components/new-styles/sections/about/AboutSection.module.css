@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  gap: 1rem;
+  position: relative;
+  margin-bottom: 5rem;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  object-fit: cover;
+  position: relative;
+  height: 12rem;
+  width: 20rem;
+  overflow: hidden;
+}
+
+.content-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.content-row::after,
+.content-row:nth-of-type(3)::before {
+  content: ">>==============================================================================================================================<<";
+  position: absolute;
+  font-size: small;
+  margin: -0.6rem;
+}
+
+.content-row::after {
+  top: 0;
+}
+
+.content-row::before {
+  bottom: 0;
+}
+
+.text-block {
+  width: 35rem;
+}
+
+.title {
+  font-size: 10rem;
+}
+
+.ascii-brick-l {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ascii-brick-r {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.brick-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  min-width: 110rem;
+  max-width: 142rem;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -85,7 +85,7 @@
   min-width: 38rem;
   max-width: 142rem;
   position: absolute;
-  left: 50%;
   top: 0;
+  left: 50%;
   transform: translateX(-50%);
 }
