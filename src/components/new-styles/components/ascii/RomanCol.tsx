@@ -49,7 +49,7 @@ ${Array.from({ length: rows })
  |__________________|`;
 
   return (
-    <div className={`${className} absolute`}>
+    <div className={`${className} absolute`} inert>
       <pre className={styles["ascii-bg"]}>{asciiArt}</pre>
     </div>
   );

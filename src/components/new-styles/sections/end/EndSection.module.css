@@ -1,0 +1,29 @@
+.container {
+  min-height: 91rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ascii-eye {
+  color: var(--off-black);
+  font-size: x-small;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.title {
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: medium;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+}

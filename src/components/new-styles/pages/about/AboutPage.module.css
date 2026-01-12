@@ -4,7 +4,8 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
-  background-color: var(--primary-120);;
+  background-color: var(--primary);
+  gap: 1rem;
 }
 
 .image {
@@ -12,9 +13,7 @@
   position: relative;
   height: 100%;
   width: 20rem;
-  border-radius: 8px;
   overflow: hidden;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .content-row {
@@ -24,8 +23,28 @@
   align-items: center;
   gap: 3rem;
   padding: 1rem;
+  position: relative;
+}
+
+.content-row:first-of-type::after,
+.content-row::before {
+  content: ">>======================================================================================================<<";
+  position: absolute;
+  margin: -1rem;
+}
+
+.content-row::after {
+  top: 0;
+}
+
+.content-row::before {
+  bottom: 0;
 }
 
 .text-block {
   width: 35rem;
+}
+
+.title {
+  font-size: 10rem;
 }

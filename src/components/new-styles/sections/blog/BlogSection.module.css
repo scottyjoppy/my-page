@@ -1,0 +1,89 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4px;
+  margin: 2rem;
+  width: 90%;
+  max-width: 142rem;
+}
+
+
+.post-container::before,
+.post-container::after {
+  content: "[-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .][-_-]]._.[[. .]";
+  position: absolute;
+  white-space: pre;
+  left: 50%;
+  font-size: small;
+  transform: translateX(-50%);
+  color: var(--primary-130);
+}
+
+.post-container::before {
+  top: 0;
+}
+
+.post-container::after {
+  bottom: 0;
+}
+
+.post-box {
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  width: 100%;
+  max-width: 30rem;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  position: relative;
+  border: solid var(--off-black);
+  border-width: 0;
+  justify-self: center;
+}
+
+.post-box:hover, .post-box:focus {
+  transition: 100ms all;
+  /* border-width: 2px; */
+  background-color: var(--primary-105);
+}
+
+
+.post-title {
+  font-size: medium;
+  text-decoration: underline;
+  font-weight: bold;
+  opacity: 100%;
+  transition: 100ms opacity;
+}
+
+.post-title:hover {
+  opacity: 70%;
+}
+
+.post-date {
+  font-style: italic;
+  font-size: small;
+  color: var(--off-black);
+}
+
+.post-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-desc {
+  height: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}

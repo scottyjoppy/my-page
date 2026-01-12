@@ -4,9 +4,10 @@
 :root {
   --primary-90: #f5f3f0;
   --primary: #ebe8e1;
+  --primary-105: #e0dcd2;
   --primary-110: #d0c9b9;
   --primary-120: #beb49d;
-  --primary-130: #3e3520;
+  --primary-130: #463a1c;
 
   --secondary-90: #f0f1f5;
   --secondary: #e1e9eb;
@@ -19,11 +20,12 @@
 
   font-optical-sizing: auto;
   font-style: normal;
-  
+
   cursor: default;
 }
 
-html, body {
+html,
+body {
   font-family: "Roboto Mono", monospace;
 }
 
@@ -46,14 +48,30 @@ h3 {
 
 body {
   background-color: var(--primary);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-body > section {
-  flex: 1;
+::-webkit-scrollbar {
+  background: var(--primary);
+  color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-110);
+  /* border-radius: 50; */
+  border: 1px solid var(--primary);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--primary-120);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-button:vertical,
+::-webkit-scrollbar-button:horizontal {
+  display: none;
 }
 
 ::selection {
