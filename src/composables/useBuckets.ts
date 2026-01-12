@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { createClient } from "@/lib/supabase/client";
 import { useEffect, useState } from "react";
@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 const supabase = createClient();
 
 export const useAboutBucket = () => {
-  const [files, setFiles] = useState<any[]>([]);
+  const [files, setFiles] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<any>(null);
 
@@ -29,7 +29,13 @@ export const useAboutBucket = () => {
               .getPublicUrl(`public/${file.name}`).data.publicUrl,
           })) ?? [];
 
-        setFiles(filesWithUrls);
+        const filesByName = filesWithUrls.reduce((acc, file) => {
+          const key = file.name.split(".")[0];
+          acc[key] = file.url;
+          return acc;
+        }, {} as Record<string, string>);
+
+        setFiles(filesByName);
       } catch (err) {
         setError(err);
       } finally {
