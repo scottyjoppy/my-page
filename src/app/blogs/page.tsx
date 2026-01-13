@@ -1,4 +1,4 @@
-import BlogsPage from "@/components/new-styles/pages/blogs/BlogsPage";
+import BlogsPage from "@/components/pages/blogs/BlogsPage";
 
 export default function Blog() {
   // const postMetadata = getPostMetadata();

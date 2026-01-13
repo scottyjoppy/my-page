@@ -1,6 +1,6 @@
 "use client";
 
-import CountBasie from "../../components/ascii/CountBasie";
+import CountBasie from "@/components/ascii/CountBasie";
 import styles from "./AboutEnd.module.css";
 
 const AboutEnd = () => {

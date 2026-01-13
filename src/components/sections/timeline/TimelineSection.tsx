@@ -1,7 +1,7 @@
 "use client";
 
-import CreationOfAdam from "../../components/ascii/CreationOfAdam";
-import TreeImage from "../../components/ascii/TreeImage";
+import CreationOfAdam from "@/components/ascii/CreationOfAdam";
+import TreeImage from "@/components/ascii/TreeImage";
 import styles from "./TimelineSection.module.css";
 
 const TimelineSection = () => {

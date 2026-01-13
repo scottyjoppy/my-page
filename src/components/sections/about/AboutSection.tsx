@@ -3,8 +3,8 @@
 import { useAboutBucket } from "@/composables/useBuckets";
 import Link from "next/link";
 import { useRef } from "react";
-import BrickPattern from "../../components/ascii/BrickPattern";
 import styles from "./AboutSection.module.css";
+import BrickPattern from "@/components/ascii/BrickPattern";
 
 const AboutSection = () => {
   const { files } = useAboutBucket();
