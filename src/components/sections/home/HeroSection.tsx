@@ -2,10 +2,10 @@
 
 import { useAboutBucket } from "@/composables/useBuckets";
 import { useRef } from "react";
-import ImageBorder from "../../components/ascii/ImageBorder";
-import RomanCol from "../../components/ascii/RomanCol";
-import Footer from "../../components/footer/Footer";
 import styles from "./HeroSection.module.css";
+import ImageBorder from "@/components/ascii/ImageBorder";
+import RomanCol from "@/components/ascii/RomanCol";
+import Footer from "@/components/footer/Footer";
 
 const HeroSection = () => {
   const { files } = useAboutBucket();

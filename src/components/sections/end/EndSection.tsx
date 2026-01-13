@@ -1,9 +1,9 @@
 "use client";
 
-import FalseMirror from "../../components/ascii/FalseMirror";
+import FalseMirror from "@/components/ascii/FalseMirror";
 import styles from "./EndSection.module.css";
 
-const TimelineSection = () => {
+const EndSection = () => {
   return (
     <>
       <section className={styles.container}>
@@ -21,4 +21,4 @@ const TimelineSection = () => {
   );
 };
 
-export default TimelineSection;
+export default EndSection;
