@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import styles from "./Ascii.module.css";
 
 type Props = {
@@ -10,31 +10,38 @@ type Props = {
 
 const PIPE_ROW = "     ||||||||||||";
 
-const LINE_HEIGHT = 16;
-const FIXED_LINES = 6; // cap + base
 const MIN_ROWS = 6;
 const MAX_ROWS = 480;
 
 const RomanCol = ({ className, parentRef }: Props) => {
-  const [rows, setRows] = useState(12);
+  const [rows, setRows] = useState(MIN_ROWS);
+  const preRef = useRef<HTMLPreElement>(null);
 
   useEffect(() => {
-    if (!parentRef?.current) return;
-
     const computeRows = () => {
-      const height = parentRef.current!.offsetHeight;
-      const available = height - FIXED_LINES * LINE_HEIGHT;
-
-      const next = Math.floor(available / LINE_HEIGHT);
+      if (!preRef.current) return;
+      
+      // Measure the actual rendered line height
+      const computedStyle = window.getComputedStyle(preRef.current);
+      const fontSize = parseFloat(computedStyle.fontSize);
+      const lineHeight = parseFloat(computedStyle.lineHeight);
+      
+      // Use whichever is valid (lineHeight might be 'normal')
+      const actualLineHeight = isNaN(lineHeight) ? fontSize : lineHeight;
+      
+      const height = parentRef.current?.offsetHeight ?? window.innerHeight;
+      const totalLines = Math.floor(height / actualLineHeight);
+      const next = totalLines - 5; // subtract fixed lines (cap + base)
       setRows(Math.max(MIN_ROWS, Math.min(next, MAX_ROWS)));
     };
 
     computeRows();
-
-    const observer = new ResizeObserver(computeRows);
-    observer.observe(parentRef.current);
-
-    return () => observer.disconnect();
+    window.addEventListener("resize", computeRows);
+    
+    // Also recompute when fonts load
+    document.fonts.ready.then(computeRows);
+    
+    return () => window.removeEventListener("resize", computeRows);
   }, [parentRef]);
 
   const asciiArt = `    ______________
@@ -50,7 +57,7 @@ ${Array.from({ length: rows })
 
   return (
     <div className={`${className} absolute`} inert>
-      <pre className={styles["ascii-bg"]}>{asciiArt}</pre>
+      <pre ref={preRef} className={styles["ascii-bg"]}>{asciiArt}</pre>
     </div>
   );
 };

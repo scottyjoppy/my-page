@@ -2,13 +2,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--secondary-90);
+  background-color: var(--off-black);
+  color: var(--primary-90);
+  overflow: hidden;
+}
+
+.title {
+  color: var(--primary-90);
+  font-size: 10rem;
+}
+
+.project-name {
+  color: var(--primary-90);
+  text-decoration: underline;
 }
 
 .project-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 60rem;
   align-items: center;
 }
 
@@ -18,11 +30,18 @@
   place-items: center;
   height: 15rem;
   width: 50rem;
-  padding: 1rem;
+  padding: 2rem 0;
+  position: relative;
+  gap: 1rem;
 }
 
-.project-row:not(:last-child) {
-  border-bottom: 1px solid black;
+.project-row:not(:last-child)::after {
+  content: "<=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=>";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: pre;
 }
 
 .project-info {
@@ -62,12 +81,12 @@
 }
 
 .project-icon:hover {
-  opacity: 90%;
+  opacity: 80%;
 }
 
 .project-icon > svg {
   height: 100%;
-  fill: var(--off-black);
+  fill: var(--primary-90);
 }
 
 .icon {
@@ -103,7 +122,7 @@
   justify-content: center;
   height: 100%;
   width: 2rem;
-  fill: var(--off-black);
+  fill: var(--primary-90);
   gap: 4px;
 }
 
@@ -130,4 +149,33 @@
 
 .project-tool:has(svg:hover)::after {
   opacity: 1;
+}
+
+.ascii-starc-l {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ascii-star-r {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.ascii-star-r > *, .ascii-star-l> * {
+  
+  color: var(--primary-90);
+}
+
+.star-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  min-width: 110rem;
+  max-width: 159rem;
+  left: 50%;
+  transform: translateX(-50%);
 }

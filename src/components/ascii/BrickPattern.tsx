@@ -11,7 +11,7 @@ type Props = {
 const ROW_A = "|_|___|___|___|___|___|___|___|___|___|";
 const ROW_B = "|___|___|___|___|___|___|___|___|___|_|";
 
-const LINE_HEIGHT = 10;
+const LINE_HEIGHT = 8;
 const MIN_ROWS = 20;
 const MAX_ROWS = 500;
 

@@ -63,6 +63,7 @@
   font-weight: bold;
   opacity: 100%;
   transition: 100ms opacity;
+  color: var(--off-black);
 }
 
 .post-title:hover {
@@ -81,6 +82,7 @@
 }
 
 .post-desc {
+  color: var(--off-black);
   height: 100%;
   text-overflow: ellipsis;
   overflow: hidden;

@@ -1,11 +1,10 @@
 "use client";
 
+import RomanCol from "@/components/ascii/RomanCol";
+import Footer from "@/components/footer/Footer";
 import { useAboutBucket } from "@/composables/useBuckets";
 import { useRef } from "react";
 import styles from "./HeroSection.module.css";
-import ImageBorder from "@/components/ascii/ImageBorder";
-import RomanCol from "@/components/ascii/RomanCol";
-import Footer from "@/components/footer/Footer";
 
 const HeroSection = () => {
   const { files } = useAboutBucket();
@@ -23,8 +22,7 @@ const HeroSection = () => {
             </p>
             {files && (
               <div className={styles["image-container"]}>
-                <img src={files["alex-camera"]} className={styles.image} />
-                <ImageBorder className={styles["ascii-img-pos"]} />
+                <img src={files["alex-magic"]} className={styles.image} />
               </div>
             )}
             <p className={`${styles["small-p"]} text-right`}>

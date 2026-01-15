@@ -6,7 +6,6 @@
   background-color: var(--primary);
   gap: 1rem;
   position: relative;
-  margin-bottom: 5rem;
   overflow: hidden;
   padding-bottom: 2rem;
 }
@@ -15,13 +14,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 60rem;
 }
 
 .image {
   object-fit: cover;
   position: relative;
-  height: 12rem;
-  width: 20rem;
+  height: 13rem;
+  aspect-ratio: 2 / 1;
   overflow: hidden;
 }
 
@@ -33,14 +33,16 @@
   gap: 3rem;
   padding: 1rem;
   position: relative;
+  color: var(--off-black);
 }
 
 .content-row::after,
-.content-row:nth-of-type(3)::before {
+.content-row:nth-of-type(4)::before {
   content: ">>==============================================================================================================================<<";
   position: absolute;
   font-size: small;
   margin: -0.6rem;
+  white-space: pre;
 }
 
 .content-row::after {
@@ -78,7 +80,7 @@
   width: 100%;
   overflow: hidden;
   min-width: 110rem;
-  max-width: 142rem;
+  max-width: 159rem;
   left: 50%;
   transform: translateX(-50%);
 }

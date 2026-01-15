@@ -1,21 +1,27 @@
 "use client";
 
+import StarPattern from "@/components/ascii/StarPattern";
 import { useProjects } from "@/composables/useProjects";
+import { useRef } from "react";
 import styles from "./ProjectsPage.module.css";
 
 const ProjectsPage = () => {
   const { projects } = useProjects();
+  const sectionRef = useRef<HTMLElement | null>(null);
 
   return (
     <>
-      <section className={styles["page-container"]}>
-        <h1>PROJECTS</h1>
+      <section ref={sectionRef} className={styles["page-container"]}>
+        <h2 className={styles.title}>PROJECTS</h2>
         <div className={styles["project-container"]}>
           {projects.map((proj) => (
             <div key={proj.id} className={styles["project-row"]}>
               <div className={styles["project-info"]}>
                 <a href={`#${proj.project_name}`} className={styles.anchor}>
-                  <h2 id={`${proj.project_name}`} className="underline">
+                  <h2
+                    id={`${proj.project_name}`}
+                    className={styles["project-name"]}
+                  >
                     {proj.project_name}
                   </h2>
                 </a>
@@ -57,6 +63,16 @@ const ProjectsPage = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className={styles["star-container"]} inert>
+          <StarPattern
+            className={styles["ascii-star-r"]}
+            parentRef={sectionRef}
+          />
+          <StarPattern
+            className={styles["ascii-star-l"]}
+            parentRef={sectionRef}
+          />
         </div>
       </section>
     </>

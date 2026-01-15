@@ -1,5 +1,5 @@
 .container {
-  min-height: 91rem;
+  min-height: 90rem;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -9,7 +9,7 @@
 
 .ascii-art {
   color: var(--off-black);
-  font-size: x-small;
+  font-size: 0.7rem;
   transform: translateX(-50%);
   position: absolute;
   left: 50%;
@@ -27,4 +27,5 @@
   text-align: center;
   font-weight: normal;
   font-style: italic;
+  background-color: var(--primary);
 }
