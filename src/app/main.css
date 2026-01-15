@@ -17,7 +17,7 @@
   --off-white: #fefefe;
   --off-black: #32332e;
   --off-black-110: #242421;
-  --off-black-90: #676767;
+  --off-black-90: #464646;
 
   font-optical-sizing: auto;
   font-style: normal;
@@ -55,21 +55,34 @@ h3 {
 
 ::-webkit-scrollbar {
   background: var(--primary);
-  color: black;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--primary-110);
-  /* border-radius: 50; */
-  border: 1px solid var(--primary);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--primary);
 }
 
 ::-webkit-scrollbar-thumb:active {
   background-color: var(--primary-120);
 }
 
-::-webkit-scrollbar-corner {
-  background: var(--primary);
+.switch::-webkit-scrollbar {
+  background: var(--off-black);
+}
+
+.switch::-webkit-scrollbar-corner {
+  background: var(--off-black);
+}
+
+.switch::-webkit-scrollbar-thumb {
+  background: var(--off-black-90);
+}
+
+.switch::-webkit-scrollbar-thumb:active {
+  background: var(--off-black-110);
 }
 
 ::-webkit-scrollbar-button:vertical,

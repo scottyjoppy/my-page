@@ -31,7 +31,7 @@ const RomanCol = ({ className, parentRef }: Props) => {
       
       const height = parentRef.current?.offsetHeight ?? window.innerHeight;
       const totalLines = Math.floor(height / actualLineHeight);
-      const next = totalLines - 5; // subtract fixed lines (cap + base)
+      const next = totalLines - 6; // subtract fixed lines (cap + base)
       setRows(Math.max(MIN_ROWS, Math.min(next, MAX_ROWS)));
     };
 

@@ -64,15 +64,17 @@ const ProjectsPage = () => {
             </div>
           ))}
         </div>
-        <div className={styles["star-container"]} inert>
-          <StarPattern
-            className={styles["ascii-star-r"]}
-            parentRef={sectionRef}
-          />
-          <StarPattern
-            className={styles["ascii-star-l"]}
-            parentRef={sectionRef}
-          />
+        <div className={styles["star-wrapper"]} inert>
+          <div className={styles["star-container"]} inert>
+            <StarPattern
+              className={styles["ascii-star-r"]}
+              parentRef={sectionRef}
+            />
+            <StarPattern
+              className={styles["ascii-star-l"]}
+              parentRef={sectionRef}
+            />
+          </div>
         </div>
       </section>
     </>
