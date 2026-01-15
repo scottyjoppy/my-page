@@ -15,9 +15,10 @@ const ROW_D = "     |       |       |       |       | ";
 
 const PATTERN = [ROW_A, ROW_B, ROW_C, ROW_D];
 
+const LINE_HEIGHT = 8; // ← Hardcoded like BrickPattern
 const MIN_ROWS = 20;
 const MAX_ROWS = 500;
-const FILL_RATIO = 0.95;
+const FILL_RATIO = 1;
 
 const StarPattern = ({ className, parentRef }: Props) => {
   const [rows, setRows] = useState(MIN_ROWS);
@@ -25,37 +26,30 @@ const StarPattern = ({ className, parentRef }: Props) => {
 
   useEffect(() => {
     const computeRows = () => {
-      if (!preRef.current) return;
-
-      const style = window.getComputedStyle(preRef.current);
-      const fontSize = parseFloat(style.fontSize);
-      const lineHeight = parseFloat(style.lineHeight);
-      const actualLineHeight = isNaN(lineHeight)
-        ? fontSize
-        : lineHeight;
-
-      const height =
-        parentRef.current?.offsetHeight ?? window.innerHeight;
-
+      const height = parentRef.current?.offsetHeight ?? window.innerHeight;
+      
       if (height === 0) return;
 
-      const totalLines = Math.floor(
-        (height * FILL_RATIO) / actualLineHeight
-      );
-
-      setRows(
-        Math.max(MIN_ROWS, Math.min(totalLines, MAX_ROWS))
-      );
+      const totalLines = Math.floor((height * FILL_RATIO) / LINE_HEIGHT);
+      
+      setRows(Math.max(MIN_ROWS, Math.min(totalLines, MAX_ROWS)));
     };
 
     computeRows();
     window.addEventListener("resize", computeRows);
-    document.fonts.ready.then(computeRows);
+    
+    // ResizeObserver to catch parent size changes
+    const resizeObserver = new ResizeObserver(computeRows);
+    if (parentRef.current) {
+      resizeObserver.observe(parentRef.current);
+    }
 
-    return () => window.removeEventListener("resize", computeRows);
+    return () => {
+      window.removeEventListener("resize", computeRows);
+      resizeObserver.disconnect();
+    };
   }, [parentRef]);
 
-  // 👇 bootstrap layout with at least one line
   const asciiArt = Array.from({ length: Math.max(rows, 1) })
     .map((_, i) => PATTERN[i % PATTERN.length])
     .join("\n");

@@ -29,7 +29,7 @@
 .ascii-track {
   display: inline-flex;
   width: auto;
-  animation: scroll 250s linear infinite;
+  animation: scroll 350s linear infinite;
 }
 
 .ascii-track-reverse {

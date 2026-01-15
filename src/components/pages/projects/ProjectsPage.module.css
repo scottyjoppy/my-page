@@ -5,6 +5,7 @@
   background-color: var(--off-black);
   color: var(--primary-90);
   overflow: hidden;
+  position: relative;
 }
 
 .title {
@@ -151,7 +152,7 @@
   opacity: 1;
 }
 
-.ascii-starc-l {
+.ascii-star-l {
   position: absolute;
   left: 0;
   top: 0;
@@ -173,9 +174,17 @@
   top: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
   min-width: 110rem;
   max-width: 159rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.star-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
 }

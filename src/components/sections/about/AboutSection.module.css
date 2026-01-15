@@ -59,6 +59,8 @@
 
 .title {
   font-size: 10rem;
+  line-height: 1;
+  margin: 2rem;
 }
 
 .ascii-brick-l {
