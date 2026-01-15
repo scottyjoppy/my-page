@@ -16,7 +16,11 @@ export default function Navbar() {
   return (
     <>
       <nav className={switchColor ? styles.nav : styles["nav-2"]}>
-        <PlusDashBorder className={styles["ascii-in-nav-t"]} reverse />
+        <PlusDashBorder
+          switchColor={switchColor}
+          className={styles["ascii-in-nav-t"]}
+          reverse
+        />
         <Link href="/" className={styles.icon}>
           <span className={styles["icon-text"]}>ALEX</span>
         </Link>
@@ -85,7 +89,10 @@ export default function Navbar() {
             })}
           </div>
         </div>
-        <PlusDashBorder className={styles["ascii-in-nav"]} />
+        <PlusDashBorder
+          switchColor={switchColor}
+          className={styles["ascii-in-nav"]}
+        />
       </nav>
     </>
   );

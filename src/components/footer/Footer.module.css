@@ -16,6 +16,11 @@
   align-items: center;
   overflow: none;
   gap: 4px;
+  background-color: var(--off-black);
+}
+
+.footer-container-2 .icon > svg {
+  fill: var(--primary-90);
 }
 
 

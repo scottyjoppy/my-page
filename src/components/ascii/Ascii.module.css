@@ -1,16 +1,23 @@
-.ascii-bg {
-  white-space: pre;
-  line-height: 1;
-  display: inline-block;
+.ascii-bg, .ascii-base {
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-feature-settings: normal;
+  font-kerning: none;
+  line-height: 1em;
   color: var(--off-black);
-  font-size: medium;
+  white-space: pre;
+  display: inline-block;
 }
 
-.ascii-base {
-  white-space: pre;
-  line-height: 1;
-  display: inline-block;
+.ascii-bg {
+  font-size: 0.9rem;
 }
+
+/* .ascii-base is without color */
+
+.switch .ascii-bg {
+  color: var(--primary-90);
+} 
 
 .ascii-nav {
   max-width: 100vw;

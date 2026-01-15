@@ -1,10 +1,10 @@
 "use client";
 
+import BrickPattern from "@/components/ascii/BrickPattern";
 import { useAboutBucket } from "@/composables/useBuckets";
 import Link from "next/link";
 import { useRef } from "react";
 import styles from "./AboutSection.module.css";
-import BrickPattern from "@/components/ascii/BrickPattern";
 
 const AboutSection = () => {
   const { files } = useAboutBucket();
@@ -16,10 +16,9 @@ const AboutSection = () => {
       imageSide: "right",
       content: (
         <>
-          My name is Alexander Delisle. I'm 24, and I relocated to Vienna from
-          Canada last year. I'm transitioning into software engineering and am
-          currently educating myself on the programming fundamentals, security,
-          web design, and data storage.
+          My name is Alexander Delisle. I'm a 24 year old Canadian living in
+          Vienna. With that move came the start of my journey down software
+          engineering. A path to last me a lifetime.
         </>
       ),
     },
@@ -28,9 +27,9 @@ const AboutSection = () => {
       imageSide: "left",
       content: (
         <>
-          I studied film production and wore many hats on and off set. I love
-          cameras, lighting, directing, writing, but was a video editor more
-          than anything.
+          I studied film production and was a bit of a jack-of-all-trades on
+          set. I love cameras, lighting, directing, writing, and video editing.
+          But mainly the ability to tell stories
         </>
       ),
     },
@@ -39,10 +38,30 @@ const AboutSection = () => {
       imageSide: "right",
       content: (
         <>
-          Aside from film, music has always been an important part of my life. I
-          love piano and have been making songs from a very young age. In and
-          out of school I've grown to love making scores for short films. My
-          final project was a{" "}
+          Music has always been an important part of my life. I love piano and
+          have been making songs from a very young age. In and out of school
+          I've grown to love making scores for short films. My graduating
+          project was a{" "}
+          <Link
+            href="https://vimeo.com/720844027"
+            target="_blank"
+            className="font-bold hover:underline"
+          >
+            documentary
+          </Link>{" "}
+          about me making a song.
+        </>
+      ),
+    },
+    {
+      imageIndex: "alex-camera",
+      imageSide: "left",
+      content: (
+        <>
+          Music has always been an important part of my life. I love piano and
+          have been making songs from a very young age. In and out of school
+          I've grown to love making scores for short films. My graduating
+          project was a{" "}
           <Link
             href="https://vimeo.com/720844027"
             target="_blank"
@@ -91,16 +110,16 @@ const AboutSection = () => {
             </div>
           );
         })}
-        <div className={styles["brick-container"]} inert>
-          <BrickPattern
-            className={styles["ascii-brick-r"]}
-            parentRef={sectionRef}
-          />
-          <BrickPattern
-            className={styles["ascii-brick-l"]}
-            parentRef={sectionRef}
-          />
-        </div>
+      </div>
+      <div className={styles["brick-container"]} inert>
+        <BrickPattern
+          className={styles["ascii-brick-r"]}
+          parentRef={sectionRef}
+        />
+        <BrickPattern
+          className={styles["ascii-brick-l"]}
+          parentRef={sectionRef}
+        />
       </div>
     </section>
   );

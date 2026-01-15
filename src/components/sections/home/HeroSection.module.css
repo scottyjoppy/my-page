@@ -3,7 +3,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: clamp(0rem, 94vh, 100rem);
+  min-height: 52rem;
+  height: 100%;
   position: relative;
   flex-direction: column;
 }
@@ -36,7 +37,7 @@
 }
 
 .image-container {
-  width: clamp(18rem, 25rem, 32rem);
+  width: 25rem;
   border-radius: 1rem;
   aspect-ratio: 1 / 1;
   transition: all 100ms;
@@ -49,13 +50,25 @@
   height: 25rem;
   width: 25rem;
   filter: brightness(105%);
+  position: relative;
 }
 
-.ascii-img-pos {
+.image-container::before, .image-container::after {
+  content: "+============================================+";
+  position: absolute;
+  color: var(--off-black);
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-container::before {
+  bottom: 0;
+  transform: translateY(1em) translateX(-50%);
+}
+
+.image-container::after {
   top: 0;
-  left: 0;
-  transform: translateX(-11px) translateY(-19px);
-  z-index: 2;
 }
 
 .ascii-col-pos-l {

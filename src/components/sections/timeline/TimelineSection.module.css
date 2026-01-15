@@ -1,5 +1,5 @@
 .container {
-  min-height: 270rem;
+  height: 302rem;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -9,12 +9,12 @@
 
 .ascii-art {
   color: var(--off-black);
-  font-size: x-small;
+  font-size: 0.7rem;
 }
 
 .ascii-tree {
   color: var(--off-black);
-  font-size: x-small;
+  font-size: 0.7rem;
   transform: translateX(-50%) translateX(3px);
   position: absolute;
   left: 50%;
@@ -26,9 +26,8 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 45rem;
-  width: 100%;
-  gap: 1rem 12rem;
+  min-width: 48rem;
+  gap: 1rem;
 }
 
 .grid-box {
@@ -89,13 +88,6 @@
   font-style: italic;
   font-size: small;
   color: var(--off-black-90);
-}
-
-.line {
-  position: absolute;
-  bottom: 0;
-  transform: translateX(18rem) translateY(14px);
-  font-size: small;
 }
 
 .art-text {

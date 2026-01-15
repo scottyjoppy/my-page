@@ -1,4 +1,5 @@
 import "@/app/main.css";
+import BodyController from "@/components/BodyController";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/nav/Navbar";
 import { Analytics } from "@vercel/analytics/react";
@@ -20,7 +21,9 @@ export default function RootLayout({
         <SpeedInsights />
         <Analytics />
         <Navbar />
-        {children}
+        <BodyController>
+          <div className="bg-inherit min-h-screen">{children}</div>
+        </BodyController>
         <Footer />
       </body>
     </html>
