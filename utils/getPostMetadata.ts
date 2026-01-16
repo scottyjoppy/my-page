@@ -3,6 +3,7 @@ import { PostMetadata } from "@/components/interface/PostMetadata";
 import { getValidBlogFiles } from "@/lib/blogUtils";
 import fs from "fs";
 import matter from "gray-matter";
+import path from "path";
 
 const getPostMetadata = (): PostMetadata[] => {
   const markdownPosts = getValidBlogFiles();

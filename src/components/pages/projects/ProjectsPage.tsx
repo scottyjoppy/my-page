@@ -11,7 +11,7 @@ const ProjectsPage = () => {
 
   return (
     <>
-      <section ref={sectionRef} className={styles["page-container"]}>
+      <section ref={sectionRef} className={styles["container"]}>
         <h2 className={styles.title}>PROJECTS</h2>
         <div className={styles["project-container"]}>
           {projects.map((proj) => (

@@ -41,9 +41,11 @@ const getPostContent = (slug: string) => {
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  return posts
+    .filter((post) => typeof post.slug === "string")
+    .map((post) => ({
+      slug: post.slug,
+    }));
 };
 
 // Change from 'any' to proper type and await params
@@ -59,18 +61,18 @@ const BlogPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
   }
 
   return (
-    <>
-      <div className="border-b-8 border-primary flex items-center">
-        <div className="container px-5 mx-auto my-3 max-w-250">
-          <h3 className="text-left">{post.data.blogSeries}</h3>
-          <h4 className="text-left mb-5">{post.data.blogLine}</h4>
-          <h1 className="-ml-1 mb-5">{post.data.title}</h1>
-          <p className="mb-5">{post.data.description}</p>
+    <section>
+      <div>
+        <div>
+          <h3>{post.data.blogSeries}</h3>
+          <h4>{post.data.blogLine}</h4>
+          <h1>{post.data.title}</h1>
+          <p>{post.data.description}</p>
         </div>
       </div>
-      <div className="container mx-auto my-10 max-w-250 px-5">
-        <p className="mb-3">{post.data.date}</p>
-        <article className="prose prose-lg max-w-none">
+      <div>
+        <p>{post.data.date}</p>
+        <article className="prose">
           <ReactMarkdown
             remarkPlugins={[remarkBreaks]}
             rehypePlugins={[rehypeRaw, rehypeHighlight]}
@@ -97,7 +99,7 @@ const BlogPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
           </ReactMarkdown>
         </article>
       </div>
-    </>
+    </section>
   );
 };
 
