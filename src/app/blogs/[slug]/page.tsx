@@ -1,6 +1,8 @@
 import fs from "fs";
 import matter from "gray-matter";
 import "highlight.js/styles/monokai.css";
+import { notFound } from "next/navigation";
+import path from "path";
 import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
 import rehypeRaw from "rehype-raw";
@@ -8,35 +10,44 @@ import remarkBreaks from "remark-breaks";
 import getPostMetadata from "utils/getPostMetadata";
 
 const getPostContent = (slug: string) => {
-  const file = `blog-posts/${slug}.md`;
-  const content = fs.readFileSync(file, "utf8");
-  const matterResult = matter(content);
-  return matterResult;
+  if (!slug) notFound();
+
+  const filePath = path.join(process.cwd(), "blog-posts", `${slug}.md`);
+
+  if (!fs.existsSync(filePath)) {
+    notFound();
+  }
+
+  const content = fs.readFileSync(filePath, "utf8");
+  return matter(content);
 };
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  return posts
+    .filter((post) => typeof post.slug === "string")
+    .map((post) => ({
+      slug: post.slug,
+    }));
 };
 
-const BlogPage = (props: any) => {
-  const slug = props.params.slug;
+const BlogPage = async (props: any) => {
+  const params = await props.params;
+  const slug = params.slug;
   const post = getPostContent(slug);
   return (
-    <>
-      <div className="border-b-8 border-primary flex items-center">
-        <div className="container px-5 mx-auto my-3 max-w-250">
-          <h3 className="text-left">{post.data.blogSeries}</h3>
-          <h4 className="text-left mb-5">{post.data.blogLine}</h4>
-          <h1 className="-ml-1 mb-5">{post.data.title}</h1>
-          <p className="mb-5">{post.data.description}</p>
+    <section>
+      <div>
+        <div>
+          <h3>{post.data.blogSeries}</h3>
+          <h4>{post.data.blogLine}</h4>
+          <h1>{post.data.title}</h1>
+          <p>{post.data.description}</p>
         </div>
       </div>
-      <div className="container mx-auto my-10 max-w-250 px-5">
-        <p className="mb-3">{post.data.date}</p>
-        <article className="prose prose-lg max-w-none">
+      <div>
+        <p>{post.data.date}</p>
+        <article className="prose">
           <ReactMarkdown
             remarkPlugins={[remarkBreaks]} // Handle line breaks (two spaces or <br>)
             rehypePlugins={[rehypeRaw, rehypeHighlight]} // Render raw HTML (e.g., <u>) and syntax highlight code
@@ -63,7 +74,7 @@ const BlogPage = (props: any) => {
           </ReactMarkdown>
         </article>
       </div>
-    </>
+    </section>
   );
 };
 

@@ -14,7 +14,7 @@ const BlogSection = () => {
                 <a
                   href={`/blogs/${post.slug}`}
                   className={styles["post-title"]}
-                >
+                  >
                   {post.title}
                 </a>
                 <div className={styles["post-date"]}>{post.date}</div>

@@ -52,6 +52,7 @@
   width: 25rem;
   filter: brightness(105%);
   position: relative;
+  margin: 1.2rem 0
 }
 
 .image-container::before, .image-container::after {
@@ -61,11 +62,11 @@
   z-index: 10;
   left: 50%;
   transform: translateX(-50%);
+  white-space: pre;
 }
 
 .image-container::before {
   bottom: 0;
-  transform: translateY(1em) translateX(-50%);
 }
 
 .image-container::after {

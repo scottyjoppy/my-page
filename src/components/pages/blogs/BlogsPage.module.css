@@ -1,4 +1,203 @@
-.page-container {
+.container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--off-black);
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  color: var(--off-black);
+  font-size: 10rem;
+  line-height: 1;
+  margin: 2rem;
+}
+
+.ascii-frog-l {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ascii-frog-r {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.ascii-frog-r > *,
+.ascii-frog-l > * {
+  color: var(--off-black);
+}
+
+.frog-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 140rem;
+  max-width: 159rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: small;
+}
+
+.frog-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.more-button {
+  position: relative;
+  padding: 1rem 0;
+  opacity: 100%;
+  transition: opacity 100ms;
+}
+
+.more-button:hover {
+  cursor: pointer;
+  font-style: italic;
+}
+
+.more-button::after,
+.more-button::before {
+  content: "+--------+";
+  position: absolute;
+  left: 50%;
+  color: var(--off-black);
+  white-space: pre;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+}
+
+.more-button:hover::after, .more-button:hover::before {
+  font-weight: bold;
+  content: "o--------o";
+  font-style: normal;
+}
+
+.more-button::after {
+  top: 0;
+}
+
+.more-button::before {
+  bottom: 0;
+}
+
+.blogs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 50rem;
+}
+
+.blog-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  align-items: start;
+  width: 100%;
+  color: var(--off-black);
+  position: relative;
+  padding: 1rem 0.3rem;
+}
+
+.blog-box::after {
+  content: "> - - - - - - - - - - <";
+  font-size: 0.8rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: pre;
+}
+
+.blog-box::after {
+  bottom: 0;
+}
+
+.blog-serie,
+.blog-date {
+  font-size: small;
+  font-style: italic;
+  color: var(--off-black-90)
+}
+
+.blog-serie:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.blog-title {
+  font-size: large;
+  text-decoration: underline;
+  opacity: 100%;
+  transition: 100ms opacity;
+  font-weight: bold;
+}
+
+.title-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-box:hover,
+.blog-box:focus {
+  transition: 100ms all;
+  background-color: var(--primary-110);
+  border-radius: 4px;
+}
+
+.blog-box:hover::after {
+  content: "< - - - - - - - - - - - >";
+  color: var(--off-black-90);
+  font-weight: bold;
+}
+
+.blog-box:hover .read-btn {
+  display: block;
+}
+
+.post-date {
+  font-style: italic;
+  font-size: small;
+  color: var(--off-black);
+}
+
+.post-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-desc {
+  color: var(--off-black);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.read-btn {
+  display: none;
+  color: var(--primary);
+  transition: all 100ms;
+}
+
+.read-btn:hover {
+  color: var(--off-black);
+  font-weight: bold;
+}
+
+.desc-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
