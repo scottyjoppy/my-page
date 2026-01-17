@@ -1,0 +1,80 @@
+.container {
+  max-width: 62rem;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.blog-serie-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.blog-anchor::after {
+  content: "#";
+  opacity: 0;
+  padding: 0;
+  transition: all 100ms;
+}
+
+.blog-anchor:hover::after {
+  opacity: 100%;
+  padding: 0.5rem;
+}
+
+.top-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.top-container::after,
+.top-container::before {
+  position: absolute;
+  white-space: pre;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top-container::after {
+  content: "________________________________________________________________________________________________________________";
+  bottom: -1rem;
+  white-space: pre;
+}
+
+.top-container::before {
+  bottom: -2rem;
+  content: "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||";
+}
+
+.blog-serie {
+  font-size: small;
+  font-style: italic;
+  color: var(--off-black-90);
+}
+
+.title {
+  color: var(--off-black);
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.day-container {
+  font-size: calc(5rem * 0.16);
+  writing-mode: sideways-lr;
+  text-transform: uppercase;
+  text-underline-offset: 6px;
+  position: relative;
+}
+
+.date {
+  font-style: italic;
+  color: var(--off-black-90);
+}
+
+.blog-desc {
+  margin: 1rem 0;
+  font-style: italic;
+}

@@ -58,18 +58,7 @@ const AboutSection = () => {
       imageSide: "left",
       content: (
         <>
-          Music has always been an important part of my life. I love piano and
-          have been making songs from a very young age. In and out of school
-          I've grown to love making scores for short films. My graduating
-          project was a{" "}
-          <Link
-            href="https://vimeo.com/720844027"
-            target="_blank"
-            className="font-bold hover:underline"
-          >
-            documentary
-          </Link>{" "}
-          about me making a song.
+          asdasd
         </>
       ),
     },
