@@ -75,7 +75,8 @@
   font-size: 0.9rem;
 }
 
-.more-button:hover::after, .more-button:hover::before {
+.more-button:hover::after,
+.more-button:hover::before {
   font-weight: bold;
   content: "o--------o";
   font-style: normal;
@@ -106,7 +107,7 @@
   width: 100%;
   color: var(--off-black);
   position: relative;
-  padding: 1rem 0.3rem;
+  padding: 0.3rem 0.5rem 1rem 0.5rem;
 }
 
 .blog-box::after {
@@ -126,7 +127,7 @@
 .blog-date {
   font-size: small;
   font-style: italic;
-  color: var(--off-black-90)
+  color: var(--off-black-90);
 }
 
 .blog-serie:hover {
