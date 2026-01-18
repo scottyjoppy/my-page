@@ -9,12 +9,12 @@ const AboutEnd = () => {
       <section className={styles.container}>
         <AlexPiano className={styles["ascii-art"]} />
         <h2 className={styles.title}>
-          You can't force creativity.
+          "You can't force creativity.
           <br />
           <br />
           It's a living, breathing force that must be
           <br />
-          nurtured and allowed to flourish <strong>on its own</strong> terms.
+          nurtured and allowed to flourish <strong>on its own</strong> terms."
           <br />
           <br />
           - Count Basie

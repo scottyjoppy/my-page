@@ -32,6 +32,12 @@ body {
   background-color: var(--primary);
 }
 
+@supports (-webkit-backdrop-filter: blur(1px)) {
+  body {
+    letter-spacing: -0.9px; 
+  }
+}
+
 body.switch {
   background-color: var(--off-black) !important;
 }

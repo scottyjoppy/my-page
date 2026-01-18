@@ -27,7 +27,7 @@ export default function Navbar() {
         <div className={styles["links-container-wrapper"]}>
           {!expandNav ? (
             <div
-              className={styles["dropdown-container"]}
+              className={switchColor ? styles["dropdown-container"] : styles["dropdown-container-2"]}
               onClick={() => setExpandNav((prev) => !prev)}
             >
               <svg
@@ -52,7 +52,9 @@ export default function Navbar() {
                 onClick={() => setExpandNav((prev) => !prev)}
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
-                className={styles["exit-svg"]}
+                className={
+                  switchColor ? styles["exit-svg"] : styles["exit-svg-2"]
+                }
               >
                 <path
                   fill-rule="evenodd"
@@ -65,9 +67,7 @@ export default function Navbar() {
                   <Link
                     href={page.link || ""}
                     key={key}
-                    className={
-                      switchColor ? styles["page-link"] : styles["page-link-2"]
-                    }
+                    className={styles["page-link"]}
                   >
                     <div>{page.title}</div>
                   </Link>

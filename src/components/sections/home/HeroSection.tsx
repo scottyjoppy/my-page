@@ -17,8 +17,8 @@ const HeroSection = () => {
         <div className={styles["welcome-container"]}>
           <h2 className={styles.title}>Welcome</h2>
           <div className={styles["welcome-text"]}>
-            <p className={`${styles["small-p"]} text-left`}>
-              You've reached the personal page of this guy ====={">"}
+            <p className={`${styles["small-p"]} ${styles["p-arrow"]} text-left`}>
+              You've reached the personal page of this guy
             </p>
             {files && (
               <div className={styles["image-container"]}>

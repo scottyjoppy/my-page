@@ -14,7 +14,9 @@ const TimelineSection = () => {
           They don’t just survive. They discover, they create! Just look at what
           they do with food!"
           <br />
-          <a href="https://www.imdb.com/title/tt0382932/" target="_blank">- Remy</a>
+          <a href="https://www.imdb.com/title/tt0382932/" target="_blank">
+            - Remy
+          </a>
         </h2>
         <div className={styles["tree-container"]}>
           <TreeImage className={styles["ascii-tree"]} />

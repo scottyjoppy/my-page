@@ -9,9 +9,9 @@ const EndSection = () => {
       <section className={styles.container}>
         <FalseMirror className={styles["ascii-eye"]} />
         <h2 className={styles.title}>
-          Life Obliges me to do <br />
+          "Life Obliges me to do <br />
           <br/>
-          <strong><u>something</u></strong>.
+          <strong><u>something</u></strong>."
           <br/>
           <br/>
           - René Magritte

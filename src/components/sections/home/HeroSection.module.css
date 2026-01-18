@@ -18,7 +18,6 @@
   text-transform: uppercase;
   font-size: 13rem;
   line-height: 1;
-  translate: 12px 0;
 }
 
 .welcome-container {
@@ -26,7 +25,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2vh 0;
+  margin: 1rem 0;
   gap: 1rem;
   position: relative;
 }
@@ -52,10 +51,11 @@
   width: 25rem;
   filter: brightness(105%);
   position: relative;
-  margin: 1.2rem 0
+  margin: 1.2rem 0;
 }
 
-.image-container::before, .image-container::after {
+.image-container::before,
+.image-container::after {
   content: "+============================================+";
   position: absolute;
   color: var(--off-black);
@@ -76,18 +76,25 @@
 .ascii-col-pos-l {
   left: 0;
   top: 0;
-  transform: translateY(-10px);
 }
 
 .ascii-col-pos-r {
   right: 0;
   top: 0;
-  transform: translateY(-10px);
 }
 
 .small-p {
   width: 10rem;
   font-size: small;
+}
+
+.p-arrow {
+  position: relative;
+}
+
+.p-arrow::after {
+  content: "-------->";
+  padding: 1rem;
 }
 
 .ascii-art {
@@ -97,10 +104,76 @@
 
 .col-container {
   width: 100%;
-  min-width: 38rem;
+  min-width: 40rem;
   max-width: 142rem;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  /* IMPORTANT!! Throwing in the towel and moving the columns 4px to the left */
+  transform: translateX(-50%) translateY(-6px) translateX(-4px);
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 8rem;
+  }
+
+  .image-container {
+    width: 20rem;
+  }
+
+  .image {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .image-container::before,
+  .image-container::after {
+    content: "+===================================+";
+  }
+
+  .welcome-text {
+    flex-direction: column;
+  }
+
+  .small-p {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .p-arrow::after {
+    content: "V";
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(1.8rem);
+  }
+
+  .p-arrow::before {
+    content: "|";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(1rem);
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 5rem;
+  }
+
+  .image-container {
+    width: 15rem;
+  }
+
+  .image {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .image-container::before,
+  .image-container::after {
+    content: "+==========================+";
+  }
 }
