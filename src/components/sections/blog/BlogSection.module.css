@@ -16,7 +16,6 @@
   max-width: 142rem;
 }
 
-
 .post-container::before,
 .post-container::after {
   content: "[-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .] [-_-] ]._.[ [. .]";
@@ -39,7 +38,7 @@
 .post-box {
   display: flex;
   flex-direction: column;
-  height: 7rem;
+  height: auto;
   width: 100%;
   max-width: 30rem;
   justify-content: space-between;
@@ -48,13 +47,14 @@
   border: solid var(--off-black);
   border-width: 0;
   justify-self: center;
+  gap: 0.5rem;
 }
 
-.post-box:hover, .post-box:focus {
+.post-box:hover,
+.post-box:focus {
   transition: 100ms all;
   background-color: var(--primary-105);
 }
-
 
 .post-title {
   font-size: medium;
@@ -73,6 +73,7 @@
   font-style: italic;
   font-size: small;
   color: var(--off-black);
+  position: relative;
 }
 
 .post-top {
@@ -87,4 +88,17 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .post-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .post-box {
+    max-width: 100%;
+  }
+
 }

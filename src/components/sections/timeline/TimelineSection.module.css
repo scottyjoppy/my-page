@@ -38,6 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   font-size: medium;
   grid-column: span 2;
 }
@@ -111,4 +112,81 @@
 
 .art-text > a:hover {
   opacity: 70%;
+}
+
+@media (max-width: 1024px) {
+  .art-text {
+    width: 30rem;
+    margin-top: 10rem;
+  }
+
+  .ascii-art,
+  .ascii-tree {
+    font-size: 0.5rem;
+  }
+
+  .grid-title {
+    margin-top: 1.5rem;
+  }
+
+  .tree-container {
+    min-width: 40rem;
+    padding: 10rem 0;
+  }
+
+  .container {
+    height: 215rem;
+  }
+}
+@media (max-width: 768px) {
+  .art-text {
+    width: 20rem;
+    margin-top: 7rem;
+    font-size: 0.9rem;
+  }
+
+  .ascii-art,
+  .ascii-tree {
+    font-size: 0.4rem;
+  }
+
+  .grid-title {
+    font-size: 2.5rem;
+    margin-top: 1.2rem;
+  }
+
+  .tree-container {
+    padding: 7rem 0;
+    min-width: 90%;
+    gap: 1.3rem;
+  }
+
+  .grid-box:nth-child(even),
+  .grid-box:nth-child(odd) {
+    align-items: center;
+  }
+
+  .grid-box > p {
+    background-color: var(--primary);
+    padding: 0 1rem;
+  }
+
+  .grid-box::after,
+  .grid-box::before {
+    content: "---------------------------";
+    position: absolute;
+    margin: -0.5rem;
+  }
+
+  .grid-box::after {
+    bottom: 0;
+  }
+
+  .grid-box::before {
+    top: 0;
+  }
+
+  .container {
+    height: 172rem;
+  }
 }
