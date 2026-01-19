@@ -9,7 +9,7 @@
 
 .title {
   color: var(--off-black);
-  font-size: 10rem;
+  font-size: 13rem;
   line-height: 1;
   margin: 2rem;
 }
@@ -201,4 +201,15 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 5rem;
+  }
 }
