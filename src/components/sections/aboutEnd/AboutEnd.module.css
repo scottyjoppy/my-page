@@ -1,5 +1,5 @@
 .container {
-  min-height: 90rem;
+  height: 90rem;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -19,7 +19,6 @@
 .title {
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
-  position: absolute;
   left: 50%;
   top: 50%;
   font-size: medium;
@@ -27,4 +26,35 @@
   font-weight: normal;
   font-style: italic;
   background-color: var(--primary);
+  padding: 4px 1rem;
+}
+
+@media (max-width: 1024px) {
+  .ascii-art {
+    font-size: 0.5rem;
+  }
+
+  .title {
+    top: 55%;
+  }
+
+  .container {
+    height: 65rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ascii-art {
+    font-size: 0.4rem;
+  }
+
+  .title {
+    top: 60%;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .container {
+    height: 50rem;
+  }
 }

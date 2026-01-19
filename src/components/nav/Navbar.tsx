@@ -25,56 +25,20 @@ export default function Navbar() {
           <span className={styles["icon-text"]}>ALEX</span>
         </Link>
         <div className={styles["links-container-wrapper"]}>
-          {!expandNav ? (
-            <div
-              className={switchColor ? styles["dropdown-container"] : styles["dropdown-container-2"]}
-              onClick={() => setExpandNav((prev) => !prev)}
+          <div
+            className={switchColor ? styles["dropdown-container"] : styles["dropdown-container-2"]}
+            onClick={() => setExpandNav((prev) => !prev)}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              className={styles["dropdown-svg"]}
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                className={styles["dropdown-svg"]}
-              >
-                <g id="_icons">
-                  <path d="M5 7h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1zM5 13h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1zM5 19h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1z" />
-                </g>
-              </svg>
-            </div>
-          ) : (
-            <div
-              className={
-                switchColor
-                  ? styles["dropdown-container-expand"]
-                  : styles["dropdown-container-expand-2"]
-              }
-            >
-              <svg
-                onClick={() => setExpandNav((prev) => !prev)}
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                className={
-                  switchColor ? styles["exit-svg"] : styles["exit-svg-2"]
-                }
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 0 1 0-1.414Z"
-                />
-              </svg>
-              {navs.map((page, key) => {
-                return (
-                  <Link
-                    href={page.link || ""}
-                    key={key}
-                    className={styles["page-link"]}
-                  >
-                    <div>{page.title}</div>
-                  </Link>
-                );
-              })}
-            </div>
-          )}
+              <g id="_icons">
+                <path d="M5 7h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1zM5 13h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1zM5 19h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1z" />
+              </g>
+            </svg>
+          </div>
           <div className={styles["links-container"]}>
             {navs.map((page, key) => {
               return (
@@ -94,6 +58,43 @@ export default function Navbar() {
           className={styles["ascii-in-nav"]}
         />
       </nav>
+      
+      {/* Dropdown rendered as sibling, completely outside nav */}
+      {expandNav && (
+        <div
+          className={
+            switchColor
+              ? styles["dropdown-container-expand"]
+              : styles["dropdown-container-expand-2"]
+          }
+        >
+          <svg
+            onClick={() => setExpandNav((prev) => !prev)}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            className={
+              switchColor ? styles["exit-svg"] : styles["exit-svg-2"]
+            }
+          >
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 0 1 0-1.414Z"
+            />
+          </svg>
+          {navs.map((page, key) => {
+            return (
+              <Link
+                href={page.link || ""}
+                key={key}
+                className={styles["page-link"]}
+              >
+                <div>{page.title}</div>
+              </Link>
+            );
+          })}
+        </div>
+      )}
     </>
   );
 }
