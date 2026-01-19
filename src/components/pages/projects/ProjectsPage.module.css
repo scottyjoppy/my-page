@@ -17,7 +17,7 @@
 
 .project-name {
   color: var(--primary-90);
-  /* text-decoration: underline; */
+  white-space: pre;
 }
 
 .project-name::after {
@@ -130,6 +130,7 @@
   width: 1rem;
   display: flex;
   align-items: center;
+  fill: var(--primary-90) !important;
   gap: 4px;
   transition: opacity 100ms;
 }
@@ -147,7 +148,7 @@
 }
 
 .project-tool:has(svg:hover)::after {
-  opacity: 1;
+  opacity: 100%;
 }
 
 .ascii-star-l {
@@ -191,9 +192,81 @@
   .title {
     font-size: 8rem;
   }
+
+  .project-row:not(:last-child)::after {
+    content: "<=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=>";
+  }
+
+  .project-row {
+    width: 43rem;
+  }
+
+  .project-tool::after {
+    display: none;
+  }
+
+  .project-tool:hover {
+    opacity: 100%;
+  }
+
+  .star-container {
+    min-width: 92rem;
+  }
 }
 @media (max-width: 768px) {
   .title {
     font-size: 4rem;
+  }
+
+  .project-row:not(:last-child)::after {
+    content: "<=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=>";
+    transform: translateY(1rem) translateX(-50%);
+  }
+
+  .project-row {
+    max-width: 90%;
+    min-width: none;
+    height: auto;
+    padding: 0;
+  }
+
+  .project-container {
+    width: 100%;
+  }
+
+  .tool-icon-container {
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(-1.3rem);
+  }
+
+  .project-icon {
+    max-height: 1.5rem;
+    position: absolute;
+    top: 0.3rem;
+    right: 0;
+  }
+
+  .project-info {
+    font-size: 0.8rem;
+    grid-column: span 4;
+    gap: 0.5rem;
+  }
+
+  .project-name {
+    font-size: 1.5rem;
+  }
+
+  .project-container {
+    gap: 1rem;
+  }
+
+  .project-tool {
+    height: 0.8rem;
+    width: 0.8rem;
   }
 }
