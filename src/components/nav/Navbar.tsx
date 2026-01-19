@@ -3,7 +3,7 @@
 import { useNav } from "@/composables/useNav";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import PlusDashBorder from "../ascii/PlusDashBorder";
 import styles from "./Navbar.module.css";
 
@@ -12,6 +12,24 @@ export default function Navbar() {
   const { navs } = useNav();
   const pathname = usePathname();
   const switchColor = pathname !== "/projects";
+
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (!expandNav) return;
+
+    function handleClickOutside(e: MouseEvent) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(e.target as Node)
+      ) {
+        setExpandNav(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [expandNav]);
 
   return (
     <>
@@ -26,7 +44,11 @@ export default function Navbar() {
         </Link>
         <div className={styles["links-container-wrapper"]}>
           <div
-            className={switchColor ? styles["dropdown-container"] : styles["dropdown-container-2"]}
+            className={
+              switchColor
+                ? styles["dropdown-container"]
+                : styles["dropdown-container-2"]
+            }
             onClick={() => setExpandNav((prev) => !prev)}
           >
             <svg
@@ -58,10 +80,11 @@ export default function Navbar() {
           className={styles["ascii-in-nav"]}
         />
       </nav>
-      
+
       {/* Dropdown rendered as sibling, completely outside nav */}
       {expandNav && (
         <div
+          ref={dropdownRef}
           className={
             switchColor
               ? styles["dropdown-container-expand"]
@@ -72,9 +95,7 @@ export default function Navbar() {
             onClick={() => setExpandNav((prev) => !prev)}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            className={
-              switchColor ? styles["exit-svg"] : styles["exit-svg-2"]
-            }
+            className={switchColor ? styles["exit-svg"] : styles["exit-svg-2"]}
           >
             <path
               fillRule="evenodd"
@@ -88,6 +109,7 @@ export default function Navbar() {
                 href={page.link || ""}
                 key={key}
                 className={styles["page-link"]}
+                onClick={() => setExpandNav(false)}
               >
                 <div>{page.title}</div>
               </Link>
