@@ -44,7 +44,7 @@ export function useProjects() {
     project_tools:project_tools(
       icons(*)
     )
-  `
+  `,
       )
       .not("display_order", "is", null)
       .order("display_order", { ascending: true });
@@ -55,7 +55,17 @@ export function useProjects() {
       return;
     }
 
-    setProjects(data ?? []);
+    const transformedData: ProjectWithIcons[] = (data ?? []).map((project) => ({
+      ...project,
+      project_icon: Array.isArray(project.project_icon)
+        ? project.project_icon[0] ?? null
+        : project.project_icon,
+      project_tools: (project.project_tools ?? []).map((tool: any) => ({
+        icons: Array.isArray(tool.icons) ? tool.icons[0] : tool.icons,
+      })),
+    }));
+
+    setProjects(transformedData);
     setLoading(false);
   };
 
