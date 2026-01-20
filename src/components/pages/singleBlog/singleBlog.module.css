@@ -82,6 +82,10 @@
   font-style: italic;
 }
 
+.blog-content {
+  color: var(--off-black);
+}
+
 @media (max-width: 1024px) {
   .title {
     font-size: 4rem;
