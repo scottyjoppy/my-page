@@ -5,6 +5,7 @@
   color: var(--off-black);
   overflow: hidden;
   position: relative;
+  padding: 0 1rem;
 }
 
 .title {
@@ -127,7 +128,7 @@
 .blog-date {
   font-size: small;
   font-style: italic;
-  color: var(--off-black-90);
+  color: var(--off-black-80);
 }
 
 .blog-serie:hover {
@@ -207,9 +208,46 @@
   .title {
     font-size: 8rem;
   }
+
+  .frog-container {
+    min-width: 115rem;
+  }
 }
+
 @media (max-width: 768px) {
   .title {
     font-size: 5rem;
+  }
+
+  .title-container {
+    flex-direction: column-reverse;
+  }
+
+  .blog-box {
+    font-size: 0.8rem;
+    padding-right: 1.8rem;
+  }
+
+  .blog-title {
+    order: -1;
+  }
+
+  .blog-serie {
+    display: none;
+  }
+
+  .blog-box:hover .blog-serie {
+    display: block;
+  }
+
+  .blog-box:hover .blog-date {
+    display: none;
+  }
+
+  .read-btn {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

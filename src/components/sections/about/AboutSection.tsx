@@ -70,8 +70,8 @@ const AboutSection = () => {
         <h1 className={`${styles.title}`}>
           ABO
           <span className="relative inline-block w-[1ch] group">
-            <span className="block group-hover:opacity-0">U</span>
-            <span className="absolute inset-0 block opacity-0 group-hover:opacity-100">
+            <span className="block group-hover:opacity-0 group-active:opacity-0">U</span>
+            <span className="absolute inset-0 block opacity-0 group-hover:opacity-100 group-active:opacity-100">
               O
             </span>
           </span>
