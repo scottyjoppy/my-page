@@ -10,15 +10,18 @@ const AboutSection = () => {
   const { files } = useAboutBucket();
   const sectionRef = useRef<HTMLElement | null>(null);
 
+  const birthDate = new Date("2001-04-04");
+  const age = Math.floor((Date.now() - birthDate.getTime()) / 31557600000);
+
   const sections = [
     {
       imageIndex: "alex-budapest",
       imageSide: "right",
       content: (
         <>
-          My name is Alexander Delisle. I'm a 24 year old Canadian living in
+          My name is Alexander Delisle. I'm a {age} year old Canadian living in
           Vienna. With that move came the start of my journey down software
-          engineering. A path to last me a lifetime.
+          engineering.
         </>
       ),
     },
@@ -27,9 +30,9 @@ const AboutSection = () => {
       imageSide: "left",
       content: (
         <>
-          I studied film production and was a bit of a jack-of-all-trades on
-          set. I love cameras, lighting, directing, writing, and video editing.
-          But mainly the ability to tell stories
+          I studied film production and was a jack-of-all-trades on set. I love
+          cameras, lighting, directing, writing, and video editing. But mainly
+          the ability to tell stories.
         </>
       ),
     },
@@ -40,7 +43,7 @@ const AboutSection = () => {
         <>
           Music has always been an important part of my life. I love piano and
           have been making songs from a very young age. In and out of school
-          I've grown to love making scores for short films. My graduating
+          I've grown to love writing scores for short films. My graduating
           project was a{" "}
           <Link
             href="https://vimeo.com/720844027"
@@ -49,7 +52,7 @@ const AboutSection = () => {
           >
             documentary
           </Link>{" "}
-          about me making a song.
+          about me creating a song.
         </>
       ),
     },
@@ -58,7 +61,9 @@ const AboutSection = () => {
       imageSide: "left",
       content: (
         <>
-          asdasd
+          Now I enter my coding age. Ever since I discovered code I've been
+          entranced by this amazing world of ones and zeroes. I'm excited to
+          follow this path, and bring to life all the creations in my head.
         </>
       ),
     },
@@ -70,7 +75,9 @@ const AboutSection = () => {
         <h1 className={`${styles.title}`}>
           ABO
           <span className="relative inline-block w-[1ch] group">
-            <span className="block group-hover:opacity-0 group-active:opacity-0">U</span>
+            <span className="block group-hover:opacity-0 group-active:opacity-0">
+              U
+            </span>
             <span className="absolute inset-0 block opacity-0 group-hover:opacity-100 group-active:opacity-100">
               O
             </span>
