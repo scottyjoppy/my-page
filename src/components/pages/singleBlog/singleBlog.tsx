@@ -39,30 +39,28 @@ const SingleBlog = ({ slug }: SingleBlogProps) => {
 
   return (
     <section className={styles.container}>
-      <div>
-        <div className={styles["top-container"]}>
-          <div className={styles["blog-serie-container"]}>
-            <p className={styles["blog-serie"]}>
-              C:\{post.data.blogSeries}\{slug}
-            </p>
-            <p className={styles["blog-serie"]}>
-              ::{"{"}
-              {post.data.blogLine}
-              {"}"}
-            </p>
-          </div>
-          <h2 className={styles["title-container"]}>
-            <span className={styles["day-container"]}>
-              {post.data.title.split(":")[0].trim()}
-            </span>
-            <span className={styles.title}>
-              {post.data.title.split(":")[1].trim()}
-            </span>
-          </h2>
-          <p className={styles["blog-desc"]}>{post.data.description}</p>
+      <div className={styles["top-container"]}>
+        <div className={styles["blog-serie-container"]}>
+          <p className={styles["blog-serie"]}>
+            C:\{post.data.blogSeries}\{slug}
+          </p>
+          <p className={styles["blog-serie"]}>
+            ::{"{"}
+            {post.data.blogLine}
+            {"}"}
+          </p>
         </div>
+        <h2 className={styles["title-container"]}>
+          <span className={styles["day-container"]}>
+            {post.data.title.split(":")[0].trim()}
+          </span>
+          <span className={styles.title}>
+            {post.data.title.split(":")[1].trim()}
+          </span>
+        </h2>
+        <p className={styles["blog-desc"]}>{post.data.description}</p>
       </div>
-      <div>
+      <div className={styles["blog-content"]}>
         <p className={styles.date}>{post.data.date}</p>
         <br />
         <article className="prose">
