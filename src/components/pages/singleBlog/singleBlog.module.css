@@ -36,6 +36,9 @@
   white-space: pre;
   left: 50%;
   transform: translateX(-50%);
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center;
 }
 
 .top-container::after {
@@ -62,7 +65,7 @@
 }
 
 .day-container {
-  font-size: calc(5rem * 0.16);
+  font-size: 0.9rem;
   writing-mode: sideways-lr;
   text-transform: uppercase;
   text-underline-offset: 6px;
@@ -77,4 +80,63 @@
 .blog-desc {
   margin: 1rem 0;
   font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 4rem;
+  }
+
+  .top-container::after {
+    content: "____________________________________________________________________________________";
+  }
+
+  .top-container::before {
+    content: "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||";
+  }
+
+  .container {
+    max-width: 46rem;
+  }
+
+  .day-container {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .day-container {
+    font-size: 0.5rem;
+  }
+
+  .top-container::after {
+    content: "________________________________________________";
+  }
+
+  .top-container::before {
+    content: "||||||||||||||||||||||||||||||||||||||||||||||||";
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .blog-serie-container {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+  }
+
+  .blog-serie-container p:last-of-type {
+    display: none;
+  }
+
+  .blog-desc,
+  .blog-content {
+    font-size: 0.9rem;
+  }
 }

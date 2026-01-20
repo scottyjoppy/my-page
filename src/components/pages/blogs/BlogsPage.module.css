@@ -131,6 +131,11 @@
   color: var(--off-black-80);
 }
 
+.blog-serie:focus {
+  color: var(--primary);
+  filter: brightness(100%);
+}
+
 .blog-serie:hover {
   font-weight: bold;
   cursor: pointer;
@@ -165,6 +170,11 @@
 
 .blog-box:hover .read-btn {
   display: block;
+}
+
+.read-btn:focus {
+  color: var(--primary);
+  filter: brightness(100%);
 }
 
 .post-date {
@@ -225,7 +235,7 @@
 
   .blog-box {
     font-size: 0.8rem;
-    padding-right: 1.8rem;
+    padding-right: 2.2rem;
   }
 
   .blog-title {
