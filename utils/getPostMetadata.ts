@@ -1,32 +1,33 @@
 // Your existing getPostMetadata.ts
 import { PostMetadata } from "@/components/interface/PostMetadata";
-import { getValidBlogFiles } from "@/lib/blogUtils";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 
 const getPostMetadata = (): PostMetadata[] => {
-  const markdownPosts = getValidBlogFiles();
+  const folder = path.join(process.cwd(), "blog-posts");
+  const files = fs.readdirSync(folder);
+
+  const markdownPosts = files.filter((file) => file.endsWith(".md"));
 
   const posts = markdownPosts.map((fileName) => {
-    const slug = fileName.replace(".md", "");
-    const fileContents = fs.readFileSync(`blog-posts/${fileName}`, "utf8");
-    const matterResult = matter(fileContents);
+    const filePath = path.join(folder, fileName);
+    const fileContents = fs.readFileSync(filePath, "utf8");
+    const { data } = matter(fileContents);
 
     return {
-      title: matterResult.data.title,
-      blogSeries: matterResult.data.blogSeries,
-      blogLine: matterResult.data.blogLine,
-      date: matterResult.data.date,
-      description: matterResult.data.description,
-      slug,
+      title: data.title ?? "Untitled",
+      blogSeries: data.blogSeries ?? "",
+      blogLine: data.blogLine ?? "",
+      date: data.date ?? "",
+      description: data.description ?? "",
+      slug: fileName.replace(".md", ""),
     };
   });
 
-  // Sort logic...
   return posts.sort((a, b) => {
     const getNum = (slug: string) =>
-      parseInt(slug.match(/D(\d+)/i)?.[1] || "0");
+      parseInt(slug.match(/D(\d+)/i)?.[1] ?? "0");
     return getNum(b.slug) - getNum(a.slug);
   });
 };
