@@ -15,7 +15,7 @@ const AboutSection = () => {
 
   const sections = [
     {
-      imageIndex: "alex-budapest",
+      imageIndex: "images/alex/alex-budapest.jpg",
       imageSide: "right",
       content: (
         <>
@@ -26,7 +26,7 @@ const AboutSection = () => {
       ),
     },
     {
-      imageIndex: "alex-piano",
+      imageIndex: "images/alex/alex-piano.png",
       imageSide: "left",
       content: (
         <>
@@ -37,7 +37,7 @@ const AboutSection = () => {
       ),
     },
     {
-      imageIndex: "alex-image",
+      imageIndex: "images/alex/alex-field.jpg",
       imageSide: "right",
       content: (
         <>
@@ -57,7 +57,7 @@ const AboutSection = () => {
       ),
     },
     {
-      imageIndex: "alex-camera",
+      imageIndex: "images/alex/alex-camera.jpg",
       imageSide: "left",
       content: (
         <>
@@ -85,20 +85,19 @@ const AboutSection = () => {
           T
         </h1>
         {sections.map((section, i) => {
-          const image = files[section.imageIndex];
           return (
             <div key={i} className={styles["content-row"]}>
-              {section.imageSide === "left" && image && (
+              {section.imageSide === "left" && (
                 <img
-                  src={image}
+                  src={section.imageIndex}
                   alt="Alexander Delisle"
                   className={styles.image}
                 />
               )}
               <p className={styles["text-block"]}>{section.content}</p>
-              {section.imageSide === "right" && image && (
+              {section.imageSide === "right" && (
                 <img
-                  src={image}
+                  src={section.imageIndex}
                   alt="Alexander Delisle"
                   className={styles.image}
                 />

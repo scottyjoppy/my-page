@@ -39,11 +39,11 @@
 
 .image-container {
   width: 25rem;
-  border-radius: 1rem;
   aspect-ratio: 1 / 1;
   transition: all 100ms;
   z-index: 1;
   position: relative;
+  box-sizing: border-box;
   padding: 1.2rem 0;
 }
 

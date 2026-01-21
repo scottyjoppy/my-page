@@ -7,8 +7,6 @@ import { useRef } from "react";
 import styles from "./HeroSection.module.css";
 
 const HeroSection = () => {
-  const { files } = useAboutBucket();
-
   const sectionRef = useRef<HTMLElement | null>(null);
 
   return (
@@ -20,11 +18,9 @@ const HeroSection = () => {
             <p className={`${styles["small-p"]} ${styles["p-arrow"]} text-left`}>
               You've reached the personal page of this guy
             </p>
-            {files && (
               <div className={styles["image-container"]}>
-                <img src={files["alex-magic"]} className={styles.image} />
+                <img src={"images/alex/alex-camera.jpg"} className={styles.image} />
               </div>
-            )}
             <p className={`${styles["small-p"]} text-right`}>
               My chunk of digital land to share blogs, projects, and anything
               else I think is cool
