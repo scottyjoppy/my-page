@@ -22,7 +22,7 @@ export default function RootLayout({
         <Analytics />
         <Navbar />
         <BodyController>
-          <div className="bg-inherit min-h-screen">{children}</div>
+          <div className="bg-inherit min-h-[97vh]">{children}</div>
         </BodyController>
         <Footer />
       </body>

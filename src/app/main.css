@@ -39,7 +39,7 @@ body {
   }
 }
 
-body.switch {
+body.switch, html:has(body.switch) {
   background-color: var(--off-black) !important;
 }
 
