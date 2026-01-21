@@ -34,7 +34,7 @@ At first I wanted to try to make something like a building a clickable link. I i
 
 <br>
 
-I didn’t have enough time to get into state and functiona today but I just added some simple hover animations to make it look more alive. I tried to visualize how it could look by scaling the image up 700% and translating it into view. Thank God for vectors as this effect is only possible due to the dynamic scaling of SVG’s.
+I didn’t have enough time to get into state and function today but I just added some simple hover animations to make it look more alive. I tried to visualize how it could look by scaling the image up 700% and translating it into view. Thank God for vectors as this effect is only possible due to the dynamic scaling of SVG’s.
 
 <br>
 

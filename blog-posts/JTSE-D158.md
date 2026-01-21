@@ -38,4 +38,4 @@ So that's all for today, actual progress, sick, thank you for reading today's bl
 
 <br>
 
-![cube image](/images/day158/cubes.png)
+![cube image](/images/blog-images/day158/cubes.png)

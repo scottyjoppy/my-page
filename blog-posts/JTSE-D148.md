@@ -70,4 +70,4 @@ It took some brain power to figure it out but I'm glad I could make some sense o
 
 Thank you for reading today's blog, been 148 days of this now and although I'm pretty confident no one has read these up until now I'm happy to be able to look at the growth over the year. It's about a year ago that I first touched programming. Beforehand never having touched any code. I'm glad to say that the love for it hasn't faded one bit in the past year. Here's to another exciting year of learning.
 
-![cloth gif](/images/day148/clothFinished.gif)
+![cloth gif](/images/blog-images/day148/clothFinished.gif)

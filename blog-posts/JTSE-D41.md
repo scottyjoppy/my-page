@@ -10,7 +10,7 @@ Hello,
 
 <br>
 
-![Grid](/images/day40/Iso-Img-1.png)
+![Grid](/images/blog-images/day41/Iso-Img-1.png)
 
 <br>
 
@@ -18,7 +18,7 @@ Today I just want to show the levels of design I'm following as I create this is
 
 <br>
 
-![Grid](/images/day40/Iso-Img-2.png)
+![Grid](/images/blog-images/day41/Iso-Img-2.png)
 
 <br>
 
@@ -26,7 +26,7 @@ I line everything up according to the grid to keep things even and isometric. Bu
 
 <br>
 
-![Grid](/images/day40/Iso-Img-3.png)
+![Grid](/images/blog-images/day41/Iso-Img-3.png)
 
 <br>
 
@@ -34,7 +34,7 @@ Next, is the water. I thought of doing this in two layers. One base layer at the
 
 <br>
 
-![Grid](/images/day40/Iso-Img-4.png)
+![Grid](/images/blog-images/day41/Iso-Img-4.png)
 
 <br>
 
@@ -42,7 +42,7 @@ Then an additional semi transparent layer for the actual water.
 
 <br>
 
-![Grid](/images/day40/Iso-Img-5.png)
+![Grid](/images/blog-images/day41/Iso-Img-5.png)
 
 <br>
 
@@ -54,7 +54,7 @@ With the basic landscape in place I built a rough lookin' boat to top things off
 
 <br>
 
-![Grid](/images/day40/Iso-Img-6.png)
+![Grid](/images/blog-images/day41/Iso-Img-6.png)
 
 <br>
 

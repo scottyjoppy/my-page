@@ -22,7 +22,7 @@ So yesterday I made sticks and points. A point being a circular object and a sti
 
 <br>
 
-![cloth fail](/images/day147/cloth.gif)
+![cloth fail](/images/blog-images/day147/cloth.gif)
 
 <br>
 
@@ -30,7 +30,7 @@ So this happened. One fun little problem I had to solve was how to create this g
 
 <br>
 
-![cloth win](/images/day147/cloth2.gif)
+![cloth win](/images/blog-images/day147/cloth2.gif)
 
 <br>
 

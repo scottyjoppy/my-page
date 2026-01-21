@@ -33,4 +33,4 @@ Extensions or not coding is fun, and it only increases workflow to be capable of
 
 <br>
 
-![Tram Gif](/images/day44/tram.gif)
+![Tram Gif](/images/blog-images/day44/tram.gif)

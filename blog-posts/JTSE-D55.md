@@ -18,7 +18,7 @@ So first off, the landscape once more. Not much has changed here besides of cour
 
 <br>
 
-![Landscape](/images/day55/Iso-Img1.png)
+![Landscape](/images/blog-images/day55/Iso-Img1.png)
 
 
 <br>
@@ -27,7 +27,7 @@ Next up the roads. I've now fully roaded-out island West but I'm still wondering
 
 <br>
 
-![Roads](/images/day55/Iso-Img2.png)
+![Roads](/images/blog-images/day55/Iso-Img2.png)
 
 <br>
 
@@ -35,7 +35,7 @@ Finally the buildings. I'm still far from done in terms of the actual building f
 
 <br>
 
-![Buildings](/images/day55/Iso-Img3.png)
+![Buildings](/images/blog-images/day55/Iso-Img3.png)
 
 <br>
 

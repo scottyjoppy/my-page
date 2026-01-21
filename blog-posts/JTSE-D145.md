@@ -14,7 +14,7 @@ Today I completed a small physics simulation to practice Verlet Integration and 
 
 <br>
 
-![collision gif](/images/day145/collision.gif)
+![collision gif](/images/blog-images/day145/collision.gif)
 
 <br>
 

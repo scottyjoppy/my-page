@@ -14,7 +14,7 @@ Today I finally got a little guy in the project:
 
 <br>
 
-![lil guy](/images/day152/idlesprite.gif)
+![lil guy](/images/blog-images/day152/idlesprite.gif)
 
 <br>
 

@@ -10,7 +10,7 @@ Hello,
 
 <br>
 
-![isometry background](/images/isometry-image.png)
+![isometry background](/images/blog-images/day33-isometry-image)
 
 <br>
 

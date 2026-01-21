@@ -59,7 +59,7 @@ But parallaxing, absolute and fixed positioning have this property that allows t
 
 <br>
 
-![Momence](/images/momence-ex.png)
+![Momence](/images/blog-images/day12-momence-ex.png)
 
 <br>
 

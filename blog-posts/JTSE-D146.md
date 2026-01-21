@@ -14,7 +14,7 @@ Hello friends,
 
 <br>
 
-![points & sticks](/images/day146/stickspoints.gif)
+![points & sticks](/images/blog-images/day146/stickspoints.gif)
 
 <br>
 
