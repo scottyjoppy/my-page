@@ -2,15 +2,11 @@
 
 Hi, my name is **Alexander Delisle**. I'm a Canadian living in Austria and I love technology. This is my personal page where I post my current projects, blogs, and general development towards my various goals.
 
----
-
 [Go To Site](https://alx-d.com)
-
----
 
 ### Projects
 
-Current: Microcontroller Experiments
+**Current:** Microcontroller Experiments
 
 - Basic Isometric Platformer
 - SportRadar Event Calendar
