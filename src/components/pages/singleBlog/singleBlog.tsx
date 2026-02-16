@@ -95,7 +95,21 @@ const SingleBlog = ({ slug }: SingleBlogProps) => {
                 />
               ),
               li: ({ node, ...props }) => <li className="ml-4" {...props} />,
-              img: ({ ...props }) => <img {...props} className="max-h-[50vh] mx-auto" />,
+              img: ({ ...props }) => (
+                <img {...props} className="max-h-[50vh] mx-auto" />
+              ),
+              video: ({ children, ...props }) => (
+                <video
+                  {...props}
+                  autoPlay
+                  muted
+                  playsInline
+                  loop
+                  className={`max-h-[50vh] mx-auto ${props.className ?? ""}`}
+                >
+                  {children}
+                </video>
+              ),
             }}
             skipHtml={false}
           >
