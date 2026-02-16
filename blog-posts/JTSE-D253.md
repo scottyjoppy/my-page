@@ -3,7 +3,7 @@ title: "Day 253: The Car"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
 date: "Feb 14, 2026"
-description: ""
+description: "Getting the car moving for the first time."
 ---
 
 Hello friends,
