@@ -1,5 +1,5 @@
 ---
-title: "Day 267: Robotics & Research"
+title: "Day 266: Robotics & Research"
 blogSeries: "Journey To: Software Engineer"
 blogLine: "From warehouse racks to full stack"
 date: "Mar 13, 2026"
