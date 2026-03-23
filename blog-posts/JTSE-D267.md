@@ -63,7 +63,7 @@ This video by the Global Science Network [Full Adder Tutorial](https://www.youtu
 
 <br>
 
-![full adder](/images/blog-images/day267/fulladder.jpeg)
+![full adder](/images/blog-images/day267-fulladder.jpeg)
 
 <br>
 
