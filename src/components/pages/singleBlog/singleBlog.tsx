@@ -39,84 +39,88 @@ const SingleBlog = ({ slug }: SingleBlogProps) => {
 
   return (
     <section className={styles.container}>
-      <div className={styles["top-container"]}>
-        <div className={styles["blog-serie-container"]}>
-          <p className={styles["blog-serie"]}>
-            C:\{post.data.blogSeries}\{slug}
-          </p>
-          <p className={styles["blog-serie"]}>
-            ::{"{"}
-            {post.data.blogLine}
-            {"}"}
-          </p>
+      <div>
+        <div className={styles["top-container"]}>
+          <div className={styles["blog-serie-container"]}>
+            <p className={styles["blog-serie"]}>
+              C:\{post.data.blogSeries}\{slug}
+            </p>
+            <p className={styles["blog-serie"]}>
+              ::{"{"}
+              {post.data.blogLine}
+              {"}"}
+            </p>
+          </div>
+          <h2 className={styles["title-container"]}>
+            <span className={styles["day-container"]}>
+              {post.data.title.split(":")[0].trim()}
+            </span>
+            <span className={styles.title}>
+              {post.data.title.split(":")[1].trim()}
+            </span>
+          </h2>
+          <p className={styles["blog-desc"]}>{post.data.description}</p>
         </div>
-        <h2 className={styles["title-container"]}>
-          <span className={styles["day-container"]}>
-            {post.data.title.split(":")[0].trim()}
-          </span>
-          <span className={styles.title}>
-            {post.data.title.split(":")[1].trim()}
-          </span>
-        </h2>
-        <p className={styles["blog-desc"]}>{post.data.description}</p>
+        <div className={styles["blog-content"]}>
+          <p className={styles.date}>{post.data.date}</p>
+          <br />
+          <article className="prose">
+            <ReactMarkdown
+              remarkPlugins={[remarkBreaks]}
+              rehypePlugins={[rehypeRaw, rehypeHighlight]}
+              components={{
+                h2: ({ children }) => {
+                  const text = Children.toArray(children).join("");
+                  const id = slugify(text);
+                  return (
+                    <h2 id={id}>
+                      <a href={`#${id}`} className={styles["blog-anchor"]}>
+                        {children}
+                      </a>
+                    </h2>
+                  );
+                },
+                u: ({ node, ...props }) => <u {...props} />,
+                a: ({ node, ...props }) => <a target="_blank" {...props} />,
+                ul: ({ node, ...props }) => (
+                  <ul
+                    className="list-disc list-inside my-6 space-y-2"
+                    {...props}
+                  />
+                ),
+                ol: ({ node, ...props }) => (
+                  <ol
+                    className="list-decimal list-inside my-6 space-y-2"
+                    {...props}
+                  />
+                ),
+                li: ({ node, ...props }) => <li className="ml-4" {...props} />,
+                img: ({ ...props }) => (
+                  <img {...props} className="max-h-[50vh] mx-auto" />
+                ),
+                video: ({ children, ...props }) => (
+                  <video
+                    {...props}
+                    autoPlay
+                    muted
+                    playsInline
+                    loop
+                    className={`max-h-[50vh] mx-auto ${props.className ?? ""}`}
+                  >
+                    {children}
+                  </video>
+                ),
+              }}
+              skipHtml={false}
+            >
+              {post.content}
+            </ReactMarkdown>
+          </article>
+        </div>
       </div>
-      <div className={styles["blog-content"]}>
-        <p className={styles.date}>{post.data.date}</p>
-        <br />
-        <article className="prose">
-          <ReactMarkdown
-            remarkPlugins={[remarkBreaks]}
-            rehypePlugins={[rehypeRaw, rehypeHighlight]}
-            components={{
-              h2: ({ children }) => {
-                const text = Children.toArray(children).join("");
-                const id = slugify(text);
-
-                return (
-                  <h2 id={id}>
-                    <a href={`#${id}`} className={styles["blog-anchor"]}>
-                      {children}
-                    </a>
-                  </h2>
-                );
-              },
-              u: ({ node, ...props }) => <u {...props} />,
-              a: ({ node, ...props }) => <a target="_blank" {...props} />,
-              ul: ({ node, ...props }) => (
-                <ul
-                  className="list-disc list-inside my-6 space-y-2"
-                  {...props}
-                />
-              ),
-              ol: ({ node, ...props }) => (
-                <ol
-                  className="list-decimal list-inside my-6 space-y-2"
-                  {...props}
-                />
-              ),
-              li: ({ node, ...props }) => <li className="ml-4" {...props} />,
-              img: ({ ...props }) => (
-                <img {...props} className="max-h-[50vh] mx-auto" />
-              ),
-              video: ({ children, ...props }) => (
-                <video
-                  {...props}
-                  autoPlay
-                  muted
-                  playsInline
-                  loop
-                  className={`max-h-[50vh] mx-auto ${props.className ?? ""}`}
-                >
-                  {children}
-                </video>
-              ),
-            }}
-            skipHtml={false}
-          >
-            {post.content}
-          </ReactMarkdown>
-        </article>
-      </div>
+      <a href="/blogs" className="hover:font-bold transition-all">
+        -{">"} Blogs
+      </a>
     </section>
   );
 };
